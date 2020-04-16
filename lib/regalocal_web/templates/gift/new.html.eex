@@ -10,7 +10,7 @@
     El cupó té un <strong>valor de <%=@coupon.value %> EUR</strong>, però a tu et costarà <strong>només <%= @coupon.amount %> EUR</strong>.
   </p>
   <p class="mt-4 max-w-3xl mx-auto text-l leading-7 text-gray-500">
-    Fes un regal als els teus tot i recolzant <strong><%= @business.owner_name %></strong>.
+    Fes un regal als els teus tot i donant suport a en/na <strong><%= @business.owner_name %></strong>.
   </p>
 </div>
 <div class="relative mt-6 lg:mt-12 lg:flex">

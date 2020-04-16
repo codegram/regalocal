@@ -63,6 +63,10 @@ defmodule RegalocalWeb.Router do
     put("/coupons/:id/unpublish", CouponController, :unpublish, as: :unpublish_coupon)
     put("/coupons/:id/archive", CouponController, :archive, as: :archive_coupon)
     put("/coupons/:id/activate", CouponController, :activate, as: :activate_coupon)
+  end
+
+  scope "/admin", RegalocalWeb.Admin, as: :admin do
+    pipe_through([:browser, RegalocalWeb.Plugs.Veil.Authenticate])
 
     get("/business/edit", BusinessController, :edit)
     put("/business", BusinessController, :update)

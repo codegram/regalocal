@@ -9,7 +9,7 @@ build:
     web: Dockerfile
 release:
   command:
-    - bin/regalocal eval "Regalocal.Release.migrate()"
+    - POOL_SIZE=2 bin/regalocal eval "Regalocal.Release.migrate()"
   image: web
 run:
   web: bin/regalocal start
