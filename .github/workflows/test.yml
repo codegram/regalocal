@@ -1,5 +1,11 @@
 name: Test
-on: [push]
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - "**"
 
 jobs:
   test:
@@ -37,8 +43,9 @@ jobs:
         uses: actions/cache@v1
         with:
           path: _build
-          key: ${{ runner.OS }}-build-${{ env.cache-name }}
+          key: ${{ runner.OS }}-build-${{ hashFiles('**/mix.lock') }}
           restore-keys: |
+            ${{ runner.OS }}-build-${{ env.cache-name }}-
             ${{ runner.OS }}-build-
             ${{ runner.OS }}-
       - uses: actions/setup-elixir@v1.2.0

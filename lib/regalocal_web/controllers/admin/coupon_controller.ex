@@ -22,7 +22,10 @@ defmodule RegalocalWeb.Admin.CouponController do
 
   def create(conn, %{"coupon" => coupon_params}) do
     params =
-      Map.merge(coupon_params, %{"business_id" => conn.assigns[:business_id], "status" => :published})
+      Map.merge(coupon_params, %{
+        "business_id" => conn.assigns[:business_id],
+        "status" => :published
+      })
 
     case Admin.create_coupon(params) do
       {:ok, coupon} ->
