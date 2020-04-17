@@ -3,6 +3,9 @@ const { colors } = require("tailwindcss/defaultTheme")
 module.exports = {
   important: true,
   theme: {
+    fontFamily: {
+      sans: ["Helvetica", "Arial", "sans-serif"],
+    },
     extend: {
       colors: {
         primary: {
