@@ -335,7 +335,7 @@ a {
 		<td></td>
 		<td class="container" width="600">
 			<div class="content">
-        <%= render @view_module, @view_template, assigns %>
+        <%= @inner_content %>
 				<div class="footer">
 					<table width="100%">
 						<tr>

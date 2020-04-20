@@ -70,7 +70,7 @@
           </div>
         </div>
       <% end %>
-      <%= render @view_module, @view_template, assigns %>
+      <%= @inner_content %>
     </main>
     <footer role="footer">
       <%= render RegalocalWeb.LayoutView, "footer.html", assigns %>

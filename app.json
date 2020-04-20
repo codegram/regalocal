@@ -12,6 +12,10 @@
       "description": "A secret key for verifying the integrity of signed cookies.",
       "generator": "secret"
     },
+    "ADMIN_PASSWORD": {
+      "description": "The default password to access live view statistics.",
+      "value": "admin1234"
+    },
     "VEIL_REQUEST_SALT": {
       "description": "A secret key for verifying the integrity of signed cookies.",
       "generator": "secret"

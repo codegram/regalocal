@@ -28,6 +28,14 @@ secret_key_base =
     You can generate one by calling: mix phx.gen.secret
     """
 
+admin_password =
+  System.get_env("ADMIN_PASSWORD") ||
+    raise """
+    environment variable ADMIN_PASSWORD is missing.
+    """
+
+config :regalocal, :basic_auth, username: "admin", password: admin_password
+
 review_app_host =
   if System.get_env("HEROKU_APP_NAME") do
     "#{System.get_env("HEROKU_APP_NAME")}.herokuapp.com"
@@ -37,10 +45,10 @@ host = System.get_env("HOST") || review_app_host || "example.com"
 
 config :regalocal, RegalocalWeb.Endpoint,
   http: [port: {:system, "PORT"}],
-  force_ssl: [rewrite_on: [:x_forwarded_proto]],
   url: [host: host, scheme: "https", port: 443],
   secret_key_base: secret_key_base,
-  pubsub: [
+  live_view: [signing_salt: secret_key_base],
+  pubsub_config: [
     name: Regalocal.PubSub,
     adapter: Phoenix.PubSub.Redis,
     url: System.get_env("REDIS_URL"),

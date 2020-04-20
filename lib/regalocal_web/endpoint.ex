@@ -2,22 +2,16 @@ defmodule RegalocalWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :regalocal
   use Sentry.Phoenix.Endpoint
 
-  if Mix.env() === :prod do
-    plug Plug.SSL, rewrite_on: [:x_forwarded_proto]
-  end
-
   # The session will be stored in the cookie and signed,
   # this means its contents can be read but not tampered with.
   # Set :encryption_salt if you would also like to encrypt it.
   @session_options [
     store: :cookie,
     key: "_regalocal_key",
-    signing_salt: "uCxrRlm8"
+    signing_salt: Application.get_env(:regalocal, RegalocalWeb.Endpoint)[:secret_key_base]
   ]
 
-  socket "/socket", RegalocalWeb.UserSocket,
-    websocket: true,
-    longpoll: false
+  socket "/live", Phoenix.LiveView.Socket, websocket: [connect_info: [session: @session_options]]
 
   # Serve at "/" the static files from "priv/static" directory.
   #
@@ -36,6 +30,10 @@ defmodule RegalocalWeb.Endpoint do
     plug Phoenix.LiveReloader
     plug Phoenix.CodeReloader
   end
+
+  plug Phoenix.LiveDashboard.RequestLogger,
+    param_key: "request_logger",
+    cookie_key: "request_logger"
 
   plug Plug.RequestId
   plug Plug.Telemetry, event_prefix: [:phoenix, :endpoint]

@@ -10,12 +10,15 @@ use Mix.Config
 config :regalocal,
   ecto_repos: [Regalocal.Repo]
 
+config :regalocal, :basic_auth, username: "admin", password: "admin1234"
+
 # Configures the endpoint
 config :regalocal, RegalocalWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "XMuJ7ME/8moiixzMitosPT8iArJ5MLQZBU1q9N6gDVZ8+rh+BRJs1VtqUlCvN4aG",
   render_errors: [view: RegalocalWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: Regalocal.PubSub, adapter: Phoenix.PubSub.PG2],
+  pubsub_server: Regalocal.PubSub,
+  pubsub_config: [name: Regalocal.PubSub, adapter: Phoenix.PubSub.PG2],
   live_view: [signing_salt: "jyq71W8L"]
 
 # Configures Elixir's Logger

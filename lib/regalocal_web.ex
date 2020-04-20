@@ -24,6 +24,8 @@ defmodule RegalocalWeb do
       import Plug.Conn
       import RegalocalWeb.Gettext
       alias RegalocalWeb.Router.Helpers, as: Routes
+
+      import Phoenix.LiveView.Controller
     end
   end
 
@@ -44,6 +46,8 @@ defmodule RegalocalWeb do
       import RegalocalWeb.MenuHelpers
       import RegalocalWeb.AppHelpers
 
+      import Phoenix.LiveView.Helpers
+
       alias RegalocalWeb.Router.Helpers, as: Routes
     end
   end
@@ -53,6 +57,8 @@ defmodule RegalocalWeb do
       use Phoenix.Router
       import Plug.Conn
       import Phoenix.Controller
+
+      import Phoenix.LiveView.Router
     end
   end
 

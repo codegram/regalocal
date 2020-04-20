@@ -10,8 +10,10 @@ defmodule Regalocal.Application do
     children = [
       # Start the Ecto repository
       Regalocal.Repo,
+      RegalocalWeb.Telemetry,
       # Start the endpoint when the application starts
-      RegalocalWeb.Endpoint
+      RegalocalWeb.Endpoint,
+      {Phoenix.PubSub, Application.get_env(:regalocal, RegalocalWeb.Endpoint)[:pubsub_config]}
       # Starts a worker by calling: Regalocal.Worker.start_link(arg)
       # {Regalocal.Worker, arg},
     ]
