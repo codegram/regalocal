@@ -69,6 +69,7 @@ defmodule Regalocal.Admin.Business do
     |> validate_terms(business)
     |> format_iban
     |> format_vat
+    |> format_website
     |> validate_address
     |> format_phone(:phone)
     |> format_phone(:whatsapp)
@@ -129,6 +130,27 @@ defmodule Regalocal.Admin.Business do
           changeset,
           :vat_number,
           vat_number |> alphanumeric_upcase
+        )
+
+      _ ->
+        changeset
+    end
+  end
+
+  defp format_website(changeset) do
+    case changeset do
+      %Ecto.Changeset{valid?: true, changes: %{website: raw_website}} ->
+        website =
+          if String.starts_with?(raw_website, ["http://", "https://"]) do
+            raw_website
+          else
+            "http://" <> raw_website
+          end
+
+        put_change(
+          changeset,
+          :website,
+          website
         )
 
       _ ->
