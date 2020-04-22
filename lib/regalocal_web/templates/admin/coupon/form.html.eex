@@ -4,6 +4,9 @@
   <%= Form.control f, :title, gettext("Títol del cupó"), [], fn form, field -> %>
   <%= Form.text_input form, field, required: true, prompt: gettext("'Cafè i pastís', 'Tallat de cabell', 'Sopar romàntic per dos', etcètera") %>
 <% end %>
+<%= Form.control f, :description, gettext("Descripció"), [hint: gettext("Explica una mica quin producte o servei ofereixes")], fn form, field -> %>
+<%= Form.textarea form, field, required: true %>
+<% end %>
 <%= Form.control f, :value, gettext("Valor real del cupó"), [], fn form, field -> %>
 <%= Form.currency_input form, field, required: true %>
 <% end %>

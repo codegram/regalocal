@@ -10,6 +10,7 @@ defmodule Regalocal.Admin.Coupon do
     field :title, :string
     field :value, :integer
     field :business_id, :id
+    field :description, :string
     field :archived, :boolean, default: false
 
     timestamps()
@@ -18,8 +19,18 @@ defmodule Regalocal.Admin.Coupon do
   @doc false
   def changeset(coupon, attrs) do
     coupon
-    |> cast(attrs, [:title, :amount, :value, :discount, :status, :terms, :business_id, :archived])
-    |> validate_required([:title, :value, :discount, :status, :business_id])
+    |> cast(attrs, [
+      :title,
+      :amount,
+      :value,
+      :discount,
+      :status,
+      :terms,
+      :business_id,
+      :description,
+      :archived
+    ])
+    |> validate_required([:title, :value, :discount, :status, :description, :business_id])
     |> validate_inclusion(:status, CouponStatusEnum.__valid_values__())
     |> validate_number(:value, greater_than_or_equal_to: 5)
     |> validate_number(:discount, greater_than_or_equal_to: 5, less_than_or_equal_to: 25)
