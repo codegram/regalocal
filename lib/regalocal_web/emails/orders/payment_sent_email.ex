@@ -4,12 +4,13 @@ defmodule RegalocalWeb.Orders.PaymentSentEmail do
     layout: {RegalocalWeb.LayoutView, :email}
 
   import RegalocalWeb.PremailHelper
+  import RegalocalWeb.Gettext
 
   def generate(conn, gift, business) do
     new()
     |> to({business.owner_name, business.email})
     |> from(from_email())
-    |> subject("✅ Pagament realitzat: \"#{gift.reference}\"")
+    |> subject(gettext("✅ Pagament realitzat: \"%{reference}\"", reference: gift.reference))
     |> render_body("payment_sent.html", %{conn: conn, gift: gift, business: business})
     |> premail
   end

@@ -1,19 +1,19 @@
 <%= AdminHelpers.layout @coupon.title, fn -> %>
 <%= if Admin.publishable?(@coupon.id) do %>
-  <%= AdminHelpers.primary_layout_button "Publicar", to: Routes.admin_coupon_path(@conn, :new), to: Routes.admin_publish_coupon_path(@conn, :publish, @coupon), method: :put %>
+  <%= AdminHelpers.primary_layout_button gettext("Publicar"), to: Routes.admin_coupon_path(@conn, :new), to: Routes.admin_publish_coupon_path(@conn, :publish, @coupon), method: :put %>
 <% end %>
 <%= if Admin.unpublishable?(@coupon.id) and @coupon.status == :published do %>
-  <%= AdminHelpers.primary_layout_button "Despublicar", to: Routes.admin_unpublish_coupon_path(@conn, :unpublish, @coupon), method: :put %>
+  <%= AdminHelpers.primary_layout_button gettext("Despublicar"), to: Routes.admin_unpublish_coupon_path(@conn, :unpublish, @coupon), method: :put %>
 <% end %>
 <%= if Admin.ready_to_redeem?(@coupon) do %>
-  <%= AdminHelpers.primary_layout_button "Activar per bescanvi", to: Routes.admin_activate_coupon_path(@conn, :activate, @coupon), method: :put, data: [confirm: "Es notificarà als compradors del cupó que ja es poden bescanviar. Estàs segur/a?"] %>
+  <%= AdminHelpers.primary_layout_button gettext("Activar per bescanvi"), to: Routes.admin_activate_coupon_path(@conn, :activate, @coupon), method: :put, data: [confirm: gettext("Es notificarà als compradors del cupó que ja es poden bescanviar. Estàs segur/a?")] %>
 <% end %>
 <%= if Admin.updatable?(@coupon.id) do %>
-  <%= AdminHelpers.secondary_layout_button "Editar",to: Routes.admin_coupon_path(@conn, :edit, @coupon) %>
-  <%= AdminHelpers.secondary_layout_button "Eliminar",to: Routes.admin_coupon_path(@conn, :delete, @coupon), method: :delete, data: [confirm: "Estàs segur/a?"]%>
+  <%= AdminHelpers.secondary_layout_button gettext("Editar"),to: Routes.admin_coupon_path(@conn, :edit, @coupon) %>
+  <%= AdminHelpers.secondary_layout_button gettext("Eliminar"),to: Routes.admin_coupon_path(@conn, :delete, @coupon), method: :delete, data: [confirm: gettext("Estàs segur/a?")]%>
 <% else %>
   <%= unless @coupon.archived do %>
-    <%= AdminHelpers.secondary_layout_button "Arxivar",to: Routes.admin_archive_coupon_path(@conn, :archive, @coupon), method: :put, data: [confirm: "Els cupons que ja s'han comprat seguiran sent bescanviables, però ja no se'n podran fer més comandes. Estàs segur/a?"]%>
+    <%= AdminHelpers.secondary_layout_button gettext("Arxivar"),to: Routes.admin_archive_coupon_path(@conn, :archive, @coupon), method: :put, data: [confirm: gettext("Els cupons que ja s'han comprat seguiran sent bescanviables, però ja no se'n podran fer més comandes. Estàs segur/a?")]%>
   <% end %>
 <% end %>
 <% end do %>
@@ -22,23 +22,23 @@
       <dl>
         <div class="sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 sm:py-5">
           <dt class="text-sm leading-5 font-medium text-gray-500">
-            Valor
+            <%= gettext("Valor") %>
           </dt>
           <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
-            <%= @coupon.value %> EUR
+            <%= @coupon.value %> <%= gettext("EUR") %>
           </dd>
         </div>
         <div class="mt-8 sm:mt-0 sm:grid sm:grid-cols-3 sm:gap-4 sm:border-t sm:border-gray-200 sm:px-6 sm:py-5">
           <dt class="text-sm leading-5 font-medium text-gray-500">
-            Preu de venda
+            <%= gettext("Preu de venda") %>
           </dt>
           <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
-            <%= @coupon.amount %> EUR
+            <%= @coupon.amount %> <%= gettext("EUR") %>
           </dd>
         </div>
         <div class="mt-8 sm:mt-0 sm:grid sm:grid-cols-3 sm:gap-4 sm:border-t sm:border-gray-200 sm:px-6 sm:py-5">
           <dt class="text-sm leading-5 font-medium text-gray-500">
-            Estat
+            <%= gettext("Estat") %>
           </dt>
           <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
             <%= status_pill(@coupon) %>
@@ -46,7 +46,7 @@
         </div>
         <div class="mt-8 sm:mt-0 sm:grid sm:grid-cols-3 sm:gap-4 sm:border-t sm:border-gray-200 sm:px-6 sm:py-5">
           <dt class="text-sm leading-5 font-medium text-gray-500">
-            Termes d'ús
+            <%= gettext("Termes d'ús") %>
           </dt>
           <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
             <%= @coupon.terms %>
@@ -61,10 +61,10 @@
         <div class="-ml-4 -mt-2 flex items-center justify-between flex-wrap sm:flex-no-wrap">
           <div class="ml-4 mt-2 flex-shrink-0">
             <h3 class="text-lg leading-6 font-medium text-gray-900">
-              Comandes d'aquest cupó
+              <%= gettext("Comandes d'aquest cupó") %>
             </h3>
             <p class="mt-1 text-sm leading-5 text-gray-500">
-              També pots veure totes les teves comandes des de la secció "Comandes" del menú superior.
+              <%= gettext("També pots veure totes les teves comandes des de la secció \"Comandes\" del menú superior.") %>
             </p>
           </div>
           <div class="ml-4 mt-2 flex-shrink-0">

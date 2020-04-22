@@ -69,7 +69,7 @@ defmodule RegalocalWeb.GiftController do
           conn
           |> put_flash(
             :info,
-            "Moltes gràcies per confirmar el pagament. Hem notificat al comerç."
+            gettext("Moltes gràcies per confirmar el pagament. Hem notificat al comerç.")
           )
           |> redirect(to: Routes.page_path(conn, :index))
 

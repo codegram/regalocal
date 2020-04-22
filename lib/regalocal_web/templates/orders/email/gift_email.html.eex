@@ -1,34 +1,34 @@
-<%= EmailHelpers.layout("Felicitats", "Has rebut un regal 🎁") do %>
+<%= EmailHelpers.layout(gettext("Felicitats"), gettext("Has rebut un regal 🎁")) do %>
   <%= EmailHelpers.content_block do %>
-    Has rebut un regal de part de <strong><%= @gift.buyer_name %></strong>:
+    <%= gettext("Has rebut un regal de part de <strong>%{gift_buyer_name}</strong>:", gift_buyer_name: @gift.buyer_name) |> raw %>
   <% end %>
   <%= EmailHelpers.content_block do %>
     <div class="gift">
-      <strong><%= @gift.coupon.title %></strong> a <strong><%= @business.name %></strong>.
+      <strong><%= @gift.coupon.title %></strong> <%= gettext("a") %> <strong><%= @business.name %></strong>.
     </div>
   <% end %>
   <%= EmailHelpers.content_block do %>
-    Aquí tens un missatge de part seva:
+    <%= gettext("Aquí tens un missatge de part seva:") %>
   <% end %>
   <%= EmailHelpers.content_block do %>
     <div class="message"><%= @gift.message_for_recipient %></div>
   <% end  %>
   <%= EmailHelpers.content_block do %>
-    <strong>Com puc fer-lo servir?</strong>
+    <strong><%= gettext("Com puc fer-lo servir?") %></strong>
   <% end %>
   <%= EmailHelpers.content_block do %>
-    Ara mateix, <%= @business.name %> està tancat degut al confinament. Tan bon punt obrin, t'enviarem un mail indicant que ja pots anar al comerç a fer servir el teu cupó.
+    <%= gettext("Ara mateix, %{business_name} està tancat degut al confinament. Tan bon punt obrin, t'enviarem un mail indicant que ja pots anar al comerç a fer servir el teu cupó.", business_name: @business.name) %>
   <% end %>
   <%= EmailHelpers.content_block do %>
-    El codi del cupó és <strong><%= @gift.reference %></strong>. No et preocupis, te'l recordarem en el proper mail.
+    <%= gettext("El codi del cupó és <strong>%{gift_reference}</strong>. No et preocupis, te'l recordarem en el proper mail.", gift_reference: @gift.reference) |> raw %>
   <% end %>
   <%= EmailHelpers.content_block do %>
-    <strong>Vols fer un regal a algú tú també?</strong>
+    <strong><%= gettext("Vols fer un regal a algú tú també?") %></strong>
   <% end %>
   <%= EmailHelpers.content_block do %>
-    <%= @gift.buyer_name %> t'ha fet el regal a través de <a href="https://regalocal.com">Regalocal</a>, el servei gratuït que et permet regalar afecte als teus tot i ajudant el comerç local.
+    <%= @gift.buyer_name %> <%= gettext("t'ha fet el regal a través de <a href=\"%{url}\">Regalocal</a>, el servei gratuït que et permet regalar afecte als teus tot i ajudant el comerç local.", url: "https://www.regalocal.com") |> raw %>
   <% end %>
   <%= EmailHelpers.content_block do %>
-    Cerca comerços en dificultats per la crisi del COVID-19 i regala solidaritat :)
+    <%= gettext("Cerca comerços en dificultats per la crisi del COVID-19 i regala solidaritat :)") %>
   <% end %>
 <% end %>

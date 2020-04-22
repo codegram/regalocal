@@ -1,61 +1,77 @@
-<%= EmailHelpers.layout("Important: Cal que realitzis el pagament del teu cupó!") do %>
+<%= EmailHelpers.layout(gettext("Important: Cal que realitzis el pagament del teu cupó!")) do %>
   <%= EmailHelpers.content_block do %>
-    Per finalitzar el procés de compra fes una transferència bancària amb aquestes dades:
+    <%= gettext("Per finalitzar el procés de compra fes una transferència bancària amb aquestes dades:") %>"
   <% end %>
   <%= EmailHelpers.content_block do %>
     <dl>
-      <dt>Nom del beneficiari</dt>
+      <dt>
+        <%= gettext("Nom del beneficiari") %>
+      </dt>
       <dd><%=@business.owner_name%></dd>
-      <dt>Número IBAN</dt>
+      <dt>
+        <%= gettext("Número IBAN") %>
+      </dt>
       <dd><%= Regex.scan(~r/..../, @business.iban) |> List.flatten |> Enum.join(" ") %></dd>
-      <dt>Import a transferir</dt>
-      <dd><strong><%=@gift.amount%> EUR</strong></dd>
-      <dt>Concepte de la transferència</dt>
+      <dt>
+        <%= gettext("Import a transferir") %>
+      </dt>
+      <dd><strong><%=@gift.amount%> <%= gettext("EUR") %></strong></dd>
+      <dt>
+        <%= gettext("Concepte de la transferència") %>
+      </dt>
       <dd><%=@gift.reference%></dd>
     </dl>
   <% end %>
-
   <%= EmailHelpers.content_block do %>
     <%= if @business.bizum_number do %>
-      <p>Si ho prefereixes, també pots enviar els <strong><%=@gift.amount %> EUR</strong> per Bizum al número <strong><%= Regex.scan(~r/.../, @business.bizum_number) |> List.flatten |> Enum.join(" ") %></strong>, especificant <strong><%= @gift.reference %></strong> com a concepte.</p>
+      <p>
+        <%= gettext("Si ho prefereixes, també pots enviar els <strong>%{gift_amount} EUR</strong> per Bizum al número <strong>%{bizum_number}</strong>, especificant <strong>%{gift_reference}</strong> com a concepte.", gift_amount: @gift.amount, bizum_number: Regex.scan(~r/.../, @business.bizum_number) |> List.flatten |> Enum.join(" "), gift_reference: @gift.reference) |> raw %>
+      </p>
     <% end %>
   <% end %>
-
   <%= EmailHelpers.content_block do %>
-    <strong>Notificació de pagament</strong>
+    <strong><%= gettext("Notificació de pagament") %></strong>
   <% end %>
-
   <%= EmailHelpers.content_block do %>
-    Una vegada hagis realitzat el pagament, fes-ho saber a <%= @business.owner_name %> seguint el següent enllaç:
+    <%= gettext("Una vegada hagis realitzat el pagament, fes-ho saber a %{business_owner_name} seguint el següent enllaç:", business_owner_name: @business.owner_name) %>
   <% end %>
-
   <%= EmailHelpers.content_block do %>
-    <a href="<%= Routes.payment_sent_url(@conn, :payment_sent, @gift.reference, token: @token) %>" class="btn-primary">Confirmar pagament</a>
+    <a href="<%= Routes.payment_sent_url(@conn, :payment_sent, @gift.reference, token: @token) %>" class="btn-primary">
+      <%= gettext("Confirmar pagament") %>
+    </a>
   <% end %>
-
   <%= EmailHelpers.content_block do %>
-    <strong>Gaudir del regal</strong>
+    <strong>
+      <%= gettext("Gaudir del regal") %>
+    </strong>
   <% end %>
-
   <%= EmailHelpers.content_block do %>
-    Quan <%= @business.name %> torni a obrir tant tu com <%= @gift.recipient_name %> rebreu un correu electrònic avisant-vos que ja podeu bescanviar el cupó!
+    <%= gettext("Quan %{business_name} torni a obrir tant tu com %{gift_recipient_name} rebreu un correu electrònic avisant-vos que ja podeu bescanviar el cupó!", business_name: @business.name, gift_recipient_name: @gift.recipient_name) %>
   <% end %>
-
   <%= EmailHelpers.content_block do %>
-    Per si és del teu interès, aquí tens les dades de contacte i facturació de <%= @business.name %>:
+    <%= gettext("Per si és del teu interès, aquí tens les dades de contacte i facturació de %{business_name}:", business_name: @business.name) %>
   <% end %>
-
   <%= EmailHelpers.content_block do %>
     <dl>
-      <dt>Nom del comerç</dt>
+      <dt>
+        <%= gettext("Nom del comerç") %>
+      </dt>
       <dd><%= @business.legal_name %></dd>
-      <dt>CIF/NIF</dt>
+      <dt>
+        <%= gettext("CIF/NIF") %>
+      </dt>
       <dd><%= @business.vat_number %></dd>
-      <dt>Adreça</dt>
+      <dt>
+        <%= gettext("Adreça") %>
+      </dt>
       <dd><%= @business.billing_address %></dd>
-      <dt>Nom del/la propietari/a</dt>
+      <dt>
+        <%= gettext("Nom del/la propietari/a") %>
+      </dt>
       <dd><%= @business.owner_name %></dd>
-      <dt>Telèfon</dt>
+      <dt>
+        <%= gettext("Telèfon") %>
+      </dt>
       <dd><%= @business.phone %></dd>
       <%= if @business.whatsapp do %>
         <dt>WhatsApp</dt>
@@ -65,12 +81,10 @@
       <% end %>
     </dl>
   <% end %>
-
   <%= EmailHelpers.content_block do %>
-    Moltes gràcies per ajudar a <%= @business.name %> comprant un cupó!
+    <%= gettext("Moltes gràcies per ajudar a %{business_name} comprant un cupó!", business_name: @business.name) %>
   <% end %>
-
   <%= EmailHelpers.content_block do %>
-    PD: En/na <%= @business.owner_name %> està en còpia en aquest email, per si li vols preguntar qualsevol cosa.
+    <%= gettext("PD: En/na %{business_owner_name} està en còpia en aquest email, per si li vols preguntar qualsevol cosa.", business_owner_name: @business.owner_name) %>
   <% end %>
 <% end %>

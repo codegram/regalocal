@@ -11,7 +11,10 @@ defmodule RegalocalWeb.Admin.OrderController do
       |> redirect(to: Routes.admin_order_path(conn, :show, order))
     else
       conn
-      |> put_flash(:error, "No s'ha pogut trobar cap comanda amb referència #{ref}")
+      |> put_flash(
+        :error,
+        gettext("No s'ha pogut trobar cap comanda amb referència %{reference}", reference: ref)
+      )
       |> redirect(to: Routes.admin_order_path(conn, :index))
     end
   end
@@ -40,12 +43,12 @@ defmodule RegalocalWeb.Admin.OrderController do
         |> Mailer.deliver()
 
         conn
-        |> put_flash(:info, "El pagament confirmat correctament.")
+        |> put_flash(:info, gettext("El pagament confirmat correctament."))
         |> redirect(to: Routes.admin_order_path(conn, :index))
 
       {:error, _error} ->
         conn
-        |> put_flash(:error, "El pagament no ha pogut ser confirmat.")
+        |> put_flash(:error, gettext("El pagament no ha pogut ser confirmat."))
         |> redirect(to: Routes.admin_order_path(conn, :index))
     end
   end
@@ -60,12 +63,12 @@ defmodule RegalocalWeb.Admin.OrderController do
         |> Mailer.deliver()
 
         conn
-        |> put_flash(:info, "El cupó ha sigut marcat com a utilitzat correctament.")
+        |> put_flash(:info, gettext("El cupó ha sigut marcat com a utilitzat correctament."))
         |> redirect(to: Routes.admin_order_path(conn, :index))
 
       {:error, _error} ->
         conn
-        |> put_flash(:error, "El cupó no s'ha pogut marcar com a utilitzat.")
+        |> put_flash(:error, gettext("El cupó no s'ha pogut marcar com a utilitzat."))
         |> redirect(to: Routes.admin_order_path(conn, :index))
     end
   end

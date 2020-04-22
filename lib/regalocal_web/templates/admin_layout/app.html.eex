@@ -4,11 +4,9 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title><%= assigns[:page_title] || "Panell d'administració - Regalocal" %></title>
-
+    <title><%= assigns[:page_title] || gettext("Panell d'administració - Regalocal") %></title>
     <meta name="theme-color" content="#d61f69" />
     <link rel="icon" type="image/png" href="<%= Routes.static_path(@conn, "/images/favicon.png") %>">
-
     <script type="text/javascript">
       window.$crisp=[];window.CRISP_WEBSITE_ID="4c5c0f55-3698-46e2-8e30-5fac344bfe95";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
     </script>
@@ -55,7 +53,7 @@
                   </div>
                   <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg">
                     <div class="py-1 rounded-md bg-white shadow-xs">
-                      <%= link "Desconnectar", to: Routes.session_path(@conn, :delete, @session_unique_id), class: "block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100", role: "menuitem", method: "delete" %>
+                      <%= link gettext("Desconnectar"), to: Routes.session_path(@conn, :delete, @session_unique_id), class: "block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100", role: "menuitem", method: "delete" %>
                     </div>
                   </div>
                 </div>
@@ -90,7 +88,7 @@
               </div>
             </div>
             <div class="mt-3 px-2" role="menu" aria-orientation="vertical" aria-labelledby="user-menu" role="menuitem">
-              <%= link "Desconnectar", to: Routes.session_path(@conn, :delete, @session_unique_id), class: "mt-1 block px-3 py-2 rounded-md text-base font-medium text-primary-300 hover:text-white hover:bg-primary-600 focus:outline-none focus:text-white focus:bg-primary-600", role: "menuitem", method: "delete" %>
+              <%= link gettext("Desconnectar"), to: Routes.session_path(@conn, :delete, @session_unique_id), class: "mt-1 block px-3 py-2 rounded-md text-base font-medium text-primary-300 hover:text-white hover:bg-primary-600 focus:outline-none focus:text-white focus:bg-primary-600", role: "menuitem", method: "delete" %>
             </div>
           </div>
         </div>

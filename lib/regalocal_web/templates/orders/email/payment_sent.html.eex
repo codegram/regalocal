@@ -1,40 +1,43 @@
 <%= EmailHelpers.layout do %>
   <%= EmailHelpers.content_block do %>
-    En/na <%= @gift.buyer_name %> ens ha notificat que ja ha realitzat el pagament de la compra amb la referència <%= @gift.reference %>!
+    <%= gettext("En/na %{gift_buyer_name} ens ha notificat que ja ha realitzat el pagament de la compra amb la referència %{gift.reference}!", gift_buyer_name: @gift.buyer_name, gift_reference: @gift.reference) %>
   <% end %>
-
   <%= EmailHelpers.content_block do %>
-    <strong>Properes passes</strong>
+    <strong>
+      <%= gettext("Properes passes") %>
+    </strong>
   <% end %>
-
   <%= EmailHelpers.content_block do %>
-    Si us plau, comprova que has rebut el pagament i una vegada l'hagis rebut notifica-ho a través del teu panell:
+    <%= gettext("Si us plau, comprova que has rebut el pagament i una vegada l'hagis rebut notifica-ho a través del teu panell:") %>
   <% end %>
-
   <%= EmailHelpers.content_block do %>
-    <a href="<%=Routes.admin_order_url(@conn, :show, @gift)%>" class="btn-primary">Les meves comandes</a>
+    <a href="<%=Routes.admin_order_url(@conn, :show, @gift)%>" class="btn-primary">
+      <%= gettext("Les meves comandes") %>
+    </a>
   <% end %>
-
   <%= EmailHelpers.content_block do %>
-    Com a recordatori, una vegada hagis obert i els compradors puguin començar a disfrutar dels cupons no t'oblidis d'activar els cupons, d'aquesta manera es notificarà automàticament als interessats.
+    <%= gettext("Com a recordatori, una vegada hagis obert i els compradors puguin començar a disfrutar dels cupons no t'oblidis d'activar els cupons, d'aquesta manera es notificarà automàticament als interessats.") %>
   <% end %>
-
   <%= EmailHelpers.content_block do %>
-    Per si és del teu interès, aquí tens les dades de contacte de <%= @gift.buyer_name %>:
+    <%= gettext("Per si és del teu interès, aquí tens les dades de contacte de %{gift_buyer_name}:", gift_buyer_name: @gift.buyer_name) %>
   <% end %>
-
   <%= EmailHelpers.content_block do %>
     <dl>
-      <dt>Nom</dt>
+      <dt>
+        <%= gettext("Nom") %>
+      </dt>
       <dd><%= @gift.buyer_name %></dd>
-      <dt>Telèfon</dt>
+      <dt>
+        <%= gettext("Telèfon") %>
+      </dt>
       <dd><%= @gift.buyer_phone %></dd>
-      <dt>Email</dt>
+      <dt>
+        <%= gettext("Email") %>
+      </dt>
       <dd><a href="mailto:<%= @gift.buyer_email %>"><%= @gift.buyer_email %></a></dd>
     </dl>
   <% end %>
-
   <%= EmailHelpers.content_block do %>
-    Moltes gràcies!
+    <%= gettext("Moltes gràcies!") %>"
   <% end %>
 <% end %>

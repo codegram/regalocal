@@ -1,9 +1,10 @@
 <%= EmailHelpers.layout do %>
   <%= EmailHelpers.content_block do %>
-    En/na <%= @gift.recipient_name %> acaba de fer servir el cupó que li vas regalar!
+    <%= gettext("En/na %{gift_recipient_name} acaba de fer servir el cupó que li vas regalar!", gift_recipient_name: @gift.recipient_name) %>
   <% end %>
-
   <%= EmailHelpers.content_block do %>
-    <p>Moltes gràcies per la teva solidaritat!</p>
+    <p>
+      <%= gettext("Moltes gràcies per la teva solidaritat!") %>"
+    </p>
   <% end %>
 <% end %>

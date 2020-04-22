@@ -1,142 +1,142 @@
 <%= container(:padded) do %>
   <h2 class="text-center text-3xl leading-9 font-extrabold text-primary-600 sm:text-4xl sm:leading-10 mb-6 border-b-2 border-gray-200 pb-6">
-    Política de Cookies
+    <%= gettext("Política de Cookies") %>
   </h2>
-  <p class="mt-2 text-base leading-6 ">El titular d'aquesta pàgina web l'informa que a través de les cookies que fem servir no reculls ni recull dades personals dels seus Usuaris. La finalitat de les cookies és oferir-li una excel·lent experiència de navegació i millorar els nostres serveis en funció dels usos que li doni als continguts publicats o els accessos que faci als diferents apartats de la mateixa.</p>
+  <p class="mt-2 text-base leading-6 "><%= gettext("El titular d'aquesta pàgina web l'informa que a través de les cookies que fem servir no reculls ni recull dades personals dels seus Usuaris. La finalitat de les cookies és oferir-li una excel·lent experiència de navegació i millorar els nostres serveis en funció dels usos que li doni als continguts publicats o els accessos que faci als diferents apartats de la mateixa.") %></p>
   <h3 class="text-xl tracking-tight leading-10 font-bold sm:text-3xl sm:leading-none md:text-2xl mt-5">
-    1. INFORMACIÓ GENERAL
+    <%= gettext("1. INFORMACIÓ GENERAL") %>
   </h3>
   <ol>
     <li>
       <h4 class="text-l tracking-tight leading-10 font-bold sm:text-xl sm:leading-none md:text-xl mt-4">
-        El que ha de saber sobres les Galetes
+        <%= gettext("El que ha de saber sobres les Galetes") %>
       </h4>
-      <p class="mt-2 text-base leading-6 ">Les galetes (galetes) són petits arxius que guarden informació en els dispositius mòbils dels Usuaris que fan servir la nostra plataforma o el nostre bloc.</p>
-      <p class="mt-2 text-base leading-6 ">Les cookies s'associen amb el navegador d'un ordinador o dispositiu determinat. Gràcies a elles, resulta possible que Codegram reconegui els navegadors dels Usuaris després que aquests hagin visitat la web per primera vegada, determinant així les seves preferències de navegació i, a partir d'això, avaluar-les, podent utilitzar-les com a indicadors per millorar el nostre contingut i navegació a la Web.</p>
+      <p class="mt-2 text-base leading-6 "><%= gettext("Les galetes (galetes) són petits arxius que guarden informació en els dispositius mòbils dels Usuaris que fan servir la nostra plataforma o el nostre bloc.") %></p>
+      <p class="mt-2 text-base leading-6 "><%= gettext("Les cookies s'associen amb el navegador d'un ordinador o dispositiu determinat. Gràcies a elles, resulta possible que Codegram reconegui els navegadors dels Usuaris després que aquests hagin visitat la web per primera vegada, determinant així les seves preferències de navegació i, a partir d'això, avaluar-les, podent utilitzar-les com a indicadors per millorar el nostre contingut i navegació a la Web.") %></p>
     </li>
     <li>
       <h4 class="text-l tracking-tight leading-10 font-bold sm:text-xl sm:leading-none md:text-xl mt-4">
-        Les cookies que utilitza Codegram
+        <%= gettext("Les cookies que utilitza Codegram") %>
       </h4>
-      <p class="mt-2 text-base leading-6 ">En el quadre que apareix a continuació s'inclouen els detalls, finalitat, el tipus i les classes de galetes que hem implementat en la nostra plataforma i el nostre bloc. Per a la seva comprensió, cal que conegui la definició de les cookies pròpies i de tercers:</p>
-      <p class="mt-2 text-base leading-6 ">Galetes de tercers: són gestionades per altres empreses i instal·lades des dels seus equips i / o dominis a l'equip terminal de l'Usuari.</p>
-      <p class="mt-2 text-base leading-6 ">Galetes Propies:són gestionades per la nostra empresa i instal·lades des dels nostres ordinadors a l'equip terminal de l'Usuari.</p>
+      <p class="mt-2 text-base leading-6 "><%= gettext("En el quadre que apareix a continuació s'inclouen els detalls, finalitat, el tipus i les classes de galetes que hem implementat en la nostra plataforma i el nostre bloc. Per a la seva comprensió, cal que conegui la definició de les cookies pròpies i de tercers:") %></p>
+      <p class="mt-2 text-base leading-6 "><%= gettext("Galetes de tercers: són gestionades per altres empreses i instal·lades des dels seus equips i / o dominis a l'equip terminal de l'Usuari.") %></p>
+      <p class="mt-2 text-base leading-6 "><%= gettext("Galetes Propies:són gestionades per la nostra empresa i instal·lades des dels nostres ordinadors a l'equip terminal de l'Usuari.") %></p>
     </li>
   </ol>
   <h3 class="text-xl tracking-tight leading-10 font-bold sm:text-3xl sm:leading-none md:text-2xl mt-5">
-    2. COOKIES UTILITZADES
+    <%= gettext("2. COOKIES UTILITZADES") %>
   </h3>
   <h4 class="text-l tracking-tight leading-10 font-bold sm:text-xl sm:leading-none md:text-xl mt-4">
-    2.1. Tipus de galetes de la pàgina web
+    <%= gettext("2.1. Tipus de galetes de la pàgina web") %>
   </h4>
   <ul>
     <li>
       <dl class="border-t-2 mt-2">
         <div>
           <div>
-            <dt class="mt-2 text-lg leading-6 font-medium text-gray-900">Cookie ID</dt>
+            <dt class="mt-2 text-lg leading-6 font-medium text-gray-900"><%= gettext("Cookie ID") %></dt>
             <dd class="mt-2">_regalocal_key</dd>
-            <dt class="mt-2 text-lg leading-6 font-medium text-gray-900">Finalitat</dt>
-            <dd class="mt-2">Emmagatzema informació de l'usuari i de les seves sessions per millor la seva experiència.</dd>
-            <dt class="mt-2 text-lg leading-6 font-medium text-gray-900">Data de Caducitat</dt>
-            <dd class="mt-2">Sessió</dd>
-            <dt class="mt-2 text-lg leading-6 font-medium text-gray-900">Pròpia o de Tercers</dt>
-            <dd class="mt-2">Pròpia</dd>
-            <dt class="mt-2 text-lg leading-6 font-medium text-gray-900">Responsable</dt>
-            <dd class="mt-2">Regalocal</dd>
+            <dt class="mt-2 text-lg leading-6 font-medium text-gray-900"><%= gettext("Finalitat") %></dt>
+            <dd class="mt-2"><%= gettext("Emmagatzema informació de l'usuari i de les seves sessions per millor la seva experiència.") %></dd>
+            <dt class="mt-2 text-lg leading-6 font-medium text-gray-900"><%= gettext("Data de Caducitat") %></dt>
+            <dd class="mt-2"><%= gettext("Sessió") %></dd>
+            <dt class="mt-2 text-lg leading-6 font-medium text-gray-900"><%= gettext("Pròpia o de Tercers") %></dt>
+            <dd class="mt-2"><%= gettext("Pròpia") %></dd>
+            <dt class="mt-2 text-lg leading-6 font-medium text-gray-900"><%= gettext("Responsable") %></dt>
+            <dd class="mt-2"><%= gettext("Regalocal") %></dd>
           </div>
         </div>
       </dl>
     </li>
     <li>
       <dl class="mt-2 border-t-2">
-        <dt class="mt-2 text-lg leading-6 font-medium text-gray-900">Cookie ID</dt>
-        <dd class="mt-2">_session_unique_id</dd>
-        <dt class="mt-2 text-lg leading-6 font-medium text-gray-900">Finalitat</dt>
-        <dd class="mt-2">Emmagatzema informació per identificar l'usuari</dd>
-        <dt class="mt-2 text-lg leading-6 font-medium text-gray-900">Data de Caducitat</dt>
-        <dd class="mt-2">Sessió</dd>
-        <dt class="mt-2 text-lg leading-6 font-medium text-gray-900">Pròpia o de Tercers</dt>
-        <dd class="mt-2">Pròpia</dd>
-        <dt class="mt-2 text-lg leading-6 font-medium text-gray-900">Responsable</dt>
-        <dd class="mt-2">Regalocal</dd>
+        <dt class="mt-2 text-lg leading-6 font-medium text-gray-900"><%= gettext("Cookie ID") %></dt>
+        <dd class="mt-2"><%= gettext("_session_unique_id") %></dd>
+        <dt class="mt-2 text-lg leading-6 font-medium text-gray-900"><%= gettext("Finalitat") %></dt>
+        <dd class="mt-2"><%= gettext("Emmagatzema informació per identificar l'usuari") %></dd>
+        <dt class="mt-2 text-lg leading-6 font-medium text-gray-900"><%= gettext("Data de Caducitat") %></dt>
+        <dd class="mt-2"><%= gettext("Sessió") %></dd>
+        <dt class="mt-2 text-lg leading-6 font-medium text-gray-900"><%= gettext("Pròpia o de Tercers") %></dt>
+        <dd class="mt-2"><%= gettext("Pròpia") %></dd>
+        <dt class="mt-2 text-lg leading-6 font-medium text-gray-900"><%= gettext("Responsable") %></dt>
+        <dd class="mt-2"><%= gettext("Regalocal") %></dd>
       </dl>
     </li>
     <li>
       <dl class="mt-2 border-t-2">
-        <dt class="mt-2 text-lg leading-6 font-medium text-gray-900">Cookie ID</dt>
-        <dd class="mt-2">_cfduid</dd>
-        <dt class="mt-2 text-lg leading-6 font-medium text-gray-900">Finalitat</dt>
-        <dd class="mt-2">Usada per identificar un individu darrere d'una IP comú i establir mesures de seguretat</dd>
-        <dt class="mt-2 text-lg leading-6 font-medium text-gray-900">Data de Caducitat</dt>
-        <dd class="mt-2">3 mesos</dd>
-        <dt class="mt-2 text-lg leading-6 font-medium text-gray-900">Pròpia o de Tercers</dt>
-        <dd class="mt-2">Tercers</dd>
-        <dt class="mt-2 text-lg leading-6 font-medium text-gray-900">Responsable</dt>
-        <dd class="mt-2">Cloudflare</dd>
+        <dt class="mt-2 text-lg leading-6 font-medium text-gray-900"><%= gettext("Cookie ID") %></dt>
+        <dd class="mt-2"><%= gettext("_cfduid") %></dd>
+        <dt class="mt-2 text-lg leading-6 font-medium text-gray-900"><%= gettext("Finalitat") %></dt>
+        <dd class="mt-2"><%= gettext("Usada per identificar un individu darrere d'una IP comú i establir mesures de seguretat") %></dd>
+        <dt class="mt-2 text-lg leading-6 font-medium text-gray-900"><%= gettext("Data de Caducitat") %></dt>
+        <dd class="mt-2"><%= gettext("3 mesos") %></dd>
+        <dt class="mt-2 text-lg leading-6 font-medium text-gray-900"><%= gettext("Pròpia o de Tercers") %></dt>
+        <dd class="mt-2"><%= gettext("Tercers") %></dd>
+        <dt class="mt-2 text-lg leading-6 font-medium text-gray-900"><%= gettext("Responsable") %></dt>
+        <dd class="mt-2"><%= gettext("Cloudflare") %></dd>
       </dl>
     </li>
     <li>
       <dl class="mt-2 border-t-2">
-        <dt class="mt-2 text-lg leading-6 font-medium text-gray-900">Cookie ID</dt>
-        <dd class="mt-2">crisp-client / session</dd>
-        <dt class="mt-2 text-lg leading-6 font-medium text-gray-900">Finalitat</dt>
-        <dd class="mt-2">Usada per tenir una experiència consistent en el xat de suport.</dd>
-        <dt class="mt-2 text-lg leading-6 font-medium text-gray-900">Data de Caducitat</dt>
-        <dd class="mt-2">6 mesos</dd>
-        <dt class="mt-2 text-lg leading-6 font-medium text-gray-900">Pròpia o de Tercers</dt>
-        <dd class="mt-2">Tercers</dd>
-        <dt class="mt-2 text-lg leading-6 font-medium text-gray-900">Responsable</dt>
-        <dd class="mt-2">Crisp</dd>
+        <dt class="mt-2 text-lg leading-6 font-medium text-gray-900"><%= gettext("Cookie ID") %></dt>
+        <dd class="mt-2"><%= gettext("crisp-client / session") %></dd>
+        <dt class="mt-2 text-lg leading-6 font-medium text-gray-900"><%= gettext("Finalitat") %></dt>
+        <dd class="mt-2"><%= gettext("Usada per tenir una experiència consistent en el xat de suport.") %></dd>
+        <dt class="mt-2 text-lg leading-6 font-medium text-gray-900"><%= gettext("Data de Caducitat") %></dt>
+        <dd class="mt-2"><%= gettext("6 mesos") %></dd>
+        <dt class="mt-2 text-lg leading-6 font-medium text-gray-900"><%= gettext("Pròpia o de Tercers") %></dt>
+        <dd class="mt-2"><%= gettext("Tercers") %></dd>
+        <dt class="mt-2 text-lg leading-6 font-medium text-gray-900"><%= gettext("Responsable") %></dt>
+        <dd class="mt-2"><%= gettext("Crisp") %></dd>
       </dl>
     </li>
     <li>
       <dl class="mt-2 border-t-2">
-        <dt class="mt-2 text-lg leading-6 font-medium text-gray-900">Cookie ID</dt>
-        <dd class="mt-2">crisp-client / domain-detect</dd>
-        <dt class="mt-2 text-lg leading-6 font-medium text-gray-900">Finalitat</dt>
-        <dd class="mt-2">Usada per desactivar funcions al xat quan hi ha massa usuaris a el mateix temps.</dd>
-        <dt class="mt-2 text-lg leading-6 font-medium text-gray-900">Data de Caducitat</dt>
-        <dd class="mt-2">6 mesos</dd>
-        <dt class="mt-2 text-lg leading-6 font-medium text-gray-900">Pròpia o de Tercers</dt>
-        <dd class="mt-2">Tercers</dd>
-        <dt class="mt-2 text-lg leading-6 font-medium text-gray-900">Responsable</dt>
-        <dd class="mt-2">Crisp</dd>
+        <dt class="mt-2 text-lg leading-6 font-medium text-gray-900"><%= gettext("Cookie ID") %></dt>
+        <dd class="mt-2"><%= gettext("crisp-client / domain-detect") %></dd>
+        <dt class="mt-2 text-lg leading-6 font-medium text-gray-900"><%= gettext("Finalitat") %></dt>
+        <dd class="mt-2"><%= gettext("Usada per desactivar funcions al xat quan hi ha massa usuaris a el mateix temps.") %></dd>
+        <dt class="mt-2 text-lg leading-6 font-medium text-gray-900"><%= gettext("Data de Caducitat") %></dt>
+        <dd class="mt-2"><%= gettext("6 mesos") %></dd>
+        <dt class="mt-2 text-lg leading-6 font-medium text-gray-900"><%= gettext("Pròpia o de Tercers") %></dt>
+        <dd class="mt-2"><%= gettext("Tercers") %></dd>
+        <dt class="mt-2 text-lg leading-6 font-medium text-gray-900"><%= gettext("Responsable") %></dt>
+        <dd class="mt-2"><%= gettext("Crisp") %></dd>
       </dl>
     </li>
     <h4 class="text-l tracking-tight leading-10 font-bold sm:text-xl sm:leading-none md:text-xl mt-4">
-      2.2. Notes sobre l'ús de galetes i altres tècniques de spamming
+      <%= gettext("2.2. Notes sobre l'ús de galetes i altres tècniques de spamming") %>
     </h4>
-    <p class="mt-2 text-base leading-6 ">Com Usuari queda informat de la presència de cookies en aquesta plataforma per tal de facilitar l'ús i navegació per la mateixa. Ara bé, té la possibilitat de configurar el seu navegador per ser avisat en pantalla de la recepció de cookies i per impedir la instal·lació de les mateixes en el seu disc dur.</p>
-    <p class="mt-2 text-base leading-6 ">Si té dubtes, en el punt 4 d'aquest document té més informació. També pot consultar les instruccions i manuals del seu navegador per ampliar aquesta informació.</p>
-    <p class="mt-2 text-base leading-6 ">Per utilitzar o navegar per la nostra pàgina web o utilitzar la plataforma no resulta necessari que permeti la instal·lació de cookies, sense perjudici que per això succeeixi que no pugui accedir a alguns dels serveis o apartats de la web.</p>
-    <p class="mt-2 text-base leading-6 ">Informar-també que Codegram no utilitza tècniques de"spamming"i que únicament tractarà les dades que l'Usuari transmeti mitjançant l'ús dels formularis electrònics de contacte, missatges de correu electrònic o continguts facilitats a través dels serveis de la pàgina web, per a les finalitats expressades en el nostre Avís legal i en la nostra Política de Privacitat.</p>
+    <p class="mt-2 text-base leading-6 "><%= gettext("Com Usuari queda informat de la presència de cookies en aquesta plataforma per tal de facilitar l'ús i navegació per la mateixa. Ara bé, té la possibilitat de configurar el seu navegador per ser avisat en pantalla de la recepció de cookies i per impedir la instal·lació de les mateixes en el seu disc dur.") %></p>
+    <p class="mt-2 text-base leading-6 "><%= gettext("Si té dubtes, en el punt 4 d'aquest document té més informació. També pot consultar les instruccions i manuals del seu navegador per ampliar aquesta informació.") %></p>
+    <p class="mt-2 text-base leading-6 "><%= gettext("Per utilitzar o navegar per la nostra pàgina web o utilitzar la plataforma no resulta necessari que permeti la instal·lació de cookies, sense perjudici que per això succeeixi que no pugui accedir a alguns dels serveis o apartats de la web.") %></p>
+    <p class="mt-2 text-base leading-6 "><%= gettext("Informar-també que Codegram no utilitza tècniques de \"spamming\"i que únicament tractarà les dades que l'Usuari transmeti mitjançant l'ús dels formularis electrònics de contacte, missatges de correu electrònic o continguts facilitats a través dels serveis de la pàgina web, per a les finalitats expressades en el nostre Avís legal i en la nostra Política de Privacitat.") %></p>
     <h3 class="text-xl tracking-tight leading-10 font-bold sm:text-3xl sm:leading-none md:text-2xl mt-5">
-      3. L'ACCEPTACIÓ DE LES COOKIES EN LA NOSTRA PLATAFORMA
+      <%= gettext("3. L'ACCEPTACIÓ DE LES COOKIES EN LA NOSTRA PLATAFORMA") %>
     </h3>
-    <p class="mt-2 text-base leading-6 ">La Llei 34/2002, de 11 de juliol, de Serveis de la Societat de la Informació i de Comerç Electrònic (en endavant, LSSICE), en relació amb les galetes, exigeix que els Usuaris siguin informats amb caràcter previ a l'experiència de navegació a la plataforma sobre l'ús, tipus i finalitat de les cookies. Aquesta és la raó per la qual hem implementat un avís informatiu que es desplega un cop accedeix a la nostra plataforma, informant-li de manera prèvia i expressa, complint amb el precepte legal.</p>
-    <p class="mt-2 text-base leading-6 ">És important que tingui en compte que en aquest avís trobarà dues opcions: la primera, que li permetrà accedir a aquest text informatiu, i la segona, que podrà usar per acceptar la instal·lació de les cookies al seu equip terminal.</p>
-    <p class="mt-2 text-base leading-6 ">Com a d'Usuari, si omet l'acceptació de l'ús de les cookies i continua navegant a la nostra plataforma, entendrem que hi ha un consentiment tàcit per la seva part per poder aplicar i utilitzar les galetes descrites en l'apartat anterior i, amb això, donarem compliment a que exigeix la LSSICE.</p>
+    <p class="mt-2 text-base leading-6 "><%= gettext("La Llei 34/2002, de 11 de juliol, de Serveis de la Societat de la Informació i de Comerç Electrònic (en endavant, LSSICE), en relació amb les galetes, exigeix que els Usuaris siguin informats amb caràcter previ a l'experiència de navegació a la plataforma sobre l'ús, tipus i finalitat de les cookies. Aquesta és la raó per la qual hem implementat un avís informatiu que es desplega un cop accedeix a la nostra plataforma, informant-li de manera prèvia i expressa, complint amb el precepte legal.") %></p>
+    <p class="mt-2 text-base leading-6 "><%= gettext("És important que tingui en compte que en aquest avís trobarà dues opcions: la primera, que li permetrà accedir a aquest text informatiu, i la segona, que podrà usar per acceptar la instal·lació de les cookies al seu equip terminal.") %></p>
+    <p class="mt-2 text-base leading-6 "><%= gettext("Com a d'Usuari, si omet l'acceptació de l'ús de les cookies i continua navegant a la nostra plataforma, entendrem que hi ha un consentiment tàcit per la seva part per poder aplicar i utilitzar les galetes descrites en l'apartat anterior i, amb això, donarem compliment a que exigeix la LSSICE.") %></p>
     <h3 class="text-xl tracking-tight leading-10 font-bold sm:text-3xl sm:leading-none md:text-2xl mt-5">
-      4. COM POT DESINSTAL·LAR les COOKIES DES DE LA SEVA NAVEGADOR?
+      <%= gettext("4. COM POT DESINSTAL·LAR les COOKIES DES DE LA SEVA NAVEGADOR?") %>
     </h3>
-    <p class="mt-2 text-base leading-6 ">Si voleu desinstal·lar les galetes des del seu navegador li indiquem alguns enllaços que podrà consultar en funció de l'tipus de navegador que tingui instal·lat al seu equip terminal.</p>
+    <p class="mt-2 text-base leading-6 "><%= gettext("Si voleu desinstal·lar les galetes des del seu navegador li indiquem alguns enllaços que podrà consultar en funció de l'tipus de navegador que tingui instal·lat al seu equip terminal.") %></p>
     <ul>
-      <li>A Google Chrome: https://support.google.com/chrome/answer/95647?hl=es</li>
-      <li>A Safari: https://support.apple.com/kb/ph5042</li>
-      <li>En Mozilla Firefox: https: //support.mozilla .org / a-US / kb / disable-third-party-galetes</li>
-      <li>a Internet Explorer: http://windows.microsoft.com/en-US/windows-vista/block-or-allow-cookies</li>
-      <li>en Opera: http: //www.opera.com/help/tutorials/security/privacy/</li>
+      <li><%= gettext("A Google Chrome: https://support.google.com/chrome/answer/95647?hl=es") %></li>
+      <li><%= gettext("A Safari: https://support.apple.com/kb/ph5042") %></li>
+      <li><%= gettext("En Mozilla Firefox: https: //support.mozilla .org / a-US / kb / disable-third-party-galetes") %></li>
+      <li><%= gettext("a Internet Explorer: http://windows.microsoft.com/en-US/windows-vista/block-or-allow-cookies") %></li>
+      <li><%= gettext("en Opera: http: //www.opera.com/help/tutorials/security/privacy/") %></li>
     </ul>
-    <p class="mt-2 text-base leading-6 ">Us advertim que, després de realitzar el procés de desinstal de cookies des del seu navegador, això pot dificultar o impedir l'accés o navegació a determinades parts de la nostra pàgina web.</p>
+    <p class="mt-2 text-base leading-6 "><%= gettext("Us advertim que, després de realitzar el procés de desinstal de cookies des del seu navegador, això pot dificultar o impedir l'accés o navegació a determinades parts de la nostra pàgina web.") %></p>
     <h3 class="text-xl tracking-tight leading-10 font-bold sm:text-3xl sm:leading-none md:text-2xl mt-5">
-      5. SOBRE LES COOKIES DE LES XARXES SOCIALS
+      <%= gettext("5. SOBRE LES COOKIES DE LES XARXES SOCIALS") %>
     </h3>
-    <p class="mt-2 text-base leading-6 ">Finalment, volem advertir-li que la nostra plataforma no administra les xarxes socials o plataforma de tercers com Facebook o Twitter, on Codegram té presència, amb la qual cosa tampoc és responsable de les galetes que instal·len aquestes plataformes.</p>
-    <p class="mt-2 text-base leading-6 ">Com a d'Usuari de la nostra plataforma en línia, està obligat a consultar les polítiques de privacitat i galetes d'aquestes xarxes per estar a l'corrent de l'tipus i finalitats i decidir acceptar-les o rebutjar-les.</p>
+    <p class="mt-2 text-base leading-6 "><%= gettext("Finalment, volem advertir-li que la nostra plataforma no administra les xarxes socials o plataforma de tercers com Facebook o Twitter, on Codegram té presència, amb la qual cosa tampoc és responsable de les galetes que instal·len aquestes plataformes.") %></p>
+    <p class="mt-2 text-base leading-6 "><%= gettext("Com a d'Usuari de la nostra plataforma en línia, està obligat a consultar les polítiques de privacitat i galetes d'aquestes xarxes per estar a l'corrent de l'tipus i finalitats i decidir acceptar-les o rebutjar-les.") %></p>
     <ul>
-      <li>Galetes utilitzades per Facebook: https://www.facebook.com/help/cookies/</li>
-      <li>Galetes utilitzades per Twitter: https://help.twitter.com/es/rules-and-policies/twitter-cookies</li>
-      <li>Galetes utilitzades per YouTube: https://policies.google.com/technologies/cookies?hl=es&gl=es</li>
+      <li><%= gettext("Galetes utilitzades per Facebook: https://www.facebook.com/help/cookies/") %></li>
+      <li><%= gettext("Galetes utilitzades per Twitter: https://help.twitter.com/es/rules-and-policies/twitter-cookies") %></li>
+      <li><%= gettext("Galetes utilitzades per YouTube: https://policies.google.com/technologies/cookies?hl=es&gl=es") %></li>
     </ul>
   <% end %>

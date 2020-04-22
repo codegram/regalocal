@@ -1,89 +1,88 @@
 <%= form_for @changeset, @action, [multipart: true], fn f -> %>
 <%= Form.errors(@changeset) %>
-<%= Form.section("Dades públiques del teu negoci", "Les dades introduides a continuació es mostraran públicament al llistat de negocios, així com als correus electrònics enviats.") do %>
-  <%= Form.control f, :name, "Nom del negoci", [hint: "Nom públic del teu negoci. No cal que sigui el nom legal."], fn form, field -> %>
-    <%= Form.text_input form, field, required: true %>
-  <% end %>
-  <%= Form.control f, :address, "Adreça", [hint: "Aquesta adreça es farà servir per a ubicar el teu negoci en el mapa i trobar-hi persones a prop."], fn form, field -> %>
-    <%= Form.text_input form, field, required: true %>
-  <% end %>
-  <%= Form.control f, :website, "Pàgina web", [hint: "Adreça de la teva pàgina web, si en tens."], fn form, field -> %>
-    <%= Form.text_input form, field %>
-  <% end %>
+<%= Form.section(gettext("Dades públiques del teu negoci"), gettext("Les dades introduides a continuació es mostraran públicament al llistat de negocios, així com als correus electrònics enviats.")) do %>
+  <%= Form.control f, :name, gettext("Nom del negoci"), [hint: gettext("Nom públic del teu negoci. No cal que sigui el nom legal.")], fn form, field -> %>
+  <%= Form.text_input form, field, required: true %>
 <% end %>
-
-<%= Form.section("Dades personals", "Les següents dades es mostraran públicament al llistat i la pàgina de perfil del deu negoci.") do %>
-  <%= Form.control f, :owner_name, "Nom de pila del propietari", [hint: "El teu nom es mostrarà juntament amb la teva carta de presentació."], fn form, field -> %>
-    <%= Form.text_input form, field, required: true %>
-  <% end %>
-  <%= Form.control f, :story, "Carta de presentació", [hint: "Unes breus paraules per conèixer la teva història i la del teu negoci."], fn form, field -> %>
-    <%= Form.textarea form, field, required: true %>
-  <% end %>
-  <%= Form.control f, :photo, "Fotografia", [], fn form, field -> %>
-    <div class="flex">
-      <span class="h-12 w-12 rounded-full overflow-hidden bg-gray-100">
-        <% if form.data.photo_id do %>
-          <%= tag(:img, src: Cloudex.Url.for(f.data.photo_id, %{width: 300, height: 200})) %>
-        <% else %>
-          <svg class="h-full w-full text-gray-300" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" />
-          </svg>
-        <% end %>
-      </span>
-      <span class="ml-5 rounded-md shadow-sm">
-        <%= file_input form, field %>
-      </span>
-    </div>
-  <% end %>
+<%= Form.control f, :address, gettext("Adreça"), [hint: gettext("Aquesta adreça es farà servir per a ubicar el teu negoci en el mapa i trobar-hi persones a prop.")], fn form, field -> %>
+<%= Form.text_input form, field, required: true %>
 <% end %>
-<%= Form.section("Dades de contacte", "Dades públiques per tal que els ciutadans es puguin posar en contacte amb tu, en cas que ho necessitin.") do %>
+<%= Form.control f, :website, gettext("Pàgina web"), [hint: gettext("Adreça de la teva pàgina web, si en tens.")], fn form, field -> %>
+<%= Form.text_input form, field %>
+<% end %>
+<% end %>
+<%= Form.section(gettext("Dades personals"), gettext("Les següents dades es mostraran públicament al llistat i la pàgina de perfil del deu negoci.")) do %>
+  <%= Form.control f, :owner_name, gettext("Nom de pila del propietari"), [hint: gettext("El teu nom es mostrarà juntament amb la teva carta de presentació.")], fn form, field -> %>
+  <%= Form.text_input form, field, required: true %>
+<% end %>
+<%= Form.control f, :story, gettext("Carta de presentació"), [hint: gettext("Unes breus paraules per conèixer la teva història i la del teu negoci.")], fn form, field -> %>
+<%= Form.textarea form, field, required: true %>
+<% end %>
+<%= Form.control f, :photo, gettext("Fotografia"), [], fn form, field -> %>
+<div class="flex">
+  <span class="h-12 w-12 rounded-full overflow-hidden bg-gray-100">
+    <% if form.data.photo_id do %>
+      <%= tag(:img, src: Cloudex.Url.for(f.data.photo_id, %{width: 300, height: 200})) %>
+    <% else %>
+      <svg class="h-full w-full text-gray-300" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" />
+      </svg>
+    <% end %>
+  </span>
+  <span class="ml-5 rounded-md shadow-sm">
+    <%= file_input form, field %>
+  </span>
+</div>
+<% end %>
+<% end %>
+<%= Form.section(gettext("Dades de contacte"), gettext("Dades públiques per tal que els ciutadans es puguin posar en contacte amb tu, en cas que ho necessitin.")) do %>
   <%= Form.control f, :whatsapp, "WhatsApp", [], fn form, field -> %>
   <%= Form.text_input form, field %>
 <% end %>
-<%= Form.control f, :phone, "Telèfon fix", [], fn form, field -> %>
+<%= Form.control f, :phone, gettext("Telèfon fix"), [], fn form, field -> %>
 <%= Form.text_input form, field, required: true %>
 <% end %>
 <% end %>
-<%= Form.section("Xarxes Socials", "Les teves dades a les xarxes, per tal que els visitants puguin conèixer millor el teu negoci. Tots els camps són opcionals.") do %>
+<%= Form.section(gettext("Xarxes Socials"), gettext("Les teves dades a les xarxes, per tal que els visitants puguin conèixer millor el teu negoci. Tots els camps són opcionals.")) do %>
   <%= Form.control f, :instagram, "Instagram", [], fn form, field -> %>
   <%= Form.prefixed_text_input form, field, "instagram.com/" %>
 <% end %>
 <%= Form.control f, :facebook, "Facebook", [], fn form, field -> %>
-  <%= Form.prefixed_text_input form, field, "facebook.com/" %>
+<%= Form.prefixed_text_input form, field, "facebook.com/" %>
 <% end %>
 <% end %>
-<%= Form.section("Informació de facturació", "Les dades de facturació es remetran juntament amb els correus electrònics de compra dels cupons. És important que siguin vàlides i acurades.") do %>
-  <%= Form.control f, :legal_name, "Nom legal", [], fn form, field -> %>
+<%= Form.section(gettext("Informació de facturació"), gettext("Les dades de facturació es remetran juntament amb els correus electrònics de compra dels cupons. És important que siguin vàlides i acurades.")) do %>
+  <%= Form.control f, :legal_name, gettext("Nom legal"), [], fn form, field -> %>
   <%= Form.text_input form, field, required: true %>
 <% end %>
-<%= Form.control f, :vat_number, "NIF/NIE", [], fn form, field -> %>
+<%= Form.control f, :vat_number, gettext("NIF/NIE"), [], fn form, field -> %>
 <%= Form.text_input form, field, required: true %>
 <% end %>
-<%= Form.control f, :billing_address, "Adreça de facturació", [], fn form, field -> %>
+<%= Form.control f, :billing_address, gettext("Adreça de facturació"), [], fn form, field -> %>
 <%= Form.textarea form, field, required: true %>
 <% end %>
 <% end %>
-<%= Form.section("Mètodes de pagament", "Els usuaris realitzaran els pagaments de manera directa al teu número de compte.") do %>
-  <%= Form.control f, :iban, "IBAN", [hint: "El número del teu compte bancari per a que els usuaris puguin fer el pagament."], fn form, field -> %>
+<%= Form.section(gettext("Mètodes de pagament"), gettext("Els usuaris realitzaran els pagaments de manera directa al teu número de compte.")) do %>
+  <%= Form.control f, :iban, gettext("IBAN"), [hint: gettext("El número del teu compte bancari per a que els usuaris puguin fer el pagament.")], fn form, field -> %>
   <%= Form.text_input form, field, required: true %>
 <% end %>
-<%= Form.control f, :bizum_number, "Número a Bizum", [hint: "Si disposes d'un compte a Bizum, introdueix el teu número de telèfon mòbil. Els pagaments a través de Bizum solen ser més ràpids i àgils."], fn form, field -> %>
+<%= Form.control f, :bizum_number, gettext("Número a Bizum"), [hint: gettext("Si disposes d'un compte a Bizum, introdueix el teu número de telèfon mòbil. Els pagaments a través de Bizum solen ser més ràpids i àgils.")], fn form, field -> %>
 <%= Form.text_input form, field %>
 <% end %>
 <% end %>
 <%= if !f.data.accepted_terms do %>
-  <%= Form.section("Legal") do %>
-    <%= Form.control f, :accepted_terms, "Legal", [], fn f, field -> %>
+  <%= Form.section(gettext("Legal")) do %>
+    <%= Form.control f, :accepted_terms, gettext("Legal"), [], fn f, field -> %>
     <div class="absolute flex items-center h-5">
       <%= checkbox f, field, class: "form-checkbox h-4 w-4 text-secondary-600 transition duration-150 ease-in-out" %>
     </div>
     <div class="pl-7 text-sm leading-5">
-      <label for="business_accepted_terms" class="font-medium text-gray-700">
-        Accepto els Termes i condicions [<%= link "Llegir", to: Routes.page_path(@conn, :terms), target: "_blank" %>]
+      <label for="business_accepted_terms") class="font-medium text-gray-700">
+        Accepto els Termes i condicions [<%= link gettext("Llegir"), to: Routes.page_path(@conn, :terms), target: "_blank" %>]
       </label>
     </div>
   <% end %>
 <% end %>
 <% end %>
-<%= Form.buttons("Desar dades") %>
+<%= Form.buttons(gettext("Desar dades")) %>
 <% end %>

@@ -1,16 +1,16 @@
 <%= form_for @changeset, @action, [multipart: true], fn f -> %>
 <%= Form.errors(@changeset) %>
-<%= Form.section("Dades del cupó") do %>
-  <%= Form.control f, :title, "Títol del cupó", [], fn form, field -> %>
-  <%= Form.text_input form, field, required: true, prompt: "'Cafè i pastís', 'Tallat de cabell', 'Sopar romàntic per dos', etcètera" %>
+<%= Form.section(gettext("Dades del cupó")) do %>
+  <%= Form.control f, :title, gettext("Títol del cupó"), [], fn form, field -> %>
+  <%= Form.text_input form, field, required: true, prompt: gettext("'Cafè i pastís', 'Tallat de cabell', 'Sopar romàntic per dos', etcètera") %>
 <% end %>
-<%= Form.control f, :value, "Valor real del cupó", [], fn form, field -> %>
+<%= Form.control f, :value, gettext("Valor real del cupó"), [], fn form, field -> %>
 <%= Form.currency_input form, field, required: true %>
 <% end %>
-<%= Form.control f, :discount, "Descompte", [], fn form, field -> %>
-<%= Form.select form, field, ["5%": 5, "10%": 10, "15%": 15, "20%": 20, "25%": 25], required: true, prompt: "Selecciona el descompte d'aquest cupó" %>
+<%= Form.control f, :discount, gettext("Descompte"), [], fn form, field -> %>
+<%= Form.select form, field, ["5%": 5, "10%": 10, "15%": 15, "20%": 20, "25%": 25], required: true, prompt: gettext("Selecciona el descompte d'aquest cupó") %>
 <% end %>
-<%= Form.control f, :terms, "Termes i condicions", [hint: "Termes i condicions aplicables al cupó"], fn form, field -> %>
+<%= Form.control f, :terms, gettext("Termes i condicions"), [hint: gettext("Termes i condicions aplicables al cupó")], fn form, field -> %>
 <%= Form.textarea form, field, required: true %>
 <% end %>
 <% end %>

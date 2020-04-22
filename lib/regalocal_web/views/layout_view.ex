@@ -8,7 +8,9 @@ defmodule RegalocalWeb.LayoutView do
 
   def meta_description(assigns) do
     forward_to_view(:meta_description, assigns) ||
-      "Ajuda als comerços i petits negocis a fer front a la crisi causada pel 🦠 COVID-19 i al mateix temps regala solidaritat als qui t'estimes."
+      gettext(
+        "Ajuda als comerços i petits negocis a fer front a la crisi causada pel 🦠 COVID-19 i al mateix temps regala solidaritat als qui t'estimes."
+      )
   end
 
   def logo(conn) do
@@ -17,8 +19,8 @@ defmodule RegalocalWeb.LayoutView do
 
   def menu_items(conn) do
     [
-      %{title: "Sobre nosaltres", path: Routes.page_path(conn, :about)},
-      %{title: "Preguntes Freqüents", path: Routes.faq_path(conn, :index)}
+      %{title: gettext("Sobre nosaltres"), path: Routes.page_path(conn, :about)},
+      %{title: gettext("Preguntes Freqüents"), path: Routes.faq_path(conn, :index)}
     ]
   end
 

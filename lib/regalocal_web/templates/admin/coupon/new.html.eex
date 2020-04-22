@@ -1,3 +1,3 @@
-<%= AdminHelpers.layout "Crear nou cupó" do %>
-  <%= render "form.html", Map.merge(assigns, %{action: Routes.admin_coupon_path(@conn, :create), submit_title: "Crear cupó"}) %>
+<%= AdminHelpers.layout gettext("Crear nou cupó") do %>
+  <%= render "form.html", Map.merge(assigns, %{action: Routes.admin_coupon_path(@conn, :create), submit_title: gettext("Crear cupó")}) %>
 <% end %>

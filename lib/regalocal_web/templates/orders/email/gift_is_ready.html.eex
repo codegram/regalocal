@@ -1,19 +1,23 @@
-<%= EmailHelpers.layout("Ja pots fer servir el teu cupó!") do %>
+<%= EmailHelpers.layout(gettext("Ja pots fer servir el teu cupó!")) do %>
   <%= EmailHelpers.content_block do %>
-    <strong>El teu cupó de <%= @gift.value %> EUR ja es pot fer servir a <%= @business.name %>!</strong>
+    <strong><%= gettext("El teu cupó de %{gift_value} EUR ja es pot fer servir a %{business_name}!", gift_value: @gift.value, business_name: @business.name) %></strong>
   <% end %>
-
   <%= EmailHelpers.content_block do %>
-    Quan arribis al local, informa'ls que tens un cupó de Regalocal amb referència <strong><%= @gift.reference %></strong>
+    <%= gettext("Quan arribis al local, informa'ls que tens un cupó de Regalocal amb referència <strong>%{gift_reference}</strong>", gift_reference: @gift.reference) |> raw %>
   <% end %>
-
   <%= EmailHelpers.content_block do %>
     <dl>
-      <dt>Adreça</dt>
+      <dt>
+        <%= gettext("Adreça") %>
+      </dt>
       <dd><%= @business.address %></dd>
-      <dt>Nom del/la propietari/a</dt>
+      <dt>
+        <%= gettext("Nom del/la propietari/a") %>
+      </dt>
       <dd><%= @business.owner_name %></dd>
-      <dt>Telèfon</dt>
+      <dt>
+        <%= gettext("Telèfon") %>
+      </dt>
       <dd><%= @business.phone %></dd>
       <%= if @business.whatsapp do %>
         <dt>WhatsApp</dt>
@@ -23,8 +27,7 @@
       <% end %>
     </dl>
   <% end %>
-
   <%= EmailHelpers.content_block do %>
-    Esperem que gaudeixis del regal!
+    <%= gettext("Esperem que gaudeixis del regal!") %>
   <% end %>
 <% end %>

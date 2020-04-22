@@ -1,17 +1,16 @@
 <%= EmailHelpers.layout do %>
   <%= EmailHelpers.content_block do %>
-    En/na <%= @business.owner_name %> ens ha notificat que ja ha rebut el teu pagament amb la referència <%= @gift.reference %>!
+    <%= gettext("En/na %{business_owner_name} ens ha notificat que ja ha rebut el teu pagament amb la referència %{gift_reference}!", business_owner_name: @business.owner_name, gift_reference: @gift.reference) %>
   <% end %>
-
   <%= EmailHelpers.content_block do %>
-    <strong>Properes passes</strong>
+    <strong>
+      <%= gettext("Properes passes") %>
+    </strong>
   <% end %>
-
   <%= EmailHelpers.content_block do %>
-    Tan bon punt reobri <%= @business.name %>, t'avisarem tant a tu com a <%= @gift.recipient_name %> per fer-vos saber que el cupó ja pot ser bescanviat.
+    <%= gettext("Tan bon punt reobri %{business_name}, t'avisarem tant a tu com a %{gift_recipient_name} per fer-vos saber que el cupó ja pot ser bescanviat.", business_name: @business.name, gift_recipient_name: @gift.recipient_name) %>
   <% end %>
-
   <%= EmailHelpers.content_block do %>
-    Moltes gràcies!
+    <%= gettext("Moltes gràcies!") %>"
   <% end %>
 <% end %>

@@ -1,24 +1,25 @@
 defmodule RegalocalWeb.PageView do
   use RegalocalWeb, :view
   import RegalocalWeb.PublicLayoutHelpers
+  import RegalocalWeb.Gettext
 
   def title(:index, _assigns) do
-    "Regala solidaritat al comerç local"
+    gettext("Regala solidaritat al comerç local")
   end
 
   def title(:about, _assigns) do
-    "Sobre nosaltres"
+    gettext("Sobre nosaltres")
   end
 
   def title(:cookies, _assigns) do
-    "Política de Cookies"
+    gettext("Política de Cookies")
   end
 
   def title(:privacy, _assigns) do
-    "Política de Privacitat"
+    gettext("Política de Privacitat")
   end
 
   def title(:terms, _assigns) do
-    "Avís Legal"
+    gettext("Avís Legal")
   end
 end

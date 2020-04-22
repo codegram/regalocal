@@ -1,14 +1,13 @@
 <%= EmailHelpers.layout do %>
   <%= EmailHelpers.content_block do %>
-    Hola! 🤗
+    <%= gettext("Hola! 🤗") %>
   <% end %>
   <%= EmailHelpers.content_block do %>
-    Has rebut aquest correu electrònic perquè has decidit donar-te d'alta a <a href="<%= RegalocalWeb.Endpoint.url %>">RegaLocal</a>. En cas que no sigui així, si us plau, fes-ne cas omís.
+    <%= gettext("Has rebut aquest correu electrònic perquè has decidit donar-te d'alta a <a href=a\"%{url}\">RegaLocal</a>. En cas que no sigui així, si us plau, fes-ne cas omís.", url: RegalocalWeb.Endpoint.url) |> raw %>
   <% end %>
-
   <%= EmailHelpers.content_block do %>
     <div class="actions">
-      <%= link "Accedeix al teu panell", to: @url, class: "btn-primary" %>
+      <%= link gettext("Accedeix al teu panell"), to: @url, class: "btn-primary" %>
     </div>
   <% end %>
 <% end %>

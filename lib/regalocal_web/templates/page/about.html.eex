@@ -1,21 +1,21 @@
 <%= container(:padded) do %>
   <h2 class="text-center text-3xl leading-9 font-extrabold text-primary-600 sm:text-4xl sm:leading-10 mb-6 border-b-2 border-gray-200 pb-6">
-    Sobre nosaltres
+    <%= gettext("Sobre nosaltres") %>
   </h2>
   <h3 class="text-xl tracking-tight leading-10 font-bold text-gray-900 sm:text-xl sm:leading-none md:text-2xl mt-5">
-    Per què RegaLocal?
+    <%= gettext("Per què RegaLocal?") %>
   </h3>
-  <p class="text-base leading-6 mt-2">Degut a la crisi del COVID-19, una gran part del petit comerç s'ha vist amenaçat per la falta de gent al carrer. Molts d'aquests comerços han perdut tots o la majoria dels ingressos durant el confinament i estats d'alarma derivats de la situació.</p>
-  <p class="text-base leading-6 mt-2">D'altra banda, el confinament també afecta a la població general, que troba a faltar el contacte amb els seus amics i familiars.</p>
-  <p class="text-base leading-6 mt-2">Des de RegaLocal, volem donar solució a aquests dos reptes, efectivament canalitzant ingressos des d'aquells qui fan regals als comerços que necessiten subsistir, tot i prometent oferir els seus serveis després de la normalització de la situació.</p>
-  <p class="text-base leading-6 mt-2">A més, volem tenir un efecte a llarg termini en el teixit comercial, posant en contacte compradors amb propietaris del petit comerç, per establir relacions de confiança que aniran molt més enllà d'aquesta crisi.</p>
-  <p class="text-base leading-6 mt-2">És per això que és un servei gratuït i sense ànim de lucre, fet per aportar el nostre granet de sorra i revitalitzar l'economia local i de proximitat.</p>
+  <p class="text-base leading-6 mt-2"><%= gettext("Degut a la crisi del COVID-19, una gran part del petit comerç s'ha vist amenaçat per la falta de gent al carrer. Molts d'aquests comerços han perdut tots o la majoria dels ingressos durant el confinament i estats d'alarma derivats de la situació.") %></p>
+  <p class="text-base leading-6 mt-2"><%= gettext("D'altra banda, el confinament també afecta a la població general, que troba a faltar el contacte amb els seus amics i familiars.") %></p>
+  <p class="text-base leading-6 mt-2"><%= gettext("Des de RegaLocal, volem donar solució a aquests dos reptes, efectivament canalitzant ingressos des d'aquells qui fan regals als comerços que necessiten subsistir, tot i prometent oferir els seus serveis després de la normalització de la situació.") %></p>
+  <p class="text-base leading-6 mt-2"><%= gettext("A més, volem tenir un efecte a llarg termini en el teixit comercial, posant en contacte compradors amb propietaris del petit comerç, per establir relacions de confiança que aniran molt més enllà d'aquesta crisi.") %></p>
+  <p class="text-base leading-6 mt-2"><%= gettext("És per això que és un servei gratuït i sense ànim de lucre, fet per aportar el nostre granet de sorra i revitalitzar l'economia local i de proximitat.") %></p>
   <h3 class="text-xl tracking-tight leading-10 font-bold text-gray-900 sm:text-xl sm:leading-none md:text-2xl mt-5">
-    Qui hi ha darrere?
+    <%= gettext("Qui hi ha darrere?") %>
   </h3>
-  <p class="text-base leading-6 mt-2">El <a href="https://www.linkedin.com/in/txus/">Txus</a>, el <a href="https://www.linkedin.com/in/josep-jaume-rey-peroy-a9701622/">Josep</a> i l'<a href="https://www.linkedin.com/in/oriolgual/">Oriol</a>, fundadors de <a href="https://codegram.com">Codegram</a>, una agència internacional de productes digitals nascuda a Terrassa al 2009.</p>
+  <p class="text-base leading-6 mt-2"><%= gettext("El <a href=\"https://www.linkedin.com/in/txus/\">Txus</a>, el <a href=\"https://www.linkedin.com/in/josep-jaume-rey-peroy-a9701622/\">Josep</a> i l'<a href=\"https://www.linkedin.com/in/oriolgual/\">Oriol</a>, fundadors de <a href=\"https://codegram.com\">Codegram</a>, una agència internacional de productes digitals nascuda a Terrassa al 2009.") |> raw %></p>
   <h3 class="text-xl tracking-tight leading-10 font-bold text-gray-900 sm:text-xl sm:leading-none md:text-2xl mt-5">
-    Com va néixer?
+    <%= gettext("Com va néixer?") %>
   </h3>
-  <p class="text-base leading-6 mt-2">RegaLocal neix de la nostra participació en el <a href="https://hackovid.cat/">Hackovid</a>, una hackathon del 6 al 12 d'Abril del 2020 amb l'objectiu de donar solucions a les necessitats més urgents identificades per la ciutadania en el context de la crisi del COVID-19.</p>
+  <p class="text-base leading-6 mt-2"><%= gettext("RegaLocal neix de la nostra participació en el <a href=\"https://hackovid.cat/\">Hackovid</a>, una hackathon del 6 al 12 d'Abril del 2020 amb l'objectiu de donar solucions a les necessitats més urgents identificades per la ciutadania en el context de la crisi del COVID-19.") |> raw %></p>
 <% end %>

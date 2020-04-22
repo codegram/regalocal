@@ -3,6 +3,6 @@ defmodule RegalocalWeb.FaqView do
   import RegalocalWeb.PublicLayoutHelpers
 
   def title(:index, _assigns) do
-    "Preguntes Freqüents"
+    gettext("Preguntes Freqüents")
   end
 end

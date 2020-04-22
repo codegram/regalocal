@@ -1,9 +1,9 @@
-<%= AdminHelpers.layout "Detall de comanda", fn -> %>
+<%= AdminHelpers.layout gettext("Detall de comanda"), fn -> %>
 <%= if Admin.pending_payment_confirmation?(@order) do %>
-  <%= AdminHelpers.primary_layout_button "He rebut el pagament", to: Routes.admin_payment_received_path(@conn, :payment_received, @order), method: :put, data: [confirm: "Estàs segur/a?"], class: "text-secondary-600 hover:text-secondary-900 focus:outline-none focus:underline" %>
+  <%= AdminHelpers.primary_layout_button gettext("He rebut el pagament"), to: Routes.admin_payment_received_path(@conn, :payment_received, @order), method: :put, data: [confirm: gettext("Estàs segur/a?")], class: "text-secondary-600 hover:text-secondary-900 focus:outline-none focus:underline" %>
 <% end %>
 <%= if Admin.redeemable?(@order) do %>
-  <%= AdminHelpers.primary_layout_button "Marcar com a bescanviat", to: Routes.admin_order_redeemed_path(@conn, :redeem, @order), method: :put, data: [confirm: "Estàs segur/a?"], class: "text-secondary-600 hover:text-secondary-900 focus:outline-none focus:underline" %>
+  <%= AdminHelpers.primary_layout_button gettext("Marcar com a bescanviat"), to: Routes.admin_order_redeemed_path(@conn, :redeem, @order), method: :put, data: [confirm: gettext("Estàs segur/a?")], class: "text-secondary-600 hover:text-secondary-900 focus:outline-none focus:underline" %>
 <% end %>
 <% end do %>
   <div class="bg-white shadow overflow-hidden sm:rounded-lg">
@@ -11,7 +11,7 @@
       <dl>
         <div class="sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 sm:py-5">
           <dt class="text-sm leading-5 font-medium text-gray-500">
-            Referència
+            <%= gettext("Referència") %>
           </dt>
           <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
             <%= @order.reference %>
@@ -19,7 +19,7 @@
         </div>
         <div class="mt-8 sm:mt-0 sm:grid sm:grid-cols-3 sm:gap-4 sm:border-t sm:border-gray-200 sm:px-6 sm:py-5">
           <dt class="text-sm leading-5 font-medium text-gray-500">
-            Comprador
+            <%= gettext("Comprador") %>
           </dt>
           <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
             <%= @order.buyer_name %>
@@ -27,7 +27,7 @@
         </div>
         <div class="mt-8 sm:mt-0 sm:grid sm:grid-cols-3 sm:gap-4 sm:border-t sm:border-gray-200 sm:px-6 sm:py-5">
           <dt class="text-sm leading-5 font-medium text-gray-500">
-            Telèfon
+            <%= gettext("Telèfon") %>
           </dt>
           <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
             <%= @order.buyer_phone %>
@@ -35,7 +35,7 @@
         </div>
         <div class="mt-8 sm:mt-0 sm:grid sm:grid-cols-3 sm:gap-4 sm:border-t sm:border-gray-200 sm:px-6 sm:py-5">
           <dt class="text-sm leading-5 font-medium text-gray-500">
-            Email
+            <%= gettext("Email") %>
           </dt>
           <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
             <%= link @order.buyer_email, to: "mailto:" <> @order.buyer_email %>
@@ -43,23 +43,23 @@
         </div>
         <div class="mt-8 sm:mt-0 sm:grid sm:grid-cols-3 sm:gap-4 sm:border-t sm:border-gray-200 sm:px-6 sm:py-5">
           <dt class="text-sm leading-5 font-medium text-gray-500">
-            Valor del cupó
+            <%= gettext("Valor del cupó") %>
           </dt>
           <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
-            <%= @order.value %> EUR
+            <%= @order.value %> <%= gettext("EUR") %>
           </dd>
         </div>
         <div class="mt-8 sm:mt-0 sm:grid sm:grid-cols-3 sm:gap-4 sm:border-t sm:border-gray-200 sm:px-6 sm:py-5">
           <dt class="text-sm leading-5 font-medium text-gray-500">
-            Quantitat a cobrar
+            <%= gettext("Quantitat a cobrar") %>
           </dt>
           <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
-            <%= @order.amount %> EUR
+            <%= @order.amount %> <%= gettext("EUR") %>
           </dd>
         </div>
         <div class="mt-8 sm:mt-0 sm:grid sm:grid-cols-3 sm:gap-4 sm:border-t sm:border-gray-200 sm:px-6 sm:py-5">
           <dt class="text-sm leading-5 font-medium text-gray-500">
-            Data de compra
+            <%= gettext("Data de compra") %>
           </dt>
           <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
             <%= @order.inserted_at %>
@@ -67,7 +67,7 @@
         </div>
         <div class="mt-8 sm:mt-0 sm:grid sm:grid-cols-3 sm:gap-4 sm:border-t sm:border-gray-200 sm:px-6 sm:py-5">
           <dt class="text-sm leading-5 font-medium text-gray-500">
-            Estat
+            <%= gettext("Estat") %>
           </dt>
           <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
             <%= status_pill(@order) %>

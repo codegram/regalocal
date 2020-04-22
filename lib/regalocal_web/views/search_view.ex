@@ -4,6 +4,6 @@ defmodule RegalocalWeb.SearchView do
   alias RegalocalWeb.BusinessHelpers, as: Business
 
   def title(:index, _assigns) do
-    "Cercant comerços al teu voltant"
+    gettext("Cercant comerços al teu voltant")
   end
 end

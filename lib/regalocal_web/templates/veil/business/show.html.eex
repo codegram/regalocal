@@ -1,9 +1,9 @@
 <%= container(:padded, class: "text-center") do %>
   <h2 class="text-primary-600 text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10 flex flex-col items-center">
     <svg xmlns="http://www.w3.org/2000/svg" class="mb-8 text-primary-600 animate-shape" viewBox="0 0 24 24" style="fill: transparent; stroke: currentColor; stroke-width: 0.015em; height: 3em; width: 3em;"><path class="heroicon-ui" d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6c0-1.1.9-2 2-2zm16 3.38V6H4v1.38l8 4 8-4zm0 2.24l-7.55 3.77a1 1 0 0 1-.9 0L4 9.62V18h16V9.62z"/></svg>
-    <span>Fes un cop d'ull a la teva bústia!</span>
+    <span><%= gettext("Fes un cop d'ull a la teva bústia!") %></span>
   </h2>
   <p class="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-    T'hem enviat un correu electrònic amb un enllaç que podràs fer servir per accedir al teu compte i gestionar les teves dades i cupons.
+  <%= gettext("T'hem enviat un correu electrònic amb un enllaç que podràs fer servir per accedir al teu compte i gestionar les teves dades i cupons.") %>
   </p>
 <% end %>

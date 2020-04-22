@@ -30,7 +30,7 @@ defmodule RegalocalWeb.Admin.CouponController do
     case Admin.create_coupon(params) do
       {:ok, coupon} ->
         conn
-        |> put_flash(:info, "Coupon created successfully.")
+        |> put_flash(:info, gettext("Coupon created successfully."))
         |> redirect(to: Routes.admin_coupon_path(conn, :show, coupon))
 
       {:error, %Ecto.Changeset{} = changeset} ->
@@ -45,20 +45,20 @@ defmodule RegalocalWeb.Admin.CouponController do
     case Admin.publish_coupon!(coupon) do
       {:ok, _} ->
         conn
-        |> put_flash(:info, "Coupon published successfully.")
+        |> put_flash(:info, gettext("Coupon published successfully."))
         |> redirect(to: Routes.admin_coupon_path(conn, :index))
 
       {:error, :unpublishable} ->
         conn
         |> put_flash(
           :error,
-          "El cupó no està en estat d'esborrany"
+          gettext("El cupó no està en estat d'esborrany")
         )
         |> redirect(to: Routes.admin_coupon_path(conn, :index))
 
       {:error, %Ecto.Changeset{}} ->
         conn
-        |> put_flash(:error, "Coupon could not be published.")
+        |> put_flash(:error, gettext("Coupon could not be published."))
         |> redirect(to: Routes.admin_coupon_path(conn, :index))
     end
   end

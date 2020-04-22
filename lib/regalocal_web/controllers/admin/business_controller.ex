@@ -26,7 +26,7 @@ defmodule RegalocalWeb.Admin.BusinessController do
     case Admin.update_business(business, new_params) do
       {:ok, _business} ->
         conn
-        |> put_flash(:info, "Business updated successfully.")
+        |> put_flash(:info, gettext("Business updated successfully."))
         |> redirect(to: Routes.admin_dashboard_path(conn, :show))
 
       {:error, %Ecto.Changeset{} = changeset} ->
@@ -42,7 +42,7 @@ defmodule RegalocalWeb.Admin.BusinessController do
     {:ok, _business} = Admin.delete_business(business)
 
     conn
-    |> put_flash(:info, "Business deleted successfully.")
+    |> put_flash(:info, gettext("Business deleted successfully."))
     |> redirect(to: Routes.page_path(conn, :index))
   end
 end

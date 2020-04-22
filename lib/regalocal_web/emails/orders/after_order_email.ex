@@ -4,6 +4,7 @@ defmodule RegalocalWeb.Orders.AfterOrderEmail do
     layout: {RegalocalWeb.LayoutView, :email}
 
   import RegalocalWeb.PremailHelper
+  import RegalocalWeb.Gettext
 
   def generate(conn, gift, business, token) do
     new()
@@ -11,7 +12,11 @@ defmodule RegalocalWeb.Orders.AfterOrderEmail do
     |> cc({business.owner_name, business.email})
     |> reply_to({business.owner_name, business.email})
     |> from(from_email())
-    |> subject("💳 Instruccions de pagament de la comanda \"#{gift.reference}\"")
+    |> subject(
+      gettext("💳 Instruccions de pagament de la comanda \"%{reference}\"",
+        reference: gift.reference
+      )
+    )
     |> render_body("after_order.html", %{conn: conn, gift: gift, business: business, token: token})
     |> premail
   end

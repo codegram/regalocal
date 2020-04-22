@@ -7,19 +7,19 @@
     <%= @coupon.title %>
   </h3>
   <p class="mt-4 max-w-3xl mx-auto text-xl leading-7 text-gray-500">
-    El cupó té un <strong>valor de <%=@coupon.value %> EUR</strong>, però a tu et costarà <strong>només <%= @coupon.amount %> EUR</strong>.
+    <%= gettext("El cupó té un <strong>valor de %{coupon_value} EUR</strong>, però a tu et costarà <strong>només %{coupon_amount} EUR</strong>.", coupon_value: @coupon.value, coupon_amount: @coupon.amount) |> raw %>
   </p>
   <p class="mt-4 max-w-3xl mx-auto text-l leading-7 text-gray-500">
-    Fes un regal als els teus tot i donant suport a en/na <strong><%= @business.owner_name %></strong>.
+    <%= gettext("Fes un regal als els teus tot i donant suport a en/na <strong>%{business_owner_name}</strong>.", business_owner_name: @business.owner_name) |> raw %>
   </p>
 </div>
 <div class="relative mt-6 lg:mt-12 lg:flex">
   <div class="relative lg:pr-16 flex-1">
     <h4 class="text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9">
-      Com funciona?
+      <%= gettext("Com funciona?") %>"
     </h4>
     <p class="mt-3 text-lg leading-7 text-gray-500">
-      És molt senzill: ajudant a <%= @business.owner_name %> a mantenir <%=@business.name %> durant el confinament, la persona a qui regales el cupó podrà gaudir-ne de seguida que reobri.
+      <%= gettext("És molt senzill: ajudant a %{business_owner_name} a mantenir %{business_name} durant el confinament, la persona a qui regales el cupó podrà gaudir-ne de seguida que reobri.", business_owner_name: @business.owner_name, business_name: @business.name) %>
     </p>
     <ul class="mt-10">
       <li class="mt-10">
@@ -30,9 +30,11 @@
             </div>
           </div>
           <div class="ml-4">
-            <h5 class="text-lg leading-6 font-medium text-gray-900">Regales solidaritat avui</h5>
+            <h5 class="text-lg leading-6 font-medium text-gray-900">
+              <%= gettext("Regales solidaritat avui") %>
+            </h5>
             <p class="mt-2 text-base leading-6 text-gray-500">
-              La persona a qui li regales el cupó <strong>el rebrà immediatament</strong>, incloent el teu missatge personalitzat.
+              <%= gettext("La persona a qui li regales el cupó <strong>el rebrà immediatament</strong>, incloent el teu missatge personalitzat.") |> raw %>
             </p>
           </div>
         </div>
@@ -45,9 +47,11 @@
             </div>
           </div>
           <div class="ml-4">
-            <h5 class="text-lg leading-6 font-medium text-gray-900">T'estalvies un <%=@coupon.discount%>%</h5>
+            <h5 class="text-lg leading-6 font-medium text-gray-900">
+              <%= gettext("T'estalvies un %{coupon_discount}%", coupon_discount: @coupon.discount) %>
+            </h5>
             <p class="mt-2 text-base leading-6 text-gray-500">
-              Com a agraïment pel teu suport, <%= @business.owner_name %> t'ofereix <strong>un descompte del <%= @coupon.discount %>%</strong>. El teu pagament <strong>ajudarà a sobreviure a <%= @business.name%></strong> fins que reobri.
+              <%= gettext("Com a agraïment pel teu suport, %{business_owner_name} t'ofereix <strong>un descompte del %{coupon_discount}%</strong>. El teu pagament <strong>ajudarà a sobreviure a %{business_name}</strong> fins que reobri.", business_owner_name: @business.owner_name, coupon_discount: @coupon.discount, business_name: @business.name) |> raw %>
             </p>
           </div>
         </div>
@@ -60,9 +64,11 @@
             </div>
           </div>
           <div class="ml-4">
-            <h5 class="text-lg leading-6 font-medium text-gray-900">Pagues directament a <%=@business.owner_name%></h5>
+            <h5 class="text-lg leading-6 font-medium text-gray-900">
+              <%= gettext("Pagues directament a %{business_owner_name}", business_owner_name: @business.owner_name) %>
+            </h5>
             <p class="mt-2 text-base leading-6 text-gray-500">
-              T'enviarem les dades de pagament i de contacte per a què li <strong>puguis enviar els diners</strong> immediatament.
+              <%= gettext("T'enviarem les dades de pagament i de contacte per a què li <strong>puguis enviar els diners</strong> immediatament.") |> raw %>
             </p>
           </div>
         </div>
@@ -75,9 +81,11 @@
             </div>
           </div>
           <div class="ml-4">
-            <h5 class="text-lg leading-6 font-medium text-gray-900">Us avisem quan <%=@business.name%> reobri</h5>
+            <h5 class="text-lg leading-6 font-medium text-gray-900">
+              <%= gettext("Us avisem quan %{business_name} reobri", business_name: @business.name) %>
+            </h5>
             <p class="mt-2 text-base leading-6 text-gray-500">
-              <strong>De seguida que <%= @business.owner_name %> reobri portes</strong>, tant tu com la persona a qui has fet el regal <strong>rebreu un email</strong> indicant-vos que el cupó ja pot ser bescanviat.
+              <%= gettext("<strong>De seguida que %{business_owner_name} reobri portes</strong>, tant tu com la persona a qui has fet el regal <strong>rebreu un email</strong> indicant-vos que el cupó ja pot ser bescanviat.", business_owner_name: @business.owner_name) |> raw %>
             </p>
           </div>
         </div>
@@ -90,9 +98,11 @@
             </div>
           </div>
           <div class="ml-4">
-            <h5 class="text-lg leading-6 font-medium text-gray-900"><strong>Regalocal</strong> és un servei gratuït</h5>
+            <h5 class="text-lg leading-6 font-medium text-gray-900">
+              <%= gettext("<strong>Regalocal</strong> és un servei gratuït") |> raw %>
+            </h5>
             <p class="mt-2 text-base leading-6 text-gray-500">
-              Regalocal <strong>no es queda cap mena de comissió</strong>, ni intervé en cap pagament. Estem aquí només per <strong>aportar el nostre granet de sorra</strong> a la revitalització del comerç local.
+              <%= gettext("Regalocal <strong>no es queda cap mena de comissió</strong>, ni intervé en cap pagament. Estem aquí només per <strong>aportar el nostre granet de sorra</strong> a la revitalització del comerç local.") |> raw %>
             </p>
           </div>
         </div>

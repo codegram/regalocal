@@ -3,6 +3,9 @@ defmodule RegalocalWeb.GiftView do
   import RegalocalWeb.PublicLayoutHelpers
 
   def title(:new, %{coupon: %{title: coupon_title}, business: %{name: business_name}}) do
-    "#{coupon_title} a #{business_name}"
+    gettext("%{coupon_title} a %{business_name}",
+      coupon_title: coupon_title,
+      business_name: business_name
+    )
   end
 end

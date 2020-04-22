@@ -2,24 +2,28 @@
   <%= form_for @changeset, @action, fn f -> %>
   <%= if @changeset.action do %>
     <div class="alert alert-danger">
-      <p>Oops, something went wrong! Please check the errors below.</p>
+      <p>
+        <%= gettext("Oops, something went wrong! Please check the errors below.") %>"
+      </p>
     </div>
   <% end %>
   <div>
     <div>
       <fieldset>
-        <legend class="block text-sm font-medium leading-5 text-gray-700">Les teves dades</legend>
+        <legend class="block text-sm font-medium leading-5 text-gray-700">
+          <%= gettext("Les teves dades") %>
+        </legend>
         <div class="mt-1 bg-white rounded-md shadow-sm">
           <div>
-            <%= text_input f, :buyer_name, required: true, "aria-label": "El teu nom", placeholder: "El teu nom", class: "form-input relative block w-full rounded-none rounded-t-md bg-transparent focus:z-10 transition ease-in-out duration-150 sm:text-sm sm:leading-5" %>
+            <%= text_input f, :buyer_name, required: true, "aria-label": gettext("El teu nom"), placeholder: gettext("El teu nom"), class: "form-input relative block w-full rounded-none rounded-t-md bg-transparent focus:z-10 transition ease-in-out duration-150 sm:text-sm sm:leading-5" %>
             <%= error_tag f, :buyer_name %>
           </div>
           <div class="-mt-px">
-            <%= email_input f, :buyer_email, required: true, "aria-label": "elteu@email.com", placeholder: "elteu@email.com", class: "form-input relative block w-full rounded-none bg-transparent focus:z-10 transition ease-in-out duration-150 sm:text-sm sm:leading-5" %>
+            <%= email_input f, :buyer_email, required: true, "aria-label": gettext("elteu@email.com"), placeholder: gettext("elteu@email.com"), class: "form-input relative block w-full rounded-none bg-transparent focus:z-10 transition ease-in-out duration-150 sm:text-sm sm:leading-5" %>
             <%= error_tag f, :buyer_email %>
           </div>
           <div class="-mt-px">
-            <%= text_input f, :buyer_phone, required: true, "aria-label": "El teu telèfon", placeholder: "El teu telèfon", class: "form-input relative block w-full rounded-none rounded-b-md bg-transparent focus:z-10 transition ease-in-out duration-150 sm:text-sm sm:leading-5" %>
+            <%= text_input f, :buyer_phone, required: true, "aria-label": gettext("El teu telèfon"), placeholder: gettext("El teu telèfon"), class: "form-input relative block w-full rounded-none rounded-b-md bg-transparent focus:z-10 transition ease-in-out duration-150 sm:text-sm sm:leading-5" %>
             <%= error_tag f, :buyer_email %>
           </div>
         </div>
@@ -27,14 +31,16 @@
     </div>
     <div class="mt-6 bg-white">
       <fieldset>
-        <legend class="block text-sm font-medium leading-5 text-gray-700">Dades de la persona a qui vols regalar-li</legend>
+        <legend class="block text-sm font-medium leading-5 text-gray-700">
+          <%= gettext("Dades de la persona a qui vols regalar-li") %>
+        </legend>
         <div class="mt-1 rounded-md shadow-sm">
           <div>
-            <%= text_input f, :recipient_name, required: true, "aria-label": "El seu nom", placeholder: "El seu nom", class: "form-input relative block w-full rounded-none rounded-t-md bg-transparent focus:z-10 transition ease-in-out duration-150 sm:text-sm sm:leading-5" %>
+            <%= text_input f, :recipient_name, required: true, "aria-label": gettext("El seu nom"), placeholder: gettext("El seu nom"), class: "form-input relative block w-full rounded-none rounded-t-md bg-transparent focus:z-10 transition ease-in-out duration-150 sm:text-sm sm:leading-5" %>
             <%= error_tag f, :recipient_name %>
           </div>
           <div class="-mt-px">
-            <%= email_input f, :recipient_email, required: true, "aria-label": "elseu@email.com", placeholder: "elseu@email.com", class: "form-input relative block w-full rounded-none rounded-b-md bg-transparent focus:z-10 transition ease-in-out duration-150 sm:text-sm sm:leading-5" %>
+            <%= email_input f, :recipient_email, required: true, "aria-label": gettext("elseu@email.com"), placeholder: gettext("elseu@email.com"), class: "form-input relative block w-full rounded-none rounded-b-md bg-transparent focus:z-10 transition ease-in-out duration-150 sm:text-sm sm:leading-5" %>
             <%= error_tag f, :recipient_email %>
           </div>
         </div>
@@ -42,11 +48,13 @@
     </div>
   </div>
   <div class="mt-6">
-    <%= label f, :message_for_recipient, "Missatge personalitzat", class: "block text-sm font-medium leading-5 text-gray-700" %>
+    <%= label f, :message_for_recipient, gettext("Missatge personalitzat"), class: "block text-sm font-medium leading-5 text-gray-700" %>
     <div class="mt-1 rounded-md shadow-sm">
       <%= textarea f, :message_for_recipient, required: true, rows: 5, class: "appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5" %>
     </div>
-    <p class="mt-2 text-sm text-gray-500">L'inclourem de part teva a l'email amb el cupó.</p>
+    <p class="mt-2 text-sm text-gray-500">
+      <%= gettext("L'inclourem de part teva a l'email amb el cupó.") %>
+    </p>
     <%= error_tag f, :message_for_recipient %>
   </div>
   <%= if !is_nil(@coupon.terms) && String.length(@coupon.terms) > 1 do %>
@@ -61,7 +69,7 @@
       <div class="flex items-center">
         <%= checkbox f, :accepted_coupon_terms, class: "form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" %>
         <label for="gift_accepted_coupon_terms" class="ml-2 block text-sm leading-5 text-gray-900">
-          Accepto els termes del cupó
+          <%= gettext("Accepto els termes del cupó") %>
         </label>
         <%= error_tag f, :accepted_coupon_terms %>
       </div>
@@ -71,10 +79,10 @@
     <div class="mt-1 rounded-md shadow-sm">
       <div class="appearance-none bg-gray-50 block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5">
         <ol class="list-decimal list-inside">
-          <li>El valor del cupó és de <%= @coupon.value %> EUR.</li>
-          <li>El cupó no es podrà bescanviar fins que <%= @business.legal_name %> ho hagi notificat.</li>
-          <li>Em comprometo a realitzar el pagament de <%= @coupon.amount %> EUR seguint les instruccions que rebré per correu electrònic.</li>
-          <li>Qualsevol reclamació o disputa haurà de resolta entre <%= @business.legal_name %> i el comprador, eximint a RegaLocal de qualsevol responsabilitat.</li>
+          <li><%= gettext("El valor del cupó és de %{coupon_vale} EUR.", coupon_value: @coupon.value) %></li>
+          <li><%= gettext("El cupó no es podrà bescanviar fins que %{business_legal_name} ho hagi notificat.", business_legal_name: @business.legal_name) %></li>
+          <li><%= gettext("Em comprometo a realitzar el pagament de %{coupon_amount} EUR seguint les instruccions que rebré per correu electrònic.", coupon_amount: @coupon.amount) %></li>
+          <li><%= gettext("Qualsevol reclamació o disputa haurà de resolta entre %{business_legal_name} i el comprador, eximint a RegaLocal de qualsevol responsabilitat.", business_legal_name: @business.legal_name) %></li>
         </ol>
       </div>
     </div>
@@ -83,7 +91,7 @@
     <div class="flex items-center">
       <%= checkbox f, :accepted_gift_terms, class: "form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" %>
       <label for="gift_accepted_gift_terms" class="ml-2 block text-sm leading-5 text-gray-900">
-        Accepto les condicions de venta
+        <%= gettext("Accepto les condicions de venta") %>
       </label>
       <%= error_tag f, :accepted_gift_terms %>
     </div>
@@ -91,7 +99,7 @@
   <div class="mt-6">
     <span class="block w-full rounded-md shadow-sm">
       <button type="submit" class="w-full flex justify-center button">
-        Regalar
+        <%= gettext("Regalar") %>
       </button>
     </span>
   </div>

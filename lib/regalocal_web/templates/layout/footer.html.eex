@@ -6,7 +6,7 @@
           <%= logo(@conn) %>
         <% end %>
         <p class="mt-8 text-gray-500 text-base leading-6 max-w-md">
-          Ajudem a la recuperació de l'economia local, sense oblidar-nos dels qui estimem.
+          <%= gettext("Ajudem a la recuperació de l'economia local, sense oblidar-nos dels qui estimem.") %>
         </p>
         <div class="mt-8 flex">
           <a href="https://github.com/codegram/regalocal" class="text-gray-400 hover:text-gray-500">
@@ -20,27 +20,27 @@
       <div class="flex justify-between">
         <div class="flex-grow lg:flex-initial">
           <h4 class="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
-            Informació
+            <%= gettext("Informació") %>
           </h4>
           <ul class="mt-4">
             <li>
               <a href="/about" class="text-base leading-6 text-gray-500 hover:text-gray-900">
-                Sobre nosaltres
+                <%= gettext("Sobre nosaltres") %>
               </a>
             </li>
             <li class="mt-4">
               <a href="/privacy" class="text-base leading-6 text-gray-500 hover:text-gray-900">
-                Privacitat
+                <%= gettext("Privacitat") %>
               </a>
             </li>
             <li class="mt-4">
               <a href="/cookies" class="text-base leading-6 text-gray-500 hover:text-gray-900">
-                Cookies
+                <%= gettext("Cookies") %>
               </a>
             </li>
             <li class="mt-4">
               <a href="/terms" class="text-base leading-6 text-gray-500 hover:text-gray-900">
-                Avís legal
+                <%= gettext("Avís legal") %>
               </a>
             </li>
           </ul>

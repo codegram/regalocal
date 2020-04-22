@@ -1,7 +1,9 @@
-<%= AdminHelpers.layout "Comandes", fn ->  %>
+<%= AdminHelpers.layout gettext("Comandes"), fn ->  %>
 <div class="flex-1 flex items-center justify-center px-2 lg:ml-6 lg:justify-end">
   <div class="max-w-lg w-full lg:max-w-xs">
-    <label for="search" class="sr-only">Buscar per referència</label>
+    <label for="search" class="sr-only">
+      <%= gettext("Buscar per referència") %>
+    </label>
     <div class="relative">
       <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
         <svg class="h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
@@ -22,19 +24,19 @@
           <thead>
             <tr>
               <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
-                Referència
+                <%= gettext("Referència") %>
               </th>
               <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
-                Comprador
+                <%= gettext("Comprador") %>
               </th>
               <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
-                Cupó
+                <%= gettext("Cupó") %>
               </th>
               <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
-                Data
+                <%= gettext("Data") %>
               </th>
               <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
-                Estat
+                <%= gettext("Estat") %>
               </th>
               <th class="px-6 py-3 border-b border-gray-200 bg-gray-50"></th>
             </tr>
@@ -59,7 +61,7 @@
                   <%= status_pill(order) %>
                 </td>
                 <td class="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
-                  <span><%= link "Veure detall", to: Routes.admin_order_path(@conn, :show, order), class: "inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-secondary-600 hover:bg-secondary-500 focus:outline-none focus:border-secondary-700 focus:shadow-outline-secondary active:bg-secondary-700 transition ease-in-out duration-150" %></span>
+                  <span><%= link gettext("Veure detall"), to: Routes.admin_order_path(@conn, :show, order), class: "inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-secondary-600 hover:bg-secondary-500 focus:outline-none focus:border-secondary-700 focus:shadow-outline-secondary active:bg-secondary-700 transition ease-in-out duration-150" %></span>
                 </td>
               </tr>
             <% end %>

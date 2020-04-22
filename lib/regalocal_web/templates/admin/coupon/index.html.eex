@@ -1,5 +1,5 @@
-<%= AdminHelpers.layout "Els meus cupons", fn -> %>
-<%= AdminHelpers.primary_layout_button "Crear cupó", to: Routes.admin_coupon_path(@conn, :new) %>
+<%= AdminHelpers.layout gettext("Els meus cupons"), fn -> %>
+<%= AdminHelpers.primary_layout_button gettext("Crear cupó"), to: Routes.admin_coupon_path(@conn, :new) %>
 <% end do %>
   <div class="flex flex-col">
     <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
@@ -8,16 +8,16 @@
           <thead>
             <tr>
               <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
-                Nom
+                <%= gettext("Nom") %>
               </th>
               <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
-                Valor en EUR
+                <%= gettext("Valor en EUR") %>
               </th>
               <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
-                % de descompte
+                <%= gettext("% de descompte") %>
               </th>
               <th class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
-                Estat
+                <%= gettext("Estat") %>
               </th>
               <th class="px-6 py-3 border-b border-gray-200 bg-gray-50"></th>
             </tr>
@@ -29,7 +29,7 @@
                   <%= title(coupon) %>
                 </td>
                 <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                  <strong><%= coupon.value %></strong> EUR
+                  <strong><%= coupon.value %></strong> <%= gettext("EUR") %>
                 </td>
                 <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
                   <strong><%= coupon.discount %></strong>%
@@ -38,7 +38,7 @@
                   <%= status_pill(coupon) %>
                 </td>
                 <td class="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
-                  <span><%= link "Veure detall", to: Routes.admin_coupon_path(@conn, :show, coupon), class: "inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-secondary-600 hover:bg-secondary-500 focus:outline-none focus:border-secondary-700 focus:shadow-outline-secondary active:bg-secondary-700 transition ease-in-out duration-150" %></span>
+                  <span><%= link gettext("Veure detall"), to: Routes.admin_coupon_path(@conn, :show, coupon), class: "inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-secondary-600 hover:bg-secondary-500 focus:outline-none focus:border-secondary-700 focus:shadow-outline-secondary active:bg-secondary-700 transition ease-in-out duration-150" %></span>
                 </td>
               </tr>
             <% end %>

@@ -2,6 +2,7 @@ defmodule RegalocalWeb.FormHelpers do
   use Phoenix.Template, root: "lib/regalocal_web/templates/helpers/form"
   alias Phoenix.HTML
   import RegalocalWeb.ErrorHelpers
+  import RegalocalWeb.Gettext
 
   def section(do: content) do
     HTML.Tag.content_tag(:div, content, class: "pb-6")

@@ -1,3 +1,3 @@
-<%= AdminHelpers.layout if @conn.assigns[:acceptance], do: "Editar perfil", else: "Veure perfil" do %>
+<%= AdminHelpers.layout if @conn.assigns[:acceptance], do: gettext("Editar perfil"), else: gettext("Veure perfil") do %>
   <%= render "form.html", Map.put(assigns, :action, Routes.admin_business_path(@conn, :update)) %>
 <% end %>
