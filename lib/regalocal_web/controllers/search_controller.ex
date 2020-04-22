@@ -3,15 +3,32 @@ defmodule RegalocalWeb.SearchController do
   alias Regalocal.Search
   alias Regalocal.Geolocation
 
-  @spec index(Plug.Conn.t(), map) :: Plug.Conn.t()
+  @limit_km 100
+
   def index(conn, %{"latitude" => latitude, "longitude" => longitude}) do
-    geo =
-      Geolocation.to_geopoint(%{lat: String.to_float(latitude), lon: String.to_float(longitude)})
+    find_businesses_near(conn, [{String.to_float(latitude), String.to_float(longitude)}])
+  end
 
-    businesses = Search.find_businesses_near!(geo, 25)
+  def index(conn, %{"q" => query}) do
+    find_businesses_near(conn, [query, "Spain"])
+  end
 
-    conn
-    |> assign(:businesses, businesses)
-    |> render("index.html")
+  defp find_businesses_near(conn, args) do
+    case apply(Geolocation, :locate, args) do
+      {:ok, geolocation} ->
+        businesses = Search.find_businesses_near!(Geolocation.to_geopoint(geolocation), @limit_km)
+
+        conn
+        |> assign(:businesses, businesses)
+        |> assign(:address, geolocation.address)
+        |> assign(:limit_km, @limit_km)
+        |> render("index.html")
+
+      {:error, error} ->
+        conn
+        |> put_flash(:error, error)
+        |> assign(:businesses, [])
+        |> render("index.html")
+    end
   end
 end

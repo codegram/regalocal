@@ -6,15 +6,15 @@ defmodule Regalocal.Search do
   alias Regalocal.Admin.Business
   alias Regalocal.Admin.Coupon
 
-  def find_businesses_near!(%Geo.Point{} = geom, limit) do
+  def find_businesses_near!(%Geo.Point{} = geom, limit_km) do
     bids = business_ids_with_coupons()
 
     Business
     |> select([b], %{b | distance_meters: st_distance_in_meters(b.coordinates, ^geom)})
     |> where([b], b.id in ^bids)
     |> where(accepted_terms: true)
+    |> where([b], st_distance_in_meters(b.coordinates, ^geom) <= ^limit_km * 1000)
     |> order_by([b], st_distance_in_meters(b.coordinates, ^geom))
-    |> limit(^limit)
     |> Repo.all()
   end
 

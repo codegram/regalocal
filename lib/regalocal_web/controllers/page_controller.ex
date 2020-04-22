@@ -21,3 +21,5 @@ defmodule RegalocalWeb.PageController do
     render(conn, "about.html")
   end
 end
+
+""
