@@ -9,6 +9,8 @@ defmodule RegalocalWeb.PublicLayoutHelpers do
     end
   end
 
+  def container(type, do: content), do: container(type, [class: ""], do: content)
+
   def container(do: content), do: container([class: ""], do: content)
 
   def container(:wide, [class: class], do: content) do
@@ -20,6 +22,4 @@ defmodule RegalocalWeb.PublicLayoutHelpers do
       content_tag(:div, content, class: "max-w-screen-md mx-auto py-16 lg:py-24 #{class}")
     end
   end
-
-  def container(type, do: content), do: container(type, [class: ""], do: content)
 end

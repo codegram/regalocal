@@ -11,6 +11,10 @@ defmodule Regalocal.Geolocation do
     locate(raw_address, "Spain")
   end
 
+  def locate(coordinates) when is_tuple(coordinates) do
+    geocode(coordinates, coordinates)
+  end
+
   def locate(raw_address, country) when is_binary(raw_address) and country in @countries do
     case geocode(raw_address <> ", " <> country) do
       {:ok, %Regalocal.Geolocation{country_code: code} = geolocation} ->
@@ -23,10 +27,6 @@ defmodule Regalocal.Geolocation do
       otherwise ->
         otherwise
     end
-  end
-
-  def locate(coordinates) when is_tuple(coordinates) do
-    geocode(coordinates, coordinates)
   end
 
   defp geocode(args) do

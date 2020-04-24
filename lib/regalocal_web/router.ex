@@ -4,7 +4,6 @@ defmodule RegalocalWeb.Router do
   use Sentry.Plug
 
   import Phoenix.LiveDashboard.Router
-  import Plug.BasicAuth
 
   pipeline :browser do
     plug :accepts, ["html"]
