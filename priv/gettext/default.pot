@@ -1,0 +1,2600 @@
+## This file is a PO Template file.
+##
+## "msgid"s here are often extracted from source code.
+## Add new translations manually only if they're dynamic
+## translations that can't be statically extracted.
+##
+## Run "mix gettext.extract" to bring this file up to
+## date. Leave "msgstr"s empty as changing them here as no
+## effect: edit them in PO (.po) files instead.
+msgid ""
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/coupon/index.html.eex:17
+msgid "% de descompte"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/search/index.html.eex:23
+msgid "%{count} resultats"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/views/gift_view.ex:6
+msgid "%{coupon_title} a %{business_name}"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/coupon/form.html.eex:5
+msgid "'Cafè i pastís', 'Tallat de cabell', 'Sopar romàntic per dos', etcètera"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:75
+msgid "(1) Aquelles persones o entitats que es proposin establir un hiperenllaç entre la seva pàgina web i aquesta (en endavant, l'hiperenllaç), han de complir les condicions següents:"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:85
+msgid "(2) REGALOCAL posa a disposició dels Usuaris enllaços o links per tal de facilitar l'accés a la informació, serveis i altres continguts disponibles a Internet. Els enllaços o links habilitats en la pàgina web poden conduir a l'Usuari a altres llocs i pàgines web gestionades per tercers, sobre els quals REGALOCAL no exerceix cap tipus de control."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:15
+msgid "1. En quins apartats de la nostra PLATAFORMA demanem Les teves dades personals?"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:7
+#: lib/regalocal_web/templates/page/terms.html.eex:6
+msgid "1. INFORMACIÓ GENERAL"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:8
+msgid "1.1. Qui hi ha darrere d'aquesta pàgina web? "
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:16
+msgid "1.2. Breu descripció d'aquesta pàgina web i finalitat "
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:18
+msgid "1.3. Què es pretén amb aquest Avís?"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:21
+msgid "1.4. Com contactar amb el responsable d'aquesta pàgina? "
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:136
+msgid "10. A QUINA ALTRES POLÍTIQUES LEGALS ES SUBJECTA AQUEST AVÍS I L'USUARI?"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:79
+msgid "10. Modificació de la present política de privacitat"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:82
+msgid "11. Integració amb la resta dels textos legals"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:27
+msgid "2. COOKIES UTILITZADES"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:20
+msgid "2. Quin és l'objectiu i / o finalitat en la recollida de dades?"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:25
+msgid "2. REGLES DE FUNCIONAMENT"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:27
+msgid "2.1. Com funciona aquesta pàgina web? "
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:30
+msgid "2.1. Tipus de galetes de la pàgina web"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:108
+msgid "2.2. Notes sobre l'ús de galetes i altres tècniques de spamming"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:29
+msgid "2.2. Tipus d'usuaris a la nostra pàgina web. "
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:33
+msgid "2.3. Quines regles de confidencialitat apliquem? "
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:35
+msgid "2.4. Quines condicions d'ús s'apliquen?"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:36
+msgid "2.4.1. Aspectes generals"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:41
+msgid "2.4.2. Drets d'l'Usuari"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:45
+msgid "2.4.3. Prohibicions de l'Usuari"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:50
+msgid "2.4.4. Drets de titular "
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:72
+msgid "3 mesos"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:115
+msgid "3. L'ACCEPTACIÓ DE LES COOKIES EN LA NOSTRA PLATAFORMA"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:55
+msgid "3. POLÍTICA DE CONTINGUTS, PROPIETAT INTEL·LECTUAL I INDUSTRIAL"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:24
+msgid "3. Ús de les dades personals I FINS COMERCIALS"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:57
+msgid "3.1. Tipus de continguts de la nostra pàgina web"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:59
+msgid "3.1.1. Política de propietat intel·lectual"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:64
+msgid "3.1.2. Límits de l'Usuari que fa a l'accés i ús dels nostres continguts"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:71
+msgid "3.1.3. Autoritzacions o permisos"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:74
+msgid "3.1.4. Enllaços entre pàgines web"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:87
+msgid "3.2. Respecte del programari corresponent a aquesta pàgina web i el seu disseny "
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:90
+msgid "3.3. Regles complementàries"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:121
+msgid "4. COM POT DESINSTAL·LAR les COOKIES DES DE LA SEVA NAVEGADOR?"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:31
+msgid "4. Compartir informació amb tercers"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:93
+msgid "4. RÈGIM DE RESPONSABILITATS"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:95
+msgid "4.1 Responsabilitat d'accés a la pàgina web"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:101
+msgid "4.2. Respecte dels continguts publicats "
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:105
+msgid "4.3. Responsabilitat en relació amb els serveis prestats "
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:107
+msgid "4.4. Responsabilitat en relació amb les fallades de l'servei"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:109
+msgid "4.5. Altres responsabilitats i deures"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:33
+msgid "5. Base jurídica: consentiment exprés per al tractament de Les teves dades"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:113
+msgid "5. PROTECCIÓ I FUNCIONAMENT DE LA PÀGINA WEB"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:133
+msgid "5. SOBRE LES COOKIES DE LES XARXES SOCIALS"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:34
+msgid "5.1 Consentiment de les persones físiques"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:38
+msgid "5.2 Consentiment de les persones jurídiques o professionals per al tractament de les seves dades"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:86
+#: lib/regalocal_web/templates/page/cookies.html.eex:100
+msgid "6 mesos"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:119
+msgid "6. DRET DE MODIFICACIÓ D'AQUEST AVÍS"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:41
+msgid "6. Sobre els teus drets d'accés, rectificació, supressió, oposició, portabilitat, oblit i limitació en el tractament"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:69
+msgid "7. Majoria d'edat"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:124
+msgid "7. NORMATIVA APLICABLE A AQUESTA PÀGINA WEB"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:128
+msgid "8. EXCLUSIONS DE LA POLÍTICA LEGAL DE LA PÀGINA WEB"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:71
+msgid "8. Les mesures de seguretat en la recollida de dades"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:132
+msgid "9. JURISDICCIÓ COMPETENT"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:77
+msgid "9. Termini de conservació de les teves dades personals"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/gift/new.html.eex:88
+msgid "<strong>De seguida que %{business_owner_name} reobri portes</strong>, tant tu com la persona a qui has fet el regal <strong>rebreu un email</strong> indicant-vos que el cupó ja pot ser bescanviat."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/gift/new.html.eex:102
+msgid "<strong>Regalocal</strong> és un servei gratuït"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:125
+msgid "A Google Chrome: https://support.google.com/chrome/answer/95647?hl=es"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:126
+msgid "A Safari: https://support.apple.com/kb/ph5042"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:58
+msgid "A la nostra Pàgina disposem de les descripcions dels serveis i productes oferts, de l'negoci, així com de les seves característiques i preus, els quals es donaran amb la intenció d'acreditar la nostra proximitat, fiabilitat i transparència"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:40
+msgid "A més d'aquestes condicions d'ús, haurà de respectar en tot moment la resta de les normes d'aquesta pàgina, ja que regulen tots els drets i deures dels Usuaris per a una millor protecció dels mateixos, la protecció de la nostra plataforma i, per tant, també el nostre negoci."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/about.html.eex:11
+msgid "A més, volem tenir un efecte a llarg termini en el teixit comercial, posant en contacte compradors amb propietaris del petit comerç, per establir relacions de confiança que aniran molt més enllà d'aquesta crisi."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/veil/email/login.html.eex:10
+msgid "Accedeix al teu panell"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/layout/header.html.eex:28
+#: lib/regalocal_web/templates/layout/header.html.eex:61
+msgid "Accedir al panell"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/gift/form.html.eex:72
+msgid "Accepto els termes del cupó"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/gift/form.html.eex:94
+msgid "Accepto les condicions de venta"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/coupon/show.html.eex:9
+msgid "Activar per bescanvi"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/coupon/edit.html.eex:2
+msgid "Actualitzar cupó"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/business/form.html.eex:7
+#: lib/regalocal_web/templates/business/show.html.eex:29 lib/regalocal_web/templates/orders/email/after_order.html.eex:65
+#: lib/regalocal_web/templates/orders/email/gift_is_ready.html.eex:11
+msgid "Adreça"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/business/form.html.eex:61
+msgid "Adreça de facturació"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/business/form.html.eex:10
+msgid "Adreça de la teva pàgina web, si en tens."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:30
+msgid "Advertir que la informació que facilitis a través de la pàgina web pot revelar o permetre que altres dedueixin teva nacionalitat, ètnia, sexe, edat o altres aspectes de la teva vida privada. D'aquesta manera, a l'facilitar aquesta informació de forma totalment voluntària a través de qualsevol mitjà de la nostra Plataforma, estàs acceptant expressament i voluntàriament aquesta Política de Privacitat i de Protecció de Dades de Caràcter Personal."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/index.html.eex:79
+msgid "Afegir el meu comerç"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:75
+msgid "Així les coses, us informem que seràs l'únic responsable sobre les mesures de seguretat que implementes en relació amb la protecció de les teves dades, amb la qual cosa, RegaLocal no es fa responsable de les situacions on no hagis implementat les mesures de seguretat que corresponguin ; ni de les seves conseqüències, així com per causes o danys provocats per tercers aliens a l'despatx, incloent casos fortuïts i / o de força major."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:67
+msgid "Així mateix, com a Usuari tens dret a presentar una reclamació davant l'Autoritat de Control competent si consideres que el tractament de dades personals que et concerneixen infringeix el que disposa la legislació i normativa de protecció de dades; tot això sense perjudici de qualsevol altre recurs administratiu o acció judicial."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/index.html.eex:11
+#: lib/regalocal_web/views/layout_view.ex:11
+msgid "Ajuda als comerços i petits negocis a fer front a la crisi causada pel 🦠 COVID-19 i al mateix temps regala solidaritat als qui t'estimes."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/index.html.eex:38
+msgid "Ajuda el comerç local"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/layout/footer.html.eex:9
+msgid "Ajudem a la recuperació de l'economia local, sense oblidar-nos dels qui estimem."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/views/veil/business_view.ex:5
+msgid "Alta com a comerç"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:19
+msgid "Amb aquest Avís li volem informar sobre qui hi ha darrere d'aquesta plataforma, així com que pugui conèixer l'tipus d'informació que recollim sobre vostè i per a què la necessitem."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:57
+msgid "Amb el dret d'oposició pots oposar-te a que no es realitzi el tractament de les teves dades en supòsits com: activitats de publicitat i prospecció comercial o quan aquest tractament tingui com a fi l'adopció d'una decisió referida a tu basada únicament en un tractament automatitzat de les teves dades personals"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/business/form.html.eex:7
+msgid "Aquesta adreça es farà servir per a ubicar el teu negoci en el mapa i trobar-hi persones a prop."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:83
+msgid "Aquesta política de privacitat es complementa amb l'AvísLegal i la Política de Cookies associats a la present pàgina web."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/gift_email.html.eex:11
+msgid "Aquí tens un missatge de part seva:"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/gift_email.html.eex:20
+msgid "Ara mateix, %{business_name} està tancat degut al confinament. Tan bon punt obrin, t'enviarem un mail indicant que ja pots anar al comerç a fer servir el teu cupó."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/coupon/show.html.eex:16
+msgid "Arxivar"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:26
+msgid "Atendre i resoldre les sol·licituds o dubtes requerides dels Usuaris"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/views/page_view.ex:23
+msgid "Avís Legal"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/layout/footer.html.eex:43
+#: lib/regalocal_web/templates/page/terms.html.eex:3
+msgid "Avís legal"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/dashboard/show.html.eex:18
+#: lib/regalocal_web/templates/admin/dashboard/show.html.eex:21
+msgid "Benvingut/da! Per a que la gent et pugui trobar, has de crear i publicar un cupó com a mínim."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/views/admin/coupon_view.ex:16
+msgid "Bescanviable"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/views/admin/order_view.ex:11
+msgid "Bescanviat"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/index.html.eex:71
+msgid "Buscant comerços..."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/order/index.html.eex:5
+msgid "Buscar per referència"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/controllers/admin/business_controller.ex:45
+msgid "Business deleted successfully."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/controllers/admin/business_controller.ex:29
+msgid "Business updated successfully."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/after_order.html.eex:61
+msgid "CIF/NIF"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/business/form.html.eex:18
+msgid "Carta de presentació"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/index.html.eex:69
+msgid "Cerca comerços al teu voltant"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/gift_email.html.eex:32
+msgid "Cerca comerços en dificultats per la crisi del COVID-19 i regala solidaritat :)"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/search/index.html.eex:7
+msgid "Cercant a %{limit_km} KM de"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/views/search_view.ex:7
+msgid "Cercant comerços al teu voltant"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:76
+msgid "Cloudflare"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:8
+#: lib/regalocal_web/templates/page/terms.html.eex:10
+msgid "Codegram TECHNOLOGIES SL"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:72
+msgid "Com Usuari podrà visualitzar els elements de la pàgina web i bloc i fins i tot imprimir-los, copiar-los i emmagatzemar-los al disc dur del seu ordinador o en qualsevol altre suport físic, sempre que sigui, única i exclusivament, per a un ús personal i privat, quedant, per tant, prohibida la seva utilització amb fins comercials, la seva distribució, així com la seva modificació, alteració o descompilació."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:110
+msgid "Com Usuari queda informat de la presència de cookies en aquesta plataforma per tal de facilitar l'ús i navegació per la mateixa. Ara bé, té la possibilitat de configurar el seu navegador per ser avisat en pantalla de la recepció de cookies i per impedir la instal·lació de les mateixes en el seu disc dur."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:43
+msgid "Com Usuari té dret a ser atès respecte dels seus dubtes, comentaris o exercici de drets, seguint-se per tot això els procediments establerts en la nostra plataforma"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:38
+msgid "Com Usuari, a l'accedir a aquesta Pàgina, assumeix els riscos que es puguin produir pel seu compte i risc. D'aquesta manera, ha de ser responsable de l'ús de mitjans idonis per evitar riscos controlables que li pertoquin a vostè o la seva persona."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:39
+msgid "Com Usuari, ha de llegir atentament el present Avís Legal en cadascuna de les ocasions en què es proposi utilitzar la pàgina web, ja que pot patir modificacions i, per tant, se subjectarà i haurà d'obeir al que s'hi disposa"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:42
+msgid "Com a Usuari té dret a navegar per la pàgina web, sujetándote sempre a les regles establertes en els avisos aplicables a aquesta, ia poder realitzar les seves gestions a través d'ella o de la solució que, si s'escau hagi contractat."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/gift/new.html.eex:54
+msgid "Com a agraïment pel teu suport, %{business_owner_name} t'ofereix <strong>un descompte del %{coupon_discount}%</strong>. El teu pagament <strong>ajudarà a sobreviure a %{business_name}</strong> fins que reobri."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/controllers/faq_controller.ex:21
+msgid "Com a comprador, què és el que estic regalant?"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:136
+msgid "Com a d'Usuari de la nostra plataforma en línia, està obligat a consultar les polítiques de privacitat i galetes d'aquestes xarxes per estar a l'corrent de l'tipus i finalitats i decidir acceptar-les o rebutjar-les."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:119
+msgid "Com a d'Usuari, si omet l'acceptació de l'ús de les cookies i continua navegant a la nostra plataforma, entendrem que hi ha un consentiment tàcit per la seva part per poder aplicar i utilitzar les galetes descrites en l'apartat anterior i, amb això, donarem compliment a que exigeix la LSSICE."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/payment_sent.html.eex:19
+msgid "Com a recordatori, una vegada hagis obert i els compradors puguin començar a disfrutar dels cupons no t'oblidis d'activar els cupons, d'aquesta manera es notificarà automàticament als interessats."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/gift/new.html.eex:19
+msgid "Com funciona?"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:6
+msgid "Com ja consta en l'Avís Legal, que es troba darrere d'aquesta Plataforma és:"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:32
+msgid "Com ja s'ha establert en els punts anteriors, RegaLocal no facilitarà les dades dels Usuaris a tercers. En el cas que volgués fer-ho, se t'informarà prèviament i se sol·licitarà el teu consentiment."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/gift_email.html.eex:17
+msgid "Com puc fer-lo servir?"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/controllers/faq_controller.ex:42
+msgid "Com puc obtenir un ticket o factura del meu regal?"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/controllers/faq_controller.ex:49
+msgid "Com puc posar-me en contacte amb RegaLocal?"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/about.html.eex:18
+msgid "Com va néixer?"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/order/index.html.eex:1
+#: lib/regalocal_web/views/admin_view.ex:15
+msgid "Comandes"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/coupon/show.html.eex:72
+msgid "Comandes d'aquest cupó"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/dashboard/show.html.eex:51
+msgid "Comandes rebudes"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/views/admin_view.ex:21
+msgid "Completar perfil"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/order/index.html.eex:30
+#: lib/regalocal_web/templates/admin/order/show.html.eex:22
+msgid "Comprador"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:31
+msgid "Comprador:aquella persona que vulgui comprar cupons per als seus éssers estimats. Per comprar aquests cupons, aquest usuari haurà d'acceptar els termes de l'cupó en qüestió, així com els termes i condicions, política de privacitat i de cookies."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/controllers/faq_controller.ex:37
+msgid "Comprar un cupó pot comportar cert risc en cas de que el comerç faci fallida. En aquest cas, t'hauràs de posar en contacte directament amb el comerç per a negociar un possible reemborsament."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/gift/thanks.html.eex:10
+msgid "Comprova el teu correu electrònic i segueix les instruccions de pagament."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/after_order.html.eex:20
+msgid "Concepte de la transferència"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/after_order.html.eex:40
+msgid "Confirmar pagament"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:53
+msgid "Consisteix que puguis modificar les teves dades de caràcter personal que siguin inexactes o incompletes, havent d'especificar en la sol·licitud quines dades vols que es modifiquin"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/gift/thanks.html.eex:15
+msgid "Continua fent més regals"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/veil/business/form.html.eex:12
+msgid "Continuar"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:37
+#: lib/regalocal_web/templates/page/cookies.html.eex:53 lib/regalocal_web/templates/page/cookies.html.eex:67
+#: lib/regalocal_web/templates/page/cookies.html.eex:81 lib/regalocal_web/templates/page/cookies.html.eex:95
+msgid "Cookie ID"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/layout/footer.html.eex:38
+msgid "Cookies"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:11
+#: lib/regalocal_web/templates/page/terms.html.eex:13
+msgid "Correu electrònic de contacte: regalocal@codegram.com."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/controllers/admin/coupon_controller.ex:61
+msgid "Coupon could not be published."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/controllers/admin/coupon_controller.ex:33
+msgid "Coupon created successfully."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/controllers/admin/coupon_controller.ex:48
+msgid "Coupon published successfully."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/coupon/index.html.eex:2
+#: lib/regalocal_web/templates/admin/coupon/new.html.eex:2 lib/regalocal_web/templates/admin/dashboard/show.html.eex:28
+msgid "Crear cupó"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/coupon/new.html.eex:1
+msgid "Crear nou cupó"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:90
+#: lib/regalocal_web/templates/page/cookies.html.eex:104
+msgid "Crisp"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/views/admin_view.ex:14
+msgid "Cupons"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/business/show.html.eex:94
+msgid "Cupons disponibles"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/order/index.html.eex:33
+msgid "Cupó"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/views/admin/coupon_view.ex:11
+msgid "Cupó de %{value} EUR"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:76
+msgid "D'acord amb allò que s'ha establert, el despatx no pot garantir que tercers no autoritzats puguin tenir coneixement de la classe, condicions, característiques i circumstàncies de l'ús que els Usuaris fan dels serveis oferts a la Plataforma. No obstant això, com a mesura, sí que s'han disposat unes condicions d'ús en el nostre Avís Legal."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/about.html.eex:9
+msgid "D'altra banda, el confinament també afecta a la població general, que troba a faltar el contacte amb els seus amics i familiars."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:73
+msgid "D'aquesta manera, RegaLocal manté els nivells de seguretat de protecció de les seves dades requerides per la Llei Orgànica 3/2018, de 5 de desembre, de Protecció de Dades Personals i garantia dels drets digitals i el Reglament Europeu de Protecció de Dades 679 / 2016, de 27 d'abril, i ha disposat tots els mitjans tècnics al teu abast per evitar la pèrdua, mal ús, alteració, accés no autoritzat i robatori de les dades que facilitis a través de la Plataforma."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:53
+msgid "D'aquesta manera, encara que es publiquin recomanacions sobre determinats temes per part de professionals de la matèria que s'estigui tractant, això no exclou que el client necessiti de l'assessorament directe d'un professional, si escau, que podria adequar o personalitzar el que aquell necessiti "
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/business/form.html.eex:38
+msgid "Dades de contacte"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/gift/form.html.eex:35
+msgid "Dades de la persona a qui vols regalar-li"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:13
+#: lib/regalocal_web/templates/page/terms.html.eex:15
+msgid "Dades de registre: Registre Mercantil de Barcelona, Tom 42.559, Foli 67, Full B-409.858"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/coupon/form.html.eex:3
+msgid "Dades del cupó"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/business/form.html.eex:14
+msgid "Dades personals"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/business/form.html.eex:3
+msgid "Dades públiques del teu negoci"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/business/form.html.eex:38
+msgid "Dades públiques per tal que els ciutadans es puguin posar en contacte amb tu, en cas que ho necessitin."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:7
+msgid "Darrere d'aquesta pàgina web i del nostre bloc amb domini www.regalocal.com, d'ara endavant, referides conjuntament com \"la Pàgina Web\" o \"plataforma\", es troba Codegram TECHNOLOGIES SL (en endavant, REGALOCAL) les dades de contacte per a qualsevol cosa que necessiti, té a continuació: "
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:9
+msgid "Darrere d'aquesta pàgina web i del nostre bloc amb domini www.regalocal.com,d'ara endavant, referides conjuntament com \"la Pàgina Web\" o \"plataforma\", es troba Codegram TECHNOLOGIES SL (en endavant, REGALOCAL)les dades de contacte per a qualsevol cosa que necessiti, té a continuació: "
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/order/index.html.eex:36
+msgid "Data"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:41
+#: lib/regalocal_web/templates/page/cookies.html.eex:57 lib/regalocal_web/templates/page/cookies.html.eex:71
+#: lib/regalocal_web/templates/page/cookies.html.eex:85 lib/regalocal_web/templates/page/cookies.html.eex:99
+msgid "Data de Caducitat"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/order/show.html.eex:62
+msgid "Data de compra"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:45
+msgid "De la mateixa manera, RegaLocal no controla el sistema de renovació dels mecanismes de recerca de tercers, podent contenir-se en aquests mecanismes certa informació de l'perfil públic que ja hagi estat cancel·lada però que encara consti en Internet per la redifusió de la mateixa, en el cas , recomanem t'adrecis als responsables d'aquestes plataformes per sol·licitar la cancel·lació o l'exercici d'un dret a l'oblit."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/about.html.eex:8
+msgid "Degut a la crisi del COVID-19, una gran part del petit comerç s'ha vist amenaçat per la falta de gent al carrer. Molts d'aquests comerços han perdut tots o la majoria dels ingressos durant el confinament i estats d'alarma derivats de la situació."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:103
+msgid "Des REGALOCAL revisarem i actualitzarem la informació publicada a la nostra pàgina web però no podem garantir que tota ella sigui totalment correcta ja que poden produir-se errors tipogràfics, d'informació inexacta o incompleta per qualsevol raó justificable."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:102
+msgid "Des REGALOCAL tampoc ens responsabilitzem pel contingut i / o actualització dels enllaços publicats a la nostra pàgina web, o de la informació que indexi la mateixa i que estigui relacionada amb altres llocs webs o amb altres empreses que resultin vinculades a els criteris de cerca de contingut."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:5
+msgid "Des RegaLocal volem oferir-te una experiència de navegació i un servei segur i fiable. Per això, hem implementat la present política de privacitat que compleix amb les mesures de seguretat exigides per la Llei Orgànica 3/2018, de 5 de desembre, de Protecció de Dades Personals i garantia dels drets digitals, i pel Reglament Europeu de Protecció de dades 679/2016, de 27 d'abril, relatiu a la protecció de les persones físiques pel que fa a el tractament de dades personals ia la lliure circulació d'aquestes dades, tot això amb l'objectiu de garantir la teva privacitat i ser transparents amb el ús de les teves dades."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/about.html.eex:10
+msgid "Des de RegaLocal, volem donar solució a aquests dos reptes, efectivament canalitzant ingressos des d'aquells qui fan regals als comerços que necessiten subsistir, tot i prometent oferir els seus serveis després de la normalització de la situació."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/business/form.html.eex:87
+msgid "Desar dades"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/coupon/form.html.eex:13
+msgid "Descompte"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin_layout/app.html.eex:56
+#: lib/regalocal_web/templates/admin_layout/app.html.eex:91
+msgid "Desconnectar"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/coupon/form.html.eex:7
+#: lib/regalocal_web/templates/admin/coupon/show.html.eex:25
+msgid "Descripció"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/coupon/show.html.eex:6
+msgid "Despublicar"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/order/show.html.eex:1
+msgid "Detall de comanda"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:10
+#: lib/regalocal_web/templates/page/terms.html.eex:12
+msgid "Domicili: Rambla d'Ègara, núm. 235, 5-2, CP 08224, Terrassa (Barcelona), "
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/veil/business/new.html.eex:5
+msgid "Dona't d'alta i revifa la teva economia"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:35
+msgid "Donant compliment al que exigeix la Llei Orgànica 3/2018, de 5 de desembre, de Protecció de Dades Personals i garantia dels drets digitals, i el Reglament Europeu de Protecció de dades 679/2016 i atenent al que estableix nostres polítiques internes, cada vegada que ens enviïs dades personals hauràs de donar el teu consentiment exprés fent clic a la casella que apareix a la part inferior de cada formulari on es recullen els teus dades, o quan ens escrius al nostre correu electrònic de contacte o qualsevol altre habilitat per a funcionalitats concretes de la plataforma, estaràs acceptant expressament que puguem demanar les dades per a la finalitat o petició que ens hagis indicat. Amb aquesta (s) acció (és), ens estàs manifestant de forma lliure i inequívoca que estàs d'acord amb que RegaLocal tracti les dades segons les finalitats esmentades en els apartats anteriors."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/coupon/index.html.eex:32
+#: lib/regalocal_web/templates/admin/coupon/show.html.eex:36 lib/regalocal_web/templates/admin/coupon/show.html.eex:44
+#: lib/regalocal_web/templates/admin/dashboard/show.html.eex:78 lib/regalocal_web/templates/admin/dashboard/show.html.eex:101
+#: lib/regalocal_web/templates/admin/order/show.html.eex:49 lib/regalocal_web/templates/admin/order/show.html.eex:57
+#: lib/regalocal_web/templates/business/coupons.html.eex:19 lib/regalocal_web/templates/business/coupons.html.eex:29
+#: lib/regalocal_web/templates/orders/email/after_order.html.eex:18
+msgid "EUR"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/coupon/show.html.eex:12
+msgid "Editar"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/coupon/edit.html.eex:1
+msgid "Editar cupó"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/business/edit.html.eex:1
+msgid "Editar perfil"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/about.html.eex:16
+msgid "El <a href=\"https://www.linkedin.com/in/txus/\">Txus</a>, el <a href=\"https://www.linkedin.com/in/josep-jaume-rey-peroy-a9701622/\">Josep</a> i l'<a href=\"https://www.linkedin.com/in/oriolgual/\">Oriol</a>, fundadors de <a href=\"https://codegram.com\">Codegram</a>, una agència internacional de productes digitals nascuda a Terrassa al 2009."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/gift_email.html.eex:23
+msgid "El codi del cupó és <strong>%{gift_reference}</strong>. No et preocupis, te'l recordarem en el proper mail."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/controllers/admin/order_controller.ex:66
+msgid "El cupó ha sigut marcat com a utilitzat correctament."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/gift/form.html.eex:83
+msgid "El cupó no es podrà bescanviar fins que %{business_legal_name} ho hagi notificat."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/controllers/admin/coupon_controller.ex:55
+msgid "El cupó no està en estat d'esborrany"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/controllers/admin/order_controller.ex:71
+msgid "El cupó no s'ha pogut marcar com a utilitzat."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/gift/new.html.eex:10
+msgid "El cupó té un <strong>valor de %{coupon_value} EUR</strong>, però a tu et costarà <strong>només %{coupon_amount} EUR</strong>."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:77
+msgid "El hiperenllaç únicament permetrà l'accés a la home de la pàgina web però no podrà reproduir-la de cap manera."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/business/form.html.eex:66
+msgid "El número del teu compte bancari per a que els usuaris puguin fer el pagament."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/controllers/admin/order_controller.ex:46
+msgid "El pagament confirmat correctament."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/controllers/admin/order_controller.ex:51
+msgid "El pagament no ha pogut ser confirmat."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:138
+msgid "El present avís legal es complementa amb la resta de les polítiques legals establertes a la nostra pàgina web, ja comentades al llarg d'aquest avís, com la política deprivacitat,la política de cookies, a més de qualsevol altra que sigui necessari afegir o complementar, seguint el que disposa la legislació vigent en cada moment, tot per vetllar per l'interès dels nostres usuaris, donant-los la major imatge de garantia i transparència."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:12
+msgid "El que ha de saber sobres les Galetes"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/gift/form.html.eex:39
+#: lib/regalocal_web/templates/gift/form.html.eex:39
+msgid "El seu nom"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/gift_is_ready.html.eex:3
+msgid "El teu cupó de %{gift_value} EUR ja es pot fer servir a %{business_name}!"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/gift/form.html.eex:18
+#: lib/regalocal_web/templates/gift/form.html.eex:18
+msgid "El teu nom"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/business/form.html.eex:15
+msgid "El teu nom es mostrarà juntament amb la teva carta de presentació."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/index.html.eex:40
+msgid "El teu pagament ajuda a subsistir als comerços fins que recuperin la seva activitat."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/gift/form.html.eex:26
+#: lib/regalocal_web/templates/gift/form.html.eex:26
+msgid "El teu telèfon"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:88
+msgid "El titular d'aquesta pàgina web disposa dels permisos i llicències per a utilitzar aquesta pàgina web, així com dels drets relatius al seu disseny. Qualsevol ús del codi de programació, programari o disseny per part dels Usuaris, no està permès, sent responsables els mateixos de qualsevol ús fraudulent o en perjudici de drets d'titular de la pàgina web, o de tercers.  "
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:5
+msgid "El titular d'aquesta pàgina web l'informa que a través de les cookies que fem servir no reculls ni recull dades personals dels seus Usuaris. La finalitat de les cookies és oferir-li una excel·lent experiència de navegació i millorar els nostres serveis en funció dels usos que li doni als continguts publicats o els accessos que faci als diferents apartats de la mateixa."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:51
+msgid "El titular d'aquesta pàgina web té dret a tractar les dades dels Usuaris d'acord amb el que estableixen aquests avisos i en la corresponent política de privacitat i galetes, utilitzant aquesta informació per atendre les seves consultes, podent dur a terme totes les mesures adequades segons llei per poder prestar el servei de forma efectiva"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/gift/form.html.eex:82
+msgid "El valor del cupó és de %{coupon_vale} EUR."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/coupon/show.html.eex:13
+msgid "Eliminar"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/controllers/faq_controller.ex:23
+msgid "Els comerços que estàn donats d'alta posen a disposició teva uns cupons de cert valor que es podràn fer servir un cop el comerç indiqui que pot rebre clients. Quan compres un cupó, el comerç sempre et fa un petit descompte com a agraïment, i la persona a qui li regales el rep immediatament."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/coupon/show.html.eex:16
+msgid "Els cupons que ja s'han comprat seguiran sent bescanviables, però ja no se'n podran fer més comandes. Estàs segur/a?"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/coupon/index.html.eex:1
+msgid "Els meus cupons"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/business/form.html.eex:65
+msgid "Els usuaris realitzaran els pagaments de manera directa al teu número de compte."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/gift/form.html.eex:84
+msgid "Em comprometo a realitzar el pagament de %{coupon_amount} EUR seguint les instruccions que rebré per correu electrònic."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/order/show.html.eex:38
+#: lib/regalocal_web/templates/business/show.html.eex:58 lib/regalocal_web/templates/orders/email/payment_sent.html.eex:35
+msgid "Email"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:40
+msgid "Emmagatzema informació de l'usuari i de les seves sessions per millor la seva experiència."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:56
+msgid "Emmagatzema informació per identificar l'usuari"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:127
+msgid "En Mozilla Firefox: https: //support.mozilla .org / a-US / kb / disable-third-party-galetes"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/controllers/faq_controller.ex:9
+msgid "En aquest cas, t'encoratgem a que et posis en contacte amb ells per a fer-los saber de Regalocal, especialment si estan en dificultats pel COVID-19. Entre tots i totes podem aportar el nostre granet de sorra."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:48
+msgid "En cap cas podrà suprimir, alterar, eludir o manipular qualsevol dispositiu de protecció o sistemes de seguretat que puguin estar instal·lats en la Pàgina per cometre algun delicte o frau, atemptar contra els drets de propietat intel·lectual, privacitat, confidencialitat de les usuaris de la plataforma o del seu titular"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:23
+msgid "En cap cas rebràs informació de tercers sense haver-te informat i sol·licitat el teu consentiment exprés prèviament, vetllant d'aquesta manera per complir amb els paràmetres de la normativa europea, ni es realitzarà transferència internacional alguna que tingui com a objecte les vostres dades de caràcter personal."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:89
+msgid "En cap cas, podrà extreure, manipular, copiar, compilar o descompilar cap element que composi la pàgina web, amb fins aliens o que escapin de l'objecte de l'ofert en la mateixa, podent emprendre accions legals contra tu, si es detecta alguna acció en contra i per aquest motiu. "
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:23
+msgid "En cas de voler exercir els seus drets en qüestions relacionades amb la normativa de protecció de dades, pot escriure a: regalocal@codegram.com. "
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:66
+msgid "En concret, està prohibida:"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:62
+msgid "En conseqüència, amb el que disposa l'apartat anterior, l'Usuari no estarà facultat per, a títol merament enunciatiu: distribuir, modificar, transformar, cedir, posar a disposició de el públic o portar a terme qualsevol altra activitat que no hagi estat expressament autoritzada, sobre els elements i continguts indicats anteriorment, inclosos els codis informàtics de qualsevol dels elements d'aquesta pàgina web o plataforma."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:134
+msgid "En el cas que sorgeixi qualsevol conflicte o discrepància en la interpretació o aplicació de les presents condicions o avís, els Jutjats i Tribunals que, si escau, coneixeran de l'assumpte, seran els que disposi la normativa legal aplicable en matèria de jurisdicció competent. En el cas de persones jurídiques, les parts es subjectaran als tribunals de Barcelona. En cas que la problemàtica sorgeixi en relació amb un usuari persona física, els tribunals competents seran els competents de el domicili de l'usuari. "
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:17
+msgid "En el formulari de contacte, com a Usuari, has d'omplir els camps disposats en els quals es requereix nom, adreça de correu electrònic i número de telèfon de contacte."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:91
+msgid "En el no disposat en els nostres avisos, s'estarà al compliment del que disposa la normativa aplicable de propietat intel·lectual i industrial. "
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:21
+msgid "En el quadre que apareix a continuació s'inclouen els detalls, finalitat, el tipus i les classes de galetes que hem implementat en la nostra plataforma i el nostre bloc. Per a la seva comprensió, cal que conegui la definició de les cookies pròpies i de tercers:"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:63
+msgid "En general, en els casos en què no quedi clar si les dades personals hauran de esborrar-se, pots exercir el teu dret a limitar el tractament . Aquest dret existeix en els casos següents: (i) quan l'exactitud de les dades de què es tracti estigui en dubte; (ii) quan com Usuari no vulguis que s'esborrin les dades, (iii) quan les dades ja no siguin necessaris per al cap original, però no es poden esborrar per motius jurídics, (iv) quan la decisió de la teva objecció a el tractament estigui pendent. La limitació significa que les teves dades personals només poden (llevat de la conservació) ser tractats amb el teu consentiment per a la formulació, l'exercici o la defensa de reclamacions, amb la intenció de la protecció dels drets d'una altra persona física o jurídica o per raons d'interès públic de la UE o d'un determinat Estat membre de la UE. Com Usuari has de ser informat abans de l'aixecament d'aquesta limitació"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:108
+msgid "En general, ni la plataforma ni la seva titular responen pels errors tècnics en la plataforma i / o de no subministrament d'el servei d'Internet: (i) per causa d'accions o errors de tercers i / o (ii) per causes pròpies quan es resolgui l'incident i / o actuï de manera diligent."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/payment_received.html.eex:3
+msgid "En/na %{business_owner_name} ens ha notificat que ja ha rebut el teu pagament amb la referència %{gift_reference}!"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/payment_sent.html.eex:3
+msgid "En/na %{gift_buyer_name} ens ha notificat que ja ha realitzat el pagament de la compra amb la referència %{gift.reference}!"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/order_redeemed.html.eex:3
+msgid "En/na %{gift_recipient_name} acaba de fer servir el cupó que li vas regalar!"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:29
+msgid "Enviar comunicacions comercials, efectuar accions de promoció o informar-respecte de les seves dades del següent: (i) les seves dades no es faran servir amb altres fins que els de dur a terme el tractament per a això va consentir expressament en el seu moment o per al que estableix la present política per la nostra part; (ii) tota aquesta informació es guarda en un servidor segur independent."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:28
+msgid "Enviar informació que es consideri que pugui ser d'interès de l'Usuari"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/coupon/show.html.eex:9
+msgid "Es notificarà als compradors del cupó que ja es poden bescanviar. Estàs segur/a?"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:81
+msgid "Es recomana a l'Usuari, en tot cas, que procedeixi a la lectura de la Política de Protecció de Dades de Caràcter Personal de la pàgina web cada vegada que vagi a accedir-hi."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/views/admin/coupon_view.ex:14
+msgid "Esborrany"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/index.html.eex:70
+msgid "Esperant ubicació..."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/gift_is_ready.html.eex:31
+msgid "Esperem que gaudeixis del regal!"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/coupon/index.html.eex:20
+#: lib/regalocal_web/templates/admin/coupon/show.html.eex:49 lib/regalocal_web/templates/admin/order/index.html.eex:39
+#: lib/regalocal_web/templates/admin/order/show.html.eex:70
+msgid "Estat"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:47
+msgid "Està prohibit qualsevol tipus d'enllaç cap a o des de pàgines difamatòries, pornogràfiques, racistes o qualsevol altra que ofereixi informació falsa o perjudiqui a la nostra pàgina web o bloc ia qualsevol dels professionals o col·laboradors que treballen amb o per a ella."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/coupon/show.html.eex:13
+#: lib/regalocal_web/templates/admin/order/show.html.eex:3 lib/regalocal_web/templates/admin/order/show.html.eex:6
+msgid "Estàs segur/a?"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:81
+msgid "Excepció feta d'aquells signes que formin part de la mateixa hiperenllaç, la pàgina web en la qual s'estableixi l'hiperenllaç no contindrà cap marca, nom comercial, rètol d'establiment, denominació, logotip, eslògan o altres signes distintius que pertanyin a REGALOCAL."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/coupon/form.html.eex:7
+msgid "Explica una mica quin producte o servei ofereixes"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/gift_email.html.eex:1
+msgid "Felicitats"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/veil/business/show.html.eex:4
+msgid "Fes un cop d'ull a la teva bústia!"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/gift/new.html.eex:13
+msgid "Fes un regal als els teus tot i donant suport a en/na <strong>%{business_owner_name}</strong>."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:39
+#: lib/regalocal_web/templates/page/cookies.html.eex:55 lib/regalocal_web/templates/page/cookies.html.eex:69
+#: lib/regalocal_web/templates/page/cookies.html.eex:83 lib/regalocal_web/templates/page/cookies.html.eex:97
+msgid "Finalitat"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:135
+msgid "Finalment, volem advertir-li que la nostra plataforma no administra les xarxes socials o plataforma de tercers com Facebook o Twitter, on Codegram té presència, amb la qual cosa tampoc és responsable de les galetes que instal·len aquestes plataformes."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/dashboard/show.html.eex:37
+msgid "Finances"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/business/form.html.eex:21
+msgid "Fotografia"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:23
+msgid "Galetes Propies:són gestionades per la nostra empresa i instal·lades des dels nostres ordinadors a l'equip terminal de l'Usuari."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:22
+msgid "Galetes de tercers: són gestionades per altres empreses i instal·lades des dels seus equips i / o dominis a l'equip terminal de l'Usuari."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:138
+msgid "Galetes utilitzades per Facebook: https://www.facebook.com/help/cookies/"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:139
+msgid "Galetes utilitzades per Twitter: https://help.twitter.com/es/rules-and-policies/twitter-cookies"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:140
+msgid "Galetes utilitzades per YouTube: https://policies.google.com/technologies/cookies?hl=es&gl=es"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/business/show.html.eex:97
+msgid "Gaudeix de temps amb els teus després del confinament i ajuda a %{owner_name} a superar la crisi del COVID-19."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/after_order.html.eex:45
+msgid "Gaudir del regal"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/veil/email/login.html.eex:6
+msgid "Has rebut aquest correu electrònic perquè has decidit donar-te d'alta a <a href=a\"%{url}\">RegaLocal</a>. En cas que no sigui així, si us plau, fes-ne cas omís."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/gift_email.html.eex:3
+msgid "Has rebut un regal de part de <strong>%{gift_buyer_name}</strong>:"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/gift_email.html.eex:1
+msgid "Has rebut un regal 🎁"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/order/show.html.eex:3
+msgid "He rebut el pagament"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/veil/email/login.html.eex:3
+msgid "Hola! 🤗"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/business/form.html.eex:66
+msgid "IBAN"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:40
+msgid "Igualment, l'acceptació que les teves dades siguin tractades amb les finalitats referits en aquesta política establerts té sempre caràcter revocable, sense efectes retroactius, d'acord amb el que disposa la legislació vigent; per tant, tens dret a retirar el teu consentiment en qualsevol moment, sense que això afecti la licitud de l'tractament basat en el teu consentiment previ, mitjançant els mitjans facilitats en l'apartat 6 d'aquest text legal."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/after_order.html.eex:16
+msgid "Import a transferir"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/after_order.html.eex:1
+msgid "Important: Cal que realitzis el pagament del teu cupó!"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/layout/footer.html.eex:23
+msgid "Informació"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/business/form.html.eex:54
+msgid "Informació de facturació"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:27
+msgid "Informar de novetats que puguem contenir a la plataforma web"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:113
+msgid "Informar-també que Codegram no utilitza tècniques de \"spamming\"i que únicament tractarà les dades que l'Usuari transmeti mitjançant l'ús dels formularis electrònics de contacte, missatges de correu electrònic o continguts facilitats a través dels serveis de la pàgina web, per a les finalitats expressades en el nostre Avís legal i en la nostra Política de Privacitat."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/dashboard/show.html.eex:97
+msgid "Ingressos generats"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/gift_is_ready.html.eex:1
+msgid "Ja pots fer servir el teu cupó!"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:20
+msgid "Juntament amb aquest text, hem disposat altres textos legals d'aplicació com la política de privacitat i la política de cookies."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:36
+msgid "L'Usuari garanteix que les dades personals facilitades a RegaLocal són veraces i es fa responsable de comunicar a aquell qualsevol modificació d'aquests."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:61
+msgid "L'Usuari reconeix expressament, ia tots els efectes, que la informació, signes, imatges, dissenys, logotips, animacions, vídeos, textos, així com els altres elements i continguts, inclosos els seus serveis i aplicacions informàtiques, de la pàgina web, estan subjectes a drets de propietat industrial i intel·lectual de REGALOCAL i / o de tercers titulars dels mateixos que han autoritzat degudament la seva inclusió a la Web, de manera que no se'ls concedeix cap tipus de dret sobre ells, excepte els que expressament es reconeguin."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:63
+msgid "L'Usuari serà directament responsable de totes les conseqüències, danys i perjudicis que es derivin per REGALOCAL i / o tercers de la infracció de qualsevol obligació continguda en la present clàusula."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:37
+msgid "L'acceptació que les teves dades siguin tractades amb les finalitats referits en aquesta política establerts té sempre caràcter revocable, sense efectes retroactius, d'acord amb el que disposa la legislació vigent; per tant, tens dret a retirar el teu consentiment en qualsevol moment, sense que això afecti la licitud de l'tractament basat en el teu consentiment previ, mitjançant els mitjans facilitats en l'apartat 6 d'aquest text legal."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:96
+msgid "L'accés a la nostra pàgina web és responsabilitat exclusiva de l'Usuari, tant en la forma d'accés com en la informació que facilita, així com en la seguretat amb que navega a través d'ella ."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:65
+msgid "L'accés als continguts de propietat intel·lectual per part seva com Usuari no li transfereix cap dret sobre els mateixos. En aquest sentit, l'ús que li doni a aquesta informació i continguts només pot ser privatiu (utilitzat d'una manera privat); qualsevol ús o reproducció realitzat pels usuaris o altres que es puguin incloure en un futur, haurà de realitzar d'acord amb les previsions i polítiques legals aquí establertes, respectant en tot cas les limitacions legals aplicables."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:22
+msgid "L'email des del qual ens escriguis al nostre correu corporatiu, l'utilitzarem per arribar informació relacionada amb els dubtes o inquietuds que ens hagis plantejat."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:83
+msgid "L'establiment de l'hiperenllaç no implica, en cap cas, l'existència de relacions entre REGALOCAL i el propietari de la pàgina web en la qual s'estableixi, ni l'acceptació i aprovació per part de REGALOCAL dels seus continguts o serveis."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/gift/form.html.eex:56
+msgid "L'inclourem de part teva a l'email amb el cupó."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:117
+msgid "La Llei 34/2002, de 11 de juliol, de Serveis de la Societat de la Informació i de Comerç Electrònic (en endavant, LSSICE), en relació amb les galetes, exigeix que els Usuaris siguin informats amb caràcter previ a l'experiència de navegació a la plataforma sobre l'ús, tipus i finalitat de les cookies. Aquesta és la raó per la qual hem implementat un avís informatiu que es desplega un cop accedeix a la nostra plataforma, informant-li de manera prèvia i expressa, complint amb el precepte legal."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:42
+msgid "La Llei Orgànica 3/2018, de 5 de desembre, de Protecció de Dades Personals i garantia dels drets digitals i el Reglament Europeu de protecció de dades 679/2016 han implementat una sèrie de garanties jurídiques que permeten l'Usuari exercir drets i accions relacionats amb el tractament de les seves dades."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:21
+msgid "La finalitat de la recollida de dades en tots els apartats esmentats en el punt anterior és la de mantenir un contacte directe i personalitzat amb els nostres usuaris i / o clients. D'aquesta manera, farem servir les vostres dades per atendre els dubtes o la informació que ens hagis requerit, gestionar les teves sol·licituds i garantir-te una experiència que respecti els màxims estàndards."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:60
+msgid "La nostra política de propietat intel·lectual és aplicable a tota la nostra web, als continguts i materials difosos mitjançant la plataforma."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/gift/new.html.eex:37
+msgid "La persona a qui li regales el cupó <strong>el rebrà immediatament</strong>, incloent el teu missatge personalitzat."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:130
+msgid "La present política legal només afecta la informació publicada i a el tractament de dades realitzat sobre la base de la nostra pàgina web o bloc. En cap cas, les condicions aquí establertes han d'estar necessàriament relacionades amb les polítiques de l'empresa pel que fa a la prestació de serveis en si, així com la forma de prestació dels mateixos per part del seu titular.  "
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:17
+msgid "La pàgina web \"RegaLocal\" és una plataforma sense ànim delucre, que es dirigeix a petites comerços en dificultats a causa de la crisi de l'COVID-19, així com a persones que vulguin ajudar a aquests comerços regalant cupons als seus éssers estimats."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:82
+msgid "La pàgina web en la qual s'estableixi l'hiperenllaç no contindrà informacions o continguts il·lícits, contraris a la moral i als bons costums generalment acceptades i a l'ordre públic, així com continguts contraris a qualssevol drets de tercers."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:67
+msgid "La reproducció, transformació, distribució, comunicació pública, posada a disposició del públic o qualsevol altre explotació dels continguts d'aquesta pàgina i blog, sense el consentiment per escrit de l'respectiu titular."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:52
+msgid "La titular d'aquesta pàgina web pot publicar articles i recomanacions destinades a millorar i solucionar els requeriments dels clients, però en cap cas, es responsabilitza per danys causats en base a decisions preses a partir dels continguts publicats en aquesta pàgina o al blog , com consells, recomanacions, propostes ... ja que es produeixen en qualitat d'això i, en conseqüència, no han de ser presos com a prescripcions o similar"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/business/form.html.eex:74
+#: lib/regalocal_web/templates/admin/business/form.html.eex:75
+msgid "Legal"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:19
+msgid "Les cookies que utilitza Codegram"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:15
+msgid "Les cookies s'associen amb el navegador d'un ordinador o dispositiu determinat. Gràcies a elles, resulta possible que Codegram reconegui els navegadors dels Usuaris després que aquests hagin visitat la web per primera vegada, determinant així les seves preferències de navegació i, a partir d'això, avaluar-les, podent utilitzar-les com a indicadors per millorar el nostre contingut i navegació a la Web."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/business/form.html.eex:54
+msgid "Les dades de facturació es remetran juntament amb els correus electrònics de compra dels cupons. És important que siguin vàlides i acurades."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/business/form.html.eex:3
+msgid "Les dades introduides a continuació es mostraran públicament al llistat de negocios, així com als correus electrònics enviats."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:78
+msgid "Les dades personals proporcionades es conservaran durant el temps necessari per complir amb la finalitat per a la qual es recullen i per determinar les possibles responsabilitats que es puguin derivar de la finalitat, a més dels períodes que es derivin de la legislació aplicable."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:14
+msgid "Les galetes (galetes) són petits arxius que guarden informació en els dispositius mòbils dels Usuaris que fan servir la nostra plataforma o el nostre bloc."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/payment_sent.html.eex:15
+msgid "Les meves comandes"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/business/form.html.eex:14
+msgid "Les següents dades es mostraran públicament al llistat i la pàgina de perfil del deu negoci."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/gift/form.html.eex:14
+msgid "Les teves dades"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/business/form.html.eex:46
+msgid "Les teves dades a les xarxes, per tal que els visitants puguin conèixer millor el teu negoci. Tots els camps són opcionals."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:62
+msgid "Limitació en el tractament"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/business/form.html.eex:81
+msgid "Llegir"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/order/show.html.eex:6
+msgid "Marcar com a bescanviat"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/gift/form.html.eex:51
+msgid "Missatge personalitzat"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:51
+msgid "Mitjançant l'exercici d'aquest dret pots conèixer quines dades de caràcter personal teus estan sent tractats per part de l'despatx; la seva finalitat, l'origen o la seva possible transferència a tercers"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:19
+msgid "Mitjançant la nostra adreça de correu electrònic corporatiu: regalocal@codegram.com, podràs escriure'ns i / o requerir la informació que consideris necessària per aclarir els dubtes relacionats amb els nostres serveis o sobre el funcionament de la nostra pàgina web o política de protecció de dades, així com sol·licitar assistència."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/gift/thanks.html.eex:6
+msgid "Moltes gràcies pel teu suport!"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/after_order.html.eex:85
+msgid "Moltes gràcies per ajudar a %{business_name} comprant un cupó!"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/controllers/gift_controller.ex:72
+msgid "Moltes gràcies per confirmar el pagament. Hem notificat al comerç."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/order_redeemed.html.eex:7
+msgid "Moltes gràcies per la teva solidaritat!"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/payment_received.html.eex:14
+#: lib/regalocal_web/templates/orders/email/payment_sent.html.eex:41
+msgid "Moltes gràcies!"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/business/form.html.eex:65
+msgid "Mètodes de pagament"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/business/form.html.eex:58
+msgid "NIF/NIE"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:9
+#: lib/regalocal_web/templates/page/terms.html.eex:11
+msgid "NIF: B 65148900"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:106
+msgid "No ens podem fer responsables, en cap cas, pels errors relacionats amb la descripció dels serveis que oferim. Tots ells queden subjectes a la informació i les condicions que s'estableixin formalment en la corresponent proposta de serveis i contracte, en funció de el cas, que es formalitzarà a part del que estableix aquesta pàgina web. "
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:78
+msgid "No es crearà un frame sobre les pàgines de la plataforma."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:80
+msgid "No es declararà ni es donarà a entendre que REGALOCAL ha autoritzat l'hiperenllaç o que ha supervisat o assumit de qualsevol forma els serveis oferts o posats a disposició des de la pàgina web en la qual s'estableix l'hiperenllaç."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:69
+msgid "No es permet l'enllaç a \"pàgines finals\", actes de \"frame\" o qualsevol altra manipulació similar a aquesta pàgina sense consentiment exprés per part de REGALOCAL llevat que es faci respectant el que disposa el punt 3.1.4 d'aquest Avís."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:79
+msgid "No es realitzaran manifestacions o indicacions falses, inexactes o incorrectes sobre REGALOCAL,els seus directius, els seus empleats i els serveis subministrats a través de la plataforma."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:73
+msgid "No obstant això i com a excepció al que indica anteriorment, li permetem que com Usuari esmenti els articles publicats a la pàgina web o bloc a través de xarxes socials, amb les accions \"tuit, retuit, compartir, bloguejar\" o similars, sempre que es respecti la nostra titularitat o la menció a les persones que s'hagi indicat en els corresponents articles o continguts."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:116
+msgid "No obstant això, REGALOCAL es reserva el dret de modificar o interrompre, en tot o en part, l'accés a el sistema de manera temporal quan el servei de manteniment, actualització o reparació de sistema o el servidor d'Internet ho requereixi, sense necessitat d'haver-ho notificat a l'Usuari."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:98
+msgid "No podem responsabilitzar-nos per les suspensions temporals, avaries o fallades tècniques que afectin la plataforma o al blog, provocats per causes alienes a la nostra empresa, per virus o inseguretat informàtica ocasionada per tercers, ni per les actuacions il·legals i irrespectuoses dels Usuaris."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:46
+msgid "No pot aprofitar la seva condició d'Usuari per accedir a informació que no li correspon sobre la informació o serveis oferts en aquesta Pàgina o sobre els seus usuaris, i efectuar un ús no autoritzat o en contra de la llei que pugui causar algun tipus de mal, ni a titular d'aquesta pàgina web, ni a un tercer o Usuari."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:49
+msgid "No pot aprofitar la seva condició d'Usuari per suplantar la identitat d'un altre negoci que no sigui de la seva propietat o pel qual no estigui autoritzat a representar. L'Usuari Client garanteix que pot actuar en nom de el comerç que representa, que proveeix dades fefaents i assumeix la total responsabilitat de la veracitat d'aquestes dades"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/controllers/admin/order_controller.ex:16
+msgid "No s'ha pogut trobar cap comanda amb referència %{reference}"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/controllers/faq_controller.ex:7
+msgid "No trobo un comerç que m'agradaria que hi fos. Què puc fer?"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/controllers/faq_controller.ex:16
+msgid "No, Regalocal és un servei gratüit sense ànim de lucre. No apliquem cap mena de comissió ni tarifa de serveis. El pagament es fa directament al compte bancari o Bizum proporcionats pel comerç, i per tant, el destinatari rep l'import íntegre."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/coupon/index.html.eex:11
+#: lib/regalocal_web/templates/orders/email/payment_sent.html.eex:27
+msgid "Nom"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/business/form.html.eex:15
+msgid "Nom de pila del propietari"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/after_order.html.eex:8
+msgid "Nom del beneficiari"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/after_order.html.eex:57
+msgid "Nom del comerç"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/business/form.html.eex:4
+msgid "Nom del negoci"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/after_order.html.eex:69
+#: lib/regalocal_web/templates/orders/email/gift_is_ready.html.eex:15
+msgid "Nom del/la propietari/a"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/business/form.html.eex:55
+msgid "Nom legal"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/business/form.html.eex:4
+msgid "Nom públic del teu negoci. No cal que sigui el nom legal."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/veil/business/new.html.eex:8
+msgid "Només cal que introdueixis la teva adreça de correu electrònic i tot seguit rebràs un correu amb un enllaç per poder activar o administrar el teu compte."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/after_order.html.eex:33
+msgid "Notificació de pagament"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/after_order.html.eex:12
+msgid "Número IBAN"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/business/form.html.eex:69
+msgid "Número a Bizum"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:60
+msgid "Oblit"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/gift/form.html.eex:6
+#: lib/regalocal_web/templates/veil/business/form.html.eex:5
+msgid "Oops, something went wrong! Please check the errors below."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:56
+msgid "Oposició"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/after_order.html.eex:88
+msgid "PD: En/na %{business_owner_name} està en còpia en aquest email, per si li vols preguntar qualsevol cosa."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/views/admin/order_view.ex:9
+msgid "Pagada"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/views/admin/order_view.ex:10
+msgid "Pagament confirmat"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/business/coupons.html.eex:27
+msgid "Pagues"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/gift/new.html.eex:68
+msgid "Pagues directament a %{business_owner_name}"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin_layout/app.html.eex:7
+msgid "Panell d'administració - Regalocal"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/dashboard/show.html.eex:1
+msgid "Panell de control"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/views/admin/order_view.ex:8
+msgid "Pendent de pagament"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:14
+msgid "Per a qualsevol cosa que necessitis com a usuari en relació amb la present política de privacitat, pots contactar amb nosaltres al correu electrònic dalt indicat o a la nostra adreça física."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:22
+msgid "Per contactar amb l'equip de REGALOCAL,qualsevol usuari pot fer-ho en l'adreça dalt indicada o, preferiblement, mitjançant el següent correu electrònic:regalocal@codegram.com"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/after_order.html.eex:3
+msgid "Per finalitzar el procés de compra fes una transferència bancària amb aquestes dades:"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:72
+msgid "Per garantir la seguretat a la nostra pàgina web, hem integrat un sistema de seguretat que ens permet mantenir la confidencialitat i la integritat de les dades dels nostres usuaris que hagin estat remesos o recollits a través d' els mitjans esmentats en el primer punt."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:97
+msgid "Per la seva banda, el titular de la pàgina web es compromet a realitzar el millor i més gran esforç, en la mesura del raonablement possible, per evitar errors en els continguts publicats a la web i oferir un servei constant i permanent a través d'ella . "
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:28
+msgid "Per poder navegar per la pàgina web no cal registre. Ara bé, sí que ho serà en el cas dels comerços que vulguin publicar cupons per vendre a REGALOCAL.En aquest cas l'UsuariClient haurà de registrar mitjançant el corresponent formulari que es pot trobar a la pàgina web"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/about.html.eex:6
+msgid "Per què RegaLocal?"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:70
+msgid "Per ser Usuari de la nostra plataforma és necessària la majoria d'edat, pel que serà necessari que sigui major de 18 anys."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/payment_sent.html.eex:22
+msgid "Per si és del teu interès, aquí tens les dades de contacte de %{gift_buyer_name}:"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/after_order.html.eex:52
+msgid "Per si és del teu interès, aquí tens les dades de contacte i facturació de %{business_name}:"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:112
+msgid "Per utilitzar o navegar per la nostra pàgina web o utilitzar la plataforma no resulta necessari que permeti la instal·lació de cookies, sense perjudici que per això succeeixi que no pugui accedir a alguns dels serveis o apartats de la web."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/views/admin_view.ex:13
+msgid "Perfil"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:55
+msgid "Permet la cancel·lació de les teves dades personals per inadequats o excessius"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/controllers/faq_controller.ex:30
+msgid "Petits i mitjans comerços de cara al públic: restaurants, cafeteries, hostals, perruqueries, veterinaris, teatres, estudis de tatuatge, en general qualsevol empresa petita o mitjana que hagi hagut d'aturar o reduïr la seva activitat degut al COVID-19."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/business/show.html.eex:36
+msgid "Phone number"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:59
+msgid "Podràs rebre les teves dades personals facilitades en un format estructurat, d'ús comú i lectura mecànica, i poder transmetre a un altre responsable, sempre que sigui tècnicament possible"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:61
+msgid "Podràs sol·licitar la supressió de les dades personals sense dilació deguda quan es doni algun dels supòsits c ontemplados. Per exemple, tractament il·lícit de dades, o quan hagi desaparegut la finalitat que va motivar el tractament o recollida"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:3
+#: lib/regalocal_web/views/page_view.ex:15
+msgid "Política de Cookies"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:3
+#: lib/regalocal_web/views/page_view.ex:19
+msgid "Política de Privacitat"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:58
+msgid "Portabilitat"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/controllers/faq_controller.ex:44
+msgid "Posa't en contacte amb el comerç directament. Trobaràs les seves dades de contacte en el mail de compra."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/controllers/faq_controller.ex:51
+msgid "Pots obrir un chat amb <a href=\"#\" @click.prevent=\"$crisp.push(['do', 'chat:open'])\"/>suport tècnic</a>, o bé enviar-nos un correu electrònic a <a href=\"mailto:regalocal@codegram.com\">regalocal@codegram.com</a>."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/faq/index.html.eex:5
+#: lib/regalocal_web/views/faq_view.ex:6 lib/regalocal_web/views/layout_view.ex:23
+msgid "Preguntes Freqüents"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/coupon/show.html.eex:41
+msgid "Preu de venda"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/layout/footer.html.eex:33
+msgid "Privacitat"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/payment_received.html.eex:7
+#: lib/regalocal_web/templates/orders/email/payment_sent.html.eex:7
+msgid "Properes passes"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:44
+#: lib/regalocal_web/templates/page/cookies.html.eex:60
+msgid "Pròpia"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:43
+#: lib/regalocal_web/templates/page/cookies.html.eex:59 lib/regalocal_web/templates/page/cookies.html.eex:73
+#: lib/regalocal_web/templates/page/cookies.html.eex:87 lib/regalocal_web/templates/page/cookies.html.eex:101
+msgid "Pròpia o de Tercers"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/coupon/show.html.eex:3
+msgid "Publicar"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/views/admin/coupon_view.ex:15
+msgid "Publicat"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/business/form.html.eex:10
+msgid "Pàgina web"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:37
+msgid "Qualsevol persona que accedeixi i navegui per la nostra pàgina web es converteix en Usuari de la mateixa. Això implica l'acceptació de les condicions d'ús d'aquesta pàgina web, detallades en totes les seves notes i polítiques legals, relatives a la protecció de dades, propietat intel·lectual, mesures de seguretat i jurisdicció competent, entre d'altres"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/gift/form.html.eex:85
+msgid "Qualsevol reclamació o disputa haurà de resolta entre %{business_legal_name} i el comprador, eximint a RegaLocal de qualsevol responsabilitat."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/after_order.html.eex:49
+msgid "Quan %{business_name} torni a obrir tant tu com %{gift_recipient_name} rebreu un correu electrònic avisant-vos que ja podeu bescanviar el cupó!"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/gift_is_ready.html.eex:6
+msgid "Quan arribis al local, informa'ls que tens un cupó de Regalocal amb referència <strong>%{gift_reference}</strong>"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/index.html.eex:55
+msgid "Quan el comerç reobri portes, gaudeix de temps amb els teus fent servir els cupons que vas regalar."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/index.html.eex:53
+msgid "Quan el comerç reobri, gaudeix!"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:122
+msgid "Quan es produeixi un canvi substancial o de rellevància en les mateixes avisarem mitjançant la present pàgina web, i amb una antelació prudencial, dels canvis que es vagin a produir en les nostres polítiques, indicant quan està previst que comencin a tenir plens efectes. "
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:34
+msgid "Quan vostè navega per la nostra pàgina web podem arribar a recollir les seves dades d'acord amb el que estableix la nostra política de privacitat i política decookies.Si bé si, com Usuari, per qualsevol motiu, accedeix a informació relativa als nostres serveis o aspectes confidencials del nostre negoci, es subjecta a la més estricta confidencialitat, tret que li indiquem expressament que és lliure d'utilitzar aquesta informació. En tot cas, qualsevol Usuari de la Pàgina Web haurà de respectar el que estableix en les nostres condicions d'ús."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/order/show.html.eex:54
+msgid "Quantitat a cobrar"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/about.html.eex:14
+msgid "Qui hi ha darrere?"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/controllers/faq_controller.ex:35
+msgid "Quines garanties sobre els cupons que regalo?"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/controllers/faq_controller.ex:28
+msgid "Quins comerços es poden unir a Regalocal?"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:100
+msgid "REGALOCAL declina tota responsabilitat pels danys informàtics o d'altre tipus que pogués ocasionar a l'Usuari visitant en l'accés als continguts del web. Per això, REGALOCAL no garanteix l'absència de virus o altres elements lesius que poguessin causar danys o alteracions en el sistema informàtic, en els documents electrònics, o en els fitxers de l'Usuari o de tercers."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:111
+msgid "REGALOCAL es reserva el dret de comunicar la informació confidencial que els Usuaris li hagin comunicat quan vingui imposat per llei, reglament, normativa, ordenança i / o qualsevol altre mandat legal, judicial o sol·licitud governamental."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:115
+msgid "REGALOCAL mantindrà operativa la plataforma durant tot l'any, les 24 hores del dia, sempre que l'estat de la tècnica ho permeti."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:86
+msgid "REGALOCAL no assumeix cap deure de vigilar ni de verificar les informacions o continguts dels altres llocs o pàgines web als quals es pugui accedir mitjançant els enllaços existents a la web. Assumeix, exclusivament, el deure de suprimir d'aquesta pàgina, amb la major brevetat possible, les informacions, continguts o serveis que no es corresponguin amb la realitat, atemptin contra qualsevol normativa aplicable o puguin induir a error o fer mal a l'Usuari."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:99
+msgid "REGALOCAL no garanteix la disponibilitat, continuïtat o infal·libilitat el funcionament del web i, en conseqüència, exclou, en la màxima mesura permesa per la legislació vigent, qualsevol responsabilitat pels danys i perjudicis de tota naturalesa que puguin deure a la falta de disponibilitat o de continuïtat de l'funcionament de la Pàgina i dels serveis habilitats en la mateixa, així com als errors en l'accés a diferents pàgines web."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:52
+msgid "Rectificació"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/order/index.html.eex:27
+#: lib/regalocal_web/templates/admin/order/show.html.eex:14
+msgid "Referència"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:25
+msgid "RegaLocal comunica als seus Usuaris que les dades personals que ens facilitin seran tractades per a les finalitats previstes en el punt 1 i que seran, en detall, les següents:"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/controllers/faq_controller.ex:14
+msgid "RegaLocal es queda comissió de cada transacció?"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/about.html.eex:20
+msgid "RegaLocal neix de la nostra participació en el <a href=\"https://hackovid.cat/\">Hackovid</a>, una hackathon del 6 al 12 d'Abril del 2020 amb l'objectiu de donar solucions a les necessitats més urgents identificades per la ciutadania en el context de la crisi del COVID-19."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:43
+msgid "RegaLocal t'ofereix aquesta garantia legal, amb la qual cosa, en qualsevol moment i / o quan així ho consideris convenient, podràs fer ús dels teus drets d'accés, rectificació, Supressió, Oposició, Portabilitat, Oblit i Limitació en el tractament escrivint a l'correu electrònic de contacte que hem habilitat: regalocal@ codegram.com o enviant-nos una sol·licitud per correu físic a Rambla d'Ègara 235 5-2, 08224,Terrassa,adjuntant, en ambdós casos, còpia de l'passaport o del teu DNI (titular de les dades ) i indicant en l'assumpte de manera expressa la petició que vols fer: accés, rectificació, supressió, oposició, portabilitat, oblit o limitació en el tractament."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/business/coupons.html.eex:36
+msgid "Regala"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/index.html.eex:6
+msgid "Regala %{bold_start}solidaritat%{bold_end}"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/index.html.eex:25
+msgid "Regala cupons als teus per a gaudir d'activitats després del confinament."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/index.html.eex:23
+msgid "Regala solidaritat"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/views/page_view.ex:7
+msgid "Regala solidaritat al comerç local"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/gift/form.html.eex:102
+msgid "Regalar"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/gift/new.html.eex:34
+msgid "Regales solidaritat avui"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:46
+#: lib/regalocal_web/templates/page/cookies.html.eex:62
+msgid "Regalocal"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/gift/new.html.eex:105
+msgid "Regalocal <strong>no es queda cap mena de comissió</strong>, ni intervé en cap pagament. Estem aquí només per <strong>aportar el nostre granet de sorra</strong> a la revitalització del comerç local."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:121
+msgid "Reservat el dret a modificar aquest avís per adaptar-lo a les novetats legislatives o jurisprudencials que vagin sorgint o publicant-se, així com efectuar les modificacions oportunes d'acord amb les pràctiques de la indústria o comercials. "
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:45
+#: lib/regalocal_web/templates/page/cookies.html.eex:61 lib/regalocal_web/templates/page/cookies.html.eex:75
+#: lib/regalocal_web/templates/page/cookies.html.eex:89 lib/regalocal_web/templates/page/cookies.html.eex:103
+msgid "Responsable"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/views/admin_view.ex:12
+msgid "Resum"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/coupon/form.html.eex:14
+msgid "Selecciona el descompte d'aquest cupó"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:104
+msgid "Sense perjudici de les limitacions establertes en la legislació vigent, REGALOCAL no es responsabilitza pels danys i perjudicis de tota naturalesa que puguin deure a la falta d'exactitud, exhaustivitat, actualitat, així com a errors o omissions dels quals poguessin emmalaltir les informacions contingudes a la plataforma o altres continguts als que es pugui accedir a través d'aquesta."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:42
+#: lib/regalocal_web/templates/page/cookies.html.eex:58
+msgid "Sessió"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:110
+msgid "Si REGALOCAL fos declarada no responsable de qualsevol dany o perjudici amb causa als anteriors extrems en un procediment judicial o extrajudicial, per un Jutjat, Tribunal o Ens Públic administratiu competent, i ho fos l'Usuari, pot repetir contra l'Usuari totes les quantitats que hagi hagut d'abonar i suportar, inclòs el dany emergent i el lucre cessant, i qualsevol cost o gravamen que hagués hagut d'afrontar, inclosos impostos, taxes, advocats, procuradors, perits, arbitratges, viatges, estades, i qualsevol un altre."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/business/form.html.eex:69
+msgid "Si disposes d'un compte a Bizum, introdueix el teu número de telèfon mòbil. Els pagaments a través de Bizum solen ser més ràpids i àgils."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/after_order.html.eex:28
+msgid "Si ho prefereixes, també pots enviar els <strong>%{gift_amount} EUR</strong> per Bizum al número <strong>%{bizum_number}</strong>, especificant <strong>%{gift_reference}</strong> com a concepte."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:117
+msgid "Si l'Usuari detectés alguna anomalia, interferències de tercers, errors de sistema o mal funcionament de la pàgina web, haurà de notificar a REGALOCAL perquè aquesta procedeixi a la seva solució."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:111
+msgid "Si té dubtes, en el punt 4 d'aquest document té més informació. També pot consultar les instruccions i manuals del seu navegador per ampliar aquesta informació."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/payment_sent.html.eex:11
+msgid "Si us plau, comprova que has rebut el pagament i una vegada l'hagis rebut notifica-ho a través del teu panell:"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:70
+msgid "Si vol sol·licitar algun tipus de permís per utilitzar o publicar algun dels nostres continguts del web o del nostre blog, pot dirigir-se a nosaltres per algun dels mitjans indicats en el punt 1.4 d'aquest Avís."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:123
+msgid "Si voleu desinstal·lar les galetes des del seu navegador li indiquem alguns enllaços que podrà consultar en funció de l'tipus de navegador que tingui instal·lat al seu equip terminal."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/layout/footer.html.eex:28
+#: lib/regalocal_web/templates/page/about.html.eex:3 lib/regalocal_web/views/layout_view.ex:22
+#: lib/regalocal_web/views/page_view.ex:11
+msgid "Sobre nosaltres"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:54
+msgid "Supressió"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/layout/header.html.eex:30
+#: lib/regalocal_web/templates/layout/header.html.eex:63
+msgid "Sóc un comerç"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/gift/new.html.eex:71
+msgid "T'enviarem les dades de pagament i de contacte per a què li <strong>puguis enviar els diners</strong> immediatament."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/gift/new.html.eex:51
+msgid "T'estalvies un %{coupon_discount}%"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:46
+msgid "T'expliquem breument en què consisteix cadascun dels drets que pots exercir:"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/veil/business/show.html.eex:7
+msgid "T'hem enviat un correu electrònic amb un enllaç que podràs fer servir per accedir al teu compte i gestionar les teves dades i cupons."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:39
+msgid "T'informem que, si actues en representació d'una persona jurídica o com a professional independent, ens autorizarás a que et fem arribar informació associada als nostres serveis, d'una banda, o informació comercial, en els moments oportuns a través de l'acceptació de la present política de privacitat. Així, quan demanis alguna informació relacionada amb RegaLocal pels canals establerts a través de la Plataforma, la teva informació també podrà ser tractada per a fins comercials i l'enviament de comunicacions electròniques quan així ens ho hagis autoritzat mitjançant les opcions habilitades."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/coupon/show.html.eex:75
+msgid "També pots veure totes les teves comandes des de la secció \"Comandes\" del menú superior."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:74
+msgid "També, en qualitat d'Usuari de la nostra plataforma entens, acceptes i comprens que les mesures de seguretat a Internet no són inexpugnables i que, per tant, et obligues a adoptar les mesures de seguretat necessàries que et permetin confiar en la veracitat de la Pàgina Web en què estàs introduint les teves dades. Nosaltres també farem el possible per garantir en tot moment la privacitat i seguretat de les teves dades d'identificació, fent ús sempre de la màxima diligència i implementant les mesures que siguin necessàries."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:68
+msgid "També, se't informa que el tractament de dades no tindrà per objecte prendre decisions sobre el teu informació basada únicament en el tractament automatitzat -decisiones automatizadas-, inclosa l'elaboració de perfils, és a dir, no inclou l'elaboració de perfils de manera automatitzada - i sense intervenció humana- de les teves dades personals per avaluar aspectes personals relatives a la teva persona, com ara analitzar o predir aspectes relacionats amb situacions econòmiques, salut, preferències o interessos personals, la fiabilitat o el comportament, la situació de l'interessat, tot això en la mesura que tingui conseqüències jurídiques per a tu o et afecti significativament per això. En tot cas, només s'aplicaria quan una llei ho exigeix i aquest tractament estarà subjecte a les garanties apropiades, entre les que s'inclou la informació específica a la teva persona, com a interessat i el dret a obtenir intervenció humana, si és el cas; també a expressar el teu punt de vista, a rebre una explicació de la decisió presa després d'aquesta avaluació ia impugnar la decisió, quan això correspongui."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:68
+msgid "Tampoc es podran realitzar enllaços a aquesta pàgina web i / o blog sense el consentiment del seu titular i, si escau, només es permetran enllaços a la pàgina principal."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/payment_received.html.eex:11
+msgid "Tan bon punt reobri %{business_name}, t'avisarem tant a tu com a %{gift_recipient_name} per fer-vos saber que el cupó ja pot ser bescanviat."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/order/show.html.eex:30
+#: lib/regalocal_web/templates/orders/email/after_order.html.eex:73 lib/regalocal_web/templates/orders/email/gift_is_ready.html.eex:19
+#: lib/regalocal_web/templates/orders/email/payment_sent.html.eex:31
+msgid "Telèfon"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:12
+#: lib/regalocal_web/templates/page/terms.html.eex:14
+msgid "Telèfon de contacte: 937.872.194 "
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/business/form.html.eex:42
+msgid "Telèfon fix"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:74
+#: lib/regalocal_web/templates/page/cookies.html.eex:88 lib/regalocal_web/templates/page/cookies.html.eex:102
+msgid "Tercers"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/coupon/show.html.eex:57
+msgid "Termes d'ús"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/coupon/form.html.eex:16
+msgid "Termes i condicions"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/coupon/form.html.eex:16
+msgid "Termes i condicions aplicables al cupó"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:126
+msgid "Tots els nostres textos i polítiques legals associats a aquesta plataforma es regeixen, en tots i cadascun dels seus extrems, per la legislació espanyola, entre elles: el Reglament Europeu 679/2016, de 27 d'abril i en la Llei Orgànica 3/2018, de 5 de desembre, relatiu a la protecció de la persona física pel que fa a el tractament de dades personals, i totes les disposicions legals resultin d'aplicació."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:44
+msgid "Té dret a que la seva informació sigui tractada amb respecte i màxima privacitat, pel que hem disposat per a això una adequada política de privacitat i protecció de dades."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/coupon/form.html.eex:4
+msgid "Títol del cupó"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/index.html.eex:72
+msgid "Ubicació no disponible"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/after_order.html.eex:36
+msgid "Una vegada hagis realitzat el pagament, fes-ho saber a %{business_owner_name} seguint el següent enllaç:"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/business/form.html.eex:18
+msgid "Unes breus paraules per conèixer la teva història i la del teu negoci."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/helpers/form/errors.html.eex:10
+msgid "Ups! Aquest formulari conté errors."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:131
+msgid "Us advertim que, després de realitzar el procés de desinstal de cookies des del seu navegador, això pot dificultar o impedir l'accés o navegació a determinades parts de la nostra pàgina web."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/gift/new.html.eex:85
+msgid "Us avisem quan %{business_name} reobri"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:98
+msgid "Usada per desactivar funcions al xat quan hi ha massa usuaris a el mateix temps."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:70
+msgid "Usada per identificar un individu darrere d'una IP comú i establir mesures de seguretat"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:84
+msgid "Usada per tenir una experiència consistent en el xat de suport."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:32
+msgid "Usuari Client: aquell usuari que faci servir la nostra plataforma per vendre cupons de regal sobre el seucomerç.Aquest usuari haurà d'acceptar la nostra política de privacitat i les condicions de contractació per poder procedir a l'enviament d'informació i / o documentació mitjançant la nostra pàgina; a més d'estar subjecte al que disposa aquest Avís Legal."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/order/show.html.eex:46
+msgid "Valor del cupó"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/coupon/index.html.eex:14
+msgid "Valor en EUR"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/business/coupons.html.eex:17
+msgid "Valor real"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/coupon/form.html.eex:10
+msgid "Valor real del cupó"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/dashboard/show.html.eex:74
+msgid "Vendes generades"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/coupon/index.html.eex:41
+#: lib/regalocal_web/templates/admin/order/index.html.eex:64
+msgid "Veure detall"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/business/edit.html.eex:1
+msgid "Veure perfil"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/dashboard/show.html.eex:4
+msgid "Veure pàgina pública"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/terms.html.eex:30
+msgid "Visitant: aquella persona que visiti la pàgina i / o navegui per ella per informar-se dels cupons que estan a la venda i de les condicions o qui, així mateix, pot contactar amb nosaltres per al que necessiti, entre d'altres."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/gift_email.html.eex:26
+msgid "Vols fer un regal a algú tú també?"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/admin/business/form.html.eex:46
+msgid "Xarxes Socials"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:68
+msgid "_cfduid"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:54
+msgid "_session_unique_id"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/gift_email.html.eex:7
+msgid "a"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:128
+msgid "a Internet Explorer: http://windows.microsoft.com/en-US/windows-vista/block-or-allow-cookies"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:16
+msgid "a). - A través del formulari de contacte "
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:18
+msgid "b).- A través del nostre correu electrònic corporatiu "
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:96
+msgid "crisp-client / domain-detect"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:82
+msgid "crisp-client / session"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/gift/form.html.eex:43
+#: lib/regalocal_web/templates/gift/form.html.eex:43
+msgid "elseu@email.com"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/gift/form.html.eex:22
+#: lib/regalocal_web/templates/gift/form.html.eex:22
+msgid "elteu@email.com"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:129
+msgid "en Opera: http: //www.opera.com/help/tutorials/security/privacy/"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/index.html.eex:8
+msgid "i ajuda el %{bold_start}comerç local%{bold_end}"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/orders/email/gift_email.html.eex:29
+msgid "t'ha fet el regal a través de <a href=\"%{url}\">Regalocal</a>, el servei gratuït que et permet regalar afecte als teus tot i ajudant el comerç local."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/privacy.html.eex:44
+msgid "És important que com a Usuari tinguis en compte que la informació que hagis compartit amb Usuaris per qualsevol via podrà continuar sent visible i que RegaLocal s'exonera de tota responsabilitat amb relació a l'eliminació d'aquesta informació."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/cookies.html.eex:118
+msgid "És important que tingui en compte que en aquest avís trobarà dues opcions: la primera, que li permetrà accedir a aquest text informatiu, i la segona, que podrà usar per acceptar la instal·lació de les cookies al seu equip terminal."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/gift/new.html.eex:22
+msgid "És molt senzill: ajudant a %{business_owner_name} a mantenir %{business_name} durant el confinament, la persona a qui regales el cupó podrà gaudir-ne de seguida que reobri."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/templates/page/about.html.eex:12
+msgid "És per això que és un servei gratuït i sense ànim de lucre, fet per aportar el nostre granet de sorra i revitalitzar l'economia local i de proximitat."
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/emails/orders/payment_sent_email.ex:13
+msgid "✅ Pagament realitzat: \"%{reference}\""
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/emails/orders/gift_email.ex:17
+msgid "🎁 Has rebut un regal de part de %{buyer_name}!"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/emails/orders/gift_is_ready_email.ex:16
+msgid "🎉 Ja pots gaudir del regal que et va fer %{buyer_name}!"
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/emails/orders/order_redeemed_email.ex:15
+msgid "👍 El cupó que vas regalar s'ha utilitzat: \"%{reference}\""
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/emails/orders/payment_received_email.ex:14
+msgid "👍 Pagament rebut: \"%{reference}\""
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/emails/orders/after_order_email.ex:16
+msgid "💳 Instruccions de pagament de la comanda \"%{reference}\""
+msgstr ""
+
+#, elixir-format
+#: lib/regalocal_web/emails/veil/login_email.ex:16
+msgid "🤗 Et donem la benvinguda a %{site_name}!"
+msgstr ""
