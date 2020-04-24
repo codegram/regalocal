@@ -13,7 +13,7 @@ defmodule RegalocalWeb.Veil.LoginEmail do
     new()
     |> to(email)
     |> from(from_email())
-    |> subject(gettext("🤗 Benvingut a %{site_name}!", site_name: site))
+    |> subject(gettext("🤗 Et donem la benvinguda a %{site_name}!", site_name: site))
     |> render_body("login.html", %{url: url, site_name: site})
     |> premail
   end
