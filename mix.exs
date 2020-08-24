@@ -20,7 +20,7 @@ defmodule Regalocal.MixProject do
   def application do
     [
       mod: {Regalocal.Application, []},
-      extra_applications: [:logger, :runtime_tools, :phoenix_pubsub_redis, :inets]
+      extra_applications: [:logger, :runtime_tools, :peerage, :inets]
     ]
   end
 
@@ -47,6 +47,7 @@ defmodule Regalocal.MixProject do
       {:phoenix_html, "~> 2.11"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:phoenix_pubsub_redis, "~> 3.0"},
+      {:phoenix_live_dashboard, "~> 0.2.0"},
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.1"},
       {:plug_cowboy, "~> 2.1"},
@@ -59,7 +60,8 @@ defmodule Regalocal.MixProject do
       {:faker, "~> 0.13"},
       {:ecto_enum, "~> 1.4"},
       {:sentry, "~> 7.0"},
-      {:premailex, "~> 0.3.0"}
+      {:premailex, "~> 0.3.0"},
+      {:peerage, "~> 1.0"}
     ]
   end
 

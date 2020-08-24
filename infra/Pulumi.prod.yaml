@@ -1,0 +1,27 @@
+config:
+  gcp:project: labs-260007
+  gcp:zone: europe-west3-a
+  regalocal:adminPassword:
+    secure: AAABAPV/DXEleeUVX95Psw5u8yRwbqK1ZVvjjSIiD9CX5KswAy7S6LnK6P/lIeaR
+  regalocal:cloudexApiKey:
+    secure: AAABAMQ1JRUCzRwSM01t+lh3UvvZLumegHAgBzqu5cWszbDhWG2a7iT+InvXLqM=
+  regalocal:cloudexCloudName: codegram
+  regalocal:cloudexSecret:
+    secure: AAABAPl2u/s1jwRSgwdsmViSdGHcvDbg1wMOpDMbwIfb24862Pn67leYnKNOugYqiwvlWDg8PMig45c=
+  regalocal:clusterStackRef: codegram/genesis-cluster/prod
+  regalocal:dbSuperuserPassword:
+    secure: AAABAAPAbJP5XWvTSF7Idtf2WMNY1FD+YJpf2sAG9pQRn11+0Hwm4xu81ByoWsTEw3Rdbg==
+  regalocal:gcpProjectId: labs-260007
+  regalocal:geocoderGoogleApiKey:
+    secure: AAABAHO919yUzT29yXiSh4TwOr5gGwG1RRKrimF98VUlQlLHp365QENI/A/sLJ/QNkHPg9bEoEDbrD+av7gWmatsJ0t8ilM=
+  regalocal:secretKeyBase:
+    secure: AAABAJXtrTLv6/cyVCnhts8aTxvHxnw5ybUgQutlrB0zDWBpJkjRAv53eznoijs9d5x+W4VzAYYnj9pTIYo/2F1AfQUY/i7VMRsnKLT25Yd0gtZxMgr3vdi84z+wp2SY
+  regalocal:sendgridPassword:
+    secure: AAABAF6y4pi7+bWXjCXJZXWaKZHeSO8zx/915mDjYEqfp70LeyBvMclzCKj2q1eO4MlgsLWy4jI=
+  regalocal:sendgridUsername: codegram
+  regalocal:sentryDsn:
+    secure: AAABABZtWt8713BulIdKhMe1u8KP0CK880/lVmIFDMpeyjCZme/oMoUm7sIPy/oRDxchvzVXI1w52RmNlJBQoV3EHgBqSpOj5QdIRXinuLwkkKw0afqNsA7LmoEwdYTCxlVJ6V0Ud0I=
+  regalocal:veilRequestSalt:
+    secure: AAABAMTZyYHBhpgdn3bNzB8AeLbChP+bK0EJSuoFoJIB8r155t0G3kDpbRlS9Nfmgm3anUfj2fY5RN2EBfNIb39v6KqNBeuiCjrjPA5wArw0k471p81Lt3L+EjVXRfw4
+  regalocal:veilSessionSalt:
+    secure: AAABAFdTD4LFBXIiCS3HuP9JRrHS5d6AovkNkSzmVAuVPWTBfTBkuA1CV759Nd42/wjVjrtQhT8f1GNk3vVrgrWvvLyYSMJ9dJI+dDzl1VFAV/VOB7NK11wFYrG6xy5G

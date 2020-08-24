@@ -4,6 +4,15 @@
 # remember to add this file to your .gitignore.
 import Config
 
+service_name = System.get_env("SERVICE_NAME") || raise """
+  environment variable SERVICE_NAME is missing.
+  For example: remoteplay.svc.cluster.local
+"""
+
+config :peerage, via: Peerage.Via.Dns,
+  dns_name: service_name,
+  app_name: "regalocal"
+
 database_url =
   System.get_env("DATABASE_URL") ||
     raise """
@@ -36,24 +45,19 @@ admin_password =
 
 config :regalocal, :basic_auth, username: "admin", password: admin_password
 
-review_app_host =
-  if System.get_env("HEROKU_APP_NAME") do
-    "#{System.get_env("HEROKU_APP_NAME")}.herokuapp.com"
-  end
-
-host = System.get_env("HOST") || review_app_host || "example.com"
+host = System.get_env("HOST") || "example.com"
 
 config :regalocal, RegalocalWeb.Endpoint,
-  http: [port: {:system, "PORT"}],
+  http: [
+    port: String.to_integer(System.get_env("PORT") || "4000"),
+    transport_options: [socket_opts: [:inet6]]
+  ],
   url: [host: host, scheme: "https", port: 443],
   secret_key_base: secret_key_base,
   live_view: [signing_salt: secret_key_base],
   pubsub_config: [
     name: Regalocal.PubSub,
-    adapter: Phoenix.PubSub.Redis,
-    url: System.get_env("REDIS_URL"),
-    redis_pool_size: 1,
-    node_name: :crypto.strong_rand_bytes(32)
+    adapter: Phoenix.PubSub.PG2
   ]
 
 # ## Using releases (Elixir v1.9+)
