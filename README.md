@@ -1,4 +1,4 @@
-# Regalocal
+# Regalocal ![Tests](https://github.com/codegram/regalocal/workflows/Test/badge.svg) ![Build & Deploy](https://github.com/codegram/regalocal/workflows/Build%20&%20Deploy/badge.svg)
 
 To start your Phoenix server:
 
